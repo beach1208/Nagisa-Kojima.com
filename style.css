@@ -97,9 +97,6 @@ i:hover {
 
 /*==============  About =============*/
 #about {
-    /*height: 800px;
-    padding: 80px 50px;
-    width: 800px;*/
     border-bottom: solid red 1px;
 }
 
@@ -123,17 +120,23 @@ p {
 
 
 /*============= Skills =======================*/
-
-
-
-
+.chart {
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /*=============== Beg of portfolio ========== */
 
 #portfolio{
-  border-top: solid red 1px;
-    /*background-color: #f2f2f2;*/
-    text-align: center
-    /*padding: 30px 50px 30px 50px ;*/
+    text-align: center;
   }
 
 .coming-soon {
@@ -141,10 +144,6 @@ p {
   padding: 1em;
   margin: 3em;
 }
-
-
-
-
 /*================ Contact =======================*/
 #contact h1,p {
   text-align: center;
@@ -152,7 +151,6 @@ p {
 
 #contact {
   padding-bottom: 30px;
-  border-top: solid red 1px;
   background: #DAE2F8;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
