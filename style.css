@@ -17,15 +17,32 @@ footer, header, menu, nav, section {
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   max-width: 1020px;
   margin: 0 auto;
 }
 
+#about,
+#skills,
+#portfolio,
+#contact {
+    padding: 100px 0;
+}
+
+h1 {
+  text-align: center;
+  color: #c13057;
+  font-family: 'Arapey', serif;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+p {
+  color: #8c7a70;
+}
 /* ======= Header ======== */
 
 header {
@@ -33,7 +50,7 @@ header {
    height: 600px;
    min-height: 300px;
    width: 100%;
-   background: url(img/home.jpg) no-repeat top center;
+   background: url(img/home-min2.jpg) no-repeat top center;
    background-size: cover;
    text-align: center;
    overflow: hidden;
@@ -64,15 +81,15 @@ header {
 
 .main-title {
   color: #c13057;
-  font-weight: bold;
-  font-family: Serif;
+  font-weight: 400;
+  font-family: 'Lora', serif;
   font-size: 2em;
   letter-spacing: 5px;
 }
 
 .subtitle{
   position: relative;
-  top: 160px;
+  top: 165px;
   color: #c13057;
   font-weight: bold;
   font-family: Serif;
@@ -81,7 +98,7 @@ header {
 /* ===== social media buttons =====*/
 i {
   position: relative;
-  top: 150px;
+  top: 170px;
   left: 15px;
   font-size: 2em;
   letter-spacing: 1em;
@@ -96,37 +113,72 @@ i:hover {
 
 /*==============  About =============*/
 #about {
-    border-bottom: solid red 1px;
+
 }
 
-h2 {
-    font-family: 'Trocchi', serif;
-    font-weight: normal;
-    line-height: 48px;
-    color: #dd5d92;
-}
-
-p {
-    line-height: 1.5;
+#about p {
+    line-height: 1.8;
     letter-spacing: 1.5px;
-    color: #949596;
+    color: #8c7a70;
+    text-align: left;
+  }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
-.about {
-    width: 300px;
-    font-weight: 300;
+.flex-item {
+ width: 400px;
+ height: auto;
+ padding-left: 10px;
 }
 
+.col2 {
+  border-top: dotted 1px #8c7a70;
+  border-bottom: dotted 1px #8c7a70;
+}
 
+.profile{
+  width: 150px;
+  height: 150px;
+  opacity: 0.9;
+  position: relative;
+  left: 60px;
+  margin-top: 10px;
+}
+
+.intro {
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 923px) {
+  .col2 {
+    margin-top: 30px;
+  }
+
+}
+
+@media only screen and (min-width: 923px) {
+  .col2 {
+    padding-left: 70px;
+  }
+
+}
 /*============= Skills =======================*/
+#skills {
+  background-color: #fdf6f1;
+  text-align: center;
+}
 .chart {
 position: relative;
 display: inline-block;
-width: 110px;
-height: 110px;
-margin: 40px;
-/*margin-bottom: 50px;
-margin-left: 50px;*/
+width: 140px;
+height: 140px;
+margin: 50px 30px;
 text-align: center;
 }
 .chart canvas {
@@ -136,8 +188,9 @@ left: 0;
 }
 .percent {
 display: inline-block;
-line-height: 110px;
+line-height: 140px;
 z-index: 2;
+color: #8c7a70;
 }
 .percent:after {
 content: '%';
@@ -145,11 +198,15 @@ margin-left: 0.1em;
 font-size: .8em;
 }
 
+.label {
+  color: #8c7a70;
+  padding-top: 20px;
+}
 
 /*=============== Beg of portfolio ========== */
 
 #portfolio{
-    text-align: center;
+
   }
 
 .coming-soon {
@@ -176,7 +233,7 @@ font-size: .8em;
 }
 
 form {
-   max-width: 600px;
+   max-width: 500px;
    margin: 0 auto;
  }
 
