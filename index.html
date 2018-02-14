@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
 
-   <head>
-
-       <link rel="stylesheet" href="media-queries.css">
+       <!-- <link rel="stylesheet" href="media-queries.css"> -->
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+       <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Arapey:400i" rel="stylesheet">
-       <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
        <link rel="stylesheet" href="style.css">
        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
 
       <title>Nagisa Kojima Portfolio</title>
-   </head>
+
 
 <!-- =============Beg of Header =================-->
 
 <body>
      <header id ="home">
+       <div class="opac">
 
 <!-- =========== navigation bar=================-->
 
@@ -33,19 +32,19 @@
   <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#home">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Skills</a>
+        <a class="nav-link" href="#skills">Skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Portfolio</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
   </div>
@@ -53,18 +52,18 @@
 
 <!--Main-title-->
 
-    <div class="top-title">
+    <div id="top-title">
         <h1 class="main-title">Nagisa Kojima</h1>
       </div>
       <p class = "subtitle">Front End Developer</p>
 
-      <div>
+      <div class="contactsocial-1">
         <a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-facebook"></i></a>
         <a href="https://www.instagram.com/nagii128/?hl=ja" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://github.com/beach1208" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
-
+</div>
 </header>
 
 <!-- ===========End of Header================= -->
@@ -72,7 +71,7 @@
 <!-- ============= About me ====================== -->
 <section id="about">
   <div class="container">
-    <h1>ABOUT ME</h1>
+    <h2>ABOUT ME</h2>
 
 <div class="flex-container">
       <div class="flex-item col1">
@@ -93,14 +92,12 @@
         </div>
 </div>
 
-
 </div>
-  </div>
 </section>
 <!-- ============ Skills ============== -->
 <section id="skills">
 
-       <h1>MY SKILLS</h1>
+       <h2>MY SKILLS</h2>
 
     <div class="chart" data-percent="80">
     <span class="percent">80</span>
@@ -132,17 +129,48 @@
 <!-- =============== Beg of portofolio ===================-->
 
 <section id="portfolio">
-  <div class="container">
-    <h1>MY PORTFOLIO</h1>
+  <!-- <div class="container"> -->
+    <h2>MY PORTFOLIO</h2>
 
-<div class="portfolio col">
+<div class="flex-container-2">
+     <div class="col-1-4">
+       <div class="img-container">
+         <img class="figimage" src="img/img1.jpg" alt="img">
+         <div class="img-caption bottom-top">
+           <a href="#"><h3>Budapest</h3></a>
+         </div>
+       </div>
      </div>
 
-  <div class="coming-soon">
-    <h2>COMING SOOOOOOON!</h2>
-  </div>
+     <div class="col-1-4">
+       <div class="img-container">
+         <img class="figimage" src="img/img2.jpg" alt="img">
+         <div class="img-caption bottom-top">
+           <a href="#"><h3>Dubai</h3></a>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-1-4">
+       <div class="img-container">
+         <img class="figimage" src="img/img3.jpg" alt="img">
+         <div class="img-caption bottom-top">
+           <a href="#"><h3>CapeTown</h3></a>
+         </div>
+       </div>
+     </div>
+
+     <div class="col-1-4">
+       <div class="img-container">
+         <img class="figimage" src="img/img4.jpg" alt="img">
+         <div class="img-caption bottom-top">
+           <a href="#"><h3>Singapore</h3></a>
+         </div>
+       </div>
+     </div>
 
 </div>
+
 
 </section>
   <!--End of portofolio-->
@@ -151,8 +179,8 @@
 <section id="contact">
   <div class="container">
 
-      <h1>GET IN TOUCH</h1>
-      <div class ="contactsocial">
+      <h2>GET IN TOUCH</h2>
+      <div class ="contactsocial-2">
         <a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-facebook"></i></a>
         <a href="https://www.instagram.com/nagii128/?hl=ja" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://github.com/beach1208" target="_blank"><i class="fab fa-github"></i></a>
@@ -186,8 +214,12 @@
 
 <!--============== Chart Jquary ==============-->
 
-<script type="text/javascript">
-$(function() {
+<script>
+$(document).ready(function() {
+  $('#top-title').addClass('showUp');
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 600) {
+
     $('.chart').easyPieChart({
     scaleColor: "#ecf0f1",
     lineWidth: 12,
@@ -197,7 +229,12 @@ $(function() {
     size: 140,
     animate: 1000
     });
+  }
+})
+
 });
+
+
 </script>
 
 
