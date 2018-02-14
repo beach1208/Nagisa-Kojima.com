@@ -97,6 +97,7 @@ header {
   font-weight: 500;
   font-family: 'Cormorant Garamond', serif;
   font-size: 2em;
+  letter-spacing: 3px;
 }
 
 .subtitle{
@@ -309,7 +310,6 @@ form {
      padding: 1em;
      border-radius: 8px;
      border: 1px solid #cfcfd1;
-     /*display: block;*/
      width: 100%;
      margin-top: 1em;
  }
@@ -326,10 +326,10 @@ textarea {
   width: 100%;
   padding: 19px 39px 18px 39px;
   color: #FFF;
+  letter-spacing: 5px;
   background-color: #c13057;;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
-  font-style: normal;
   border-radius: 4px;
   border-bottom: 4px solid #7f3f57;
   margin: 10px 0;
