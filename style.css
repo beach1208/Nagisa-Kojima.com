@@ -310,6 +310,7 @@ form {
      padding: 1em;
      border-radius: 8px;
      border: 1px solid #cfcfd1;
+     /*display: block;*/
      width: 100%;
      margin-top: 1em;
  }
