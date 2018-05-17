@@ -11,6 +11,10 @@ body {
   width: 90%;
   max-width: 1020px;
   margin: 0 auto;
+  transition: opacity 0.9s;
+  -moz-transition: opacity 0.9s;
+  -webkit-transition: opacity 0.9s;
+  -o-transition: opacity 0.9s;
 }
 
 #about,
@@ -146,13 +150,13 @@ header {
  width: 45%;
  height: auto;
  padding-left: 10px;
- 
 }
 
-
 .profile{
-  width: 350px;
-  height: auto;
+  width: auto;
+  height: 400px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 .intro li{
@@ -162,33 +166,15 @@ header {
   vertical-align: middle;
   padding-top: 10px;
 }
+
 .intro span {
   margin-left: 10px;
 }
 
-
-/*.fas fa-user-alt {
-  width: 100%;
-  color: #fff;
-}*/
-
 .intro {
-  padding-top: 20px;
+  /*padding-top: 20px;*/
 }
 
-@media only screen and (max-width: 923px) {
-  .col2 {
-    margin-top: 30px;
-  }
-
-}
-
-@media only screen and (min-width: 923px) {
-  .col2 {
-    padding-left: 70px;
-  }
-
-}
 /*============= Skills =======================*/
 #skills {
   background-color: #fff;
