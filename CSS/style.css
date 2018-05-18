@@ -71,7 +71,7 @@ p {
 
 /*====main-top style====*/
 header {
-  background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url("img/headimg.jpg");
+  background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url("../img/headimg.jpg");
   width: 100%;
   height: 80vh;
   background-size: cover;
