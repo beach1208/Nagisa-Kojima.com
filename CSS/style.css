@@ -17,10 +17,10 @@ body {
   -o-transition: opacity 0.9s;
 }
 
-#about,
-#skills,
-#portfolio,
-#contact {
+.about,
+.skills,
+.portfolio,
+.contact {
     padding: 90px 0;
 }
 
@@ -43,14 +43,19 @@ p {
   background-color: #ecd8d8;
   padding: 0px;
   margin: 0px;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+
+  /*text-align: center;*/
 }
 .nav-item {
   font-size: 1em;
   font-family: 'Playfair Display',serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  display: inline-block;
+/*  display: inline-block;*/
   padding: 20px;
 }
 
@@ -79,21 +84,20 @@ header {
 }
 
 
-#top-title {
-    position: absolute; /*vertically horizontally centerにする*/
-    top: 30%;
-    left: 10%;
+.top-title {
+    padding: 5% 10%;
+    display: block;
 }
-#top-title h1 {
+
+header h1 {
     font-weight: 400;
     font-size: 300%;
     font-family: 'Playfair Display',serif;
     color: #4d4b50;
     letter-spacing: 4px;  
-    display: inline;
 }
 
-#top-title p{
+header p{
   font-family: 'Cormorant Garamond',serif;
   font-size: 130%;
   padding-top: 5px;
@@ -129,10 +133,10 @@ header {
 }
 
 /*==============  About =============*/
-#about {
+.about {
   background: #ecd8d8;
 }
-#about p {
+.about p {
     line-height: 1.8;
     letter-spacing: 1.5px;
     text-align: left;
@@ -171,50 +175,16 @@ header {
   margin-left: 10px;
 }
 
-.intro {
-  /*padding-top: 20px;*/
-}
 
 /*============= Skills =======================*/
-#skills {
+.skills {
   background-color: #fff;
   text-align: center;
 }
 
-.chart {
-position: relative;
-display: inline-block;
-width: 140px;
-height: 140px;
-margin: 50px 30px;
-text-align: center;
-}
-
-.chart canvas {
-position: absolute;
-top: 0;
-left: 0;
-}
-
-.percent {
-display: inline-block;
-line-height: 140px;
-z-index: 2;
-color: #8c7a70;
-}
-.percent:after {
-content: '%';
-margin-left: 0.1em;
-font-size: .8em;
-}
-
-.label {
-  color: #8c7a70;
-  padding-top: 20px;
-}
 
 /*=============== Beg of portfolio ========== */
-#portfolio {
+.portfolio {
   background-color: #fff;
 }
 
@@ -284,11 +254,8 @@ font-size: .8em;
 }
 
 /*================ Contact =======================*/
-#contact h1,p {
-  text-align: center;
-}
 
-#contact {
+.contact {
   padding-bottom: 30px;
   background: #ecd8d8;
 }

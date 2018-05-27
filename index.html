@@ -4,6 +4,7 @@
 
        <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+       <link rel="icon" href="images/Favicon.ico"/>
        <link href="https://fonts.googleapis.com/css?family=Arapey:400i" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
        <link href="https://fonts.googleapis.com/css?family=Cinzel|Cormorant+SC:400,500,600" rel="stylesheet">
@@ -11,9 +12,6 @@
 
        <link rel="stylesheet" href="CSS/style.css">
        <script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
-
-
-       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script> -->
 
       <title>Nagisa Kojima Portfolio</title>
 
@@ -45,7 +43,7 @@
 </nav>
 
 
-<div id="top-title">
+<div class="top-title">
   <h1>Nagisa Kojima</h1>
   <p>Front End Developer</p>
 
@@ -54,25 +52,15 @@
     <li><a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-twitter"></i></a></li>
     <li><a href="https://github.com/beach1208" target="_blank"><i class="fab fa-github"></i></a></li>
     <li><a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="far fa-envelope"></i></a></li>
-      </div>
-      
-      
-</div>
-
-
+    <li><a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="far fa-envelope"></i></a></li></ul>
+  </div>
 </header>
 
-<!--Main-title-->
 
-
-
-<!-- ===========End of Header================= -->
 
 <!-- =============== Beg of portofolio ===================-->
 
-<section id="portfolio">
-<div class="container">
+<section class="portfolio container">
     <h2>PORTFOLIO</h2>
 
 <div class="flex-container-2">
@@ -113,18 +101,14 @@
      </div>
 
 </div>
-</div>
-
-
 </section>
   <!--End of portofolio-->
 
 
 <!-- ============= About me ====================== -->
-<section id="about">
+<section class ="about">
   <div class="container">
     <h2>ABOUT ME</h2>
-
 
 <div class="flex-container">
       <div class="flex-item col1">
@@ -147,44 +131,20 @@
          <img class="profile" src="img/IMG_7208.jpg" alt="profile">
         </div>
 </div>
-
 </div>
+
 </section>
 <!-- ============ Skills ============== -->
-<section id="skills">
+<section class="skills">
 
-       <h2>SKILLS</h2>
+  <h2>SKILLS</h2>
 
-    <div class="chart" data-percent="80">
-    <span class="percent">80</span>
-    <div class="label">HTML5</div>
-    </div>
-
-    <div class="chart" data-percent="70">
-    <span class="percent">70</span>
-    <div class="label">CSS3</div>
-    </div>
-
-    <div class="chart" data-percent="50">
-    <span class="percent">50</span>
-    <div class="label">BootStrap</div>
-    </div>
-
-    <div class="chart" data-percent="50">
-    <span class="percent">50</span>
-    <div class="label">JQuary</div>
-    </div>
-
-    <div class="chart" data-percent="40">
-    <span class="percent">40</span>
-    <div class="label">JavaScript</div>
-    </div>
-
+  
 
   </section>
 
   <!-- =============== Contact ===================-->
-<section id="contact">
+<section class="contact">
   <div class="container">
 
       <h2>GET IN TOUCH</h2>
@@ -195,8 +155,8 @@
         <a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="fab fa-linkedin"></i></a>
 
       </div>
+      </div>
     　
-</div>
 </section>
   <!-- ======== footer ============-->
 
@@ -211,9 +171,8 @@
 
 <script type="text/javascript">
 $(window).on('load',function(){
-  $('#top-title').css('display', 'inline-block');
-  $('#top-title').hide();
-  $('#top-title').show(2000);
+  $('.top-title').hide();
+  $('.top-title').show(3000);
 
 
 
@@ -234,36 +193,8 @@ $(window).on('load',function(){
     });
 });
 
-// $(window).scroll(function() {
-// if ($(this).scrollTop() > 600) {
-
-//     $('.chart').easyPieChart({
-//     scaleColor: "#ecf0f1",
-//     lineWidth: 12,
-//     lineCap: 'square',
-//     barColor: '#b74979',
-//     trackColor:  "#ecf0f1",
-//     size: 140,
-//     animate: 1000
-//     });
-//   }
-// });
-
-
-
 
 </script>
 
-
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-
-    <!-- <script type="text/javascript" src="script.js"></script>
- -->
-   </body>
-
-
-
-
+</body>
 </html>
