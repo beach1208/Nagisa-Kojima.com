@@ -85,8 +85,8 @@ header {
 
 
 .top-title {
-    padding: 5% 10%;
-    display: block;
+    padding: 10% 10%;
+    display: inline-block;
 }
 
 header h1 {
@@ -98,22 +98,21 @@ header h1 {
 }
 
 header p{
-  display: inline;
   font-family: 'Cormorant Garamond',serif;
   font-size: 130%;
   padding-top: 5px;
-  margin-left: 67px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .social-icons {
-  margin-left: 25px;
+  text-align: center;
+  display: inline-block;
 }
 
 .social-icons li {
-  padding-top: 10px;
+  padding: 10px 15px;
   font-size: 23px;
-  letter-spacing: 1em;
   display: inline-block;
 }
 
@@ -263,6 +262,7 @@ header p{
 }
 
 .icons {
+  display: inline;
   text-align: center;
 }
 
