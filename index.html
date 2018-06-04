@@ -12,6 +12,7 @@
 
        <link rel="stylesheet" href="CSS/style.css">
        <script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+       <script type="text/javascript" src="JS/script.js"></script>
 
       <title>Nagisa Kojima Portfolio</title>
 
@@ -21,26 +22,16 @@
 <body>
 <header>
 <!-- =========== navigation bar=================-->
+<nav>
+  <a href="#" class="menu-trigger">Menu</a>
 <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#home">Home</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skills">Skills</a>
-      </li>
-     
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+       <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
     </ul>
-  </div>
-</nav>
+  </nav>
 
 
 <div class="top-title">
@@ -146,16 +137,13 @@
   <!-- =============== Contact ===================-->
 <section class="contact">
   <div class="container">
-
-      <div class="icons">
       <h2>GET IN TOUCH</h2>
-      <ul class="social-icons">
+      <ul class="social-icons second">
         <li><a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-facebook"></i></a></li>
         <li><a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-twitter"></i></a></li>
         <li><a href="https://github.com/beach1208" target="_blank"><i class="fab fa-github"></i></a></li>
         <li><a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="far fa-envelope"></i></a></li></ul>
-      </div>
+        </ul>
       </div>
     　
 </section>
@@ -167,35 +155,7 @@
    </div>
     </footer>
 
-<!--============== Chart Jquary ==============-->
 
-
-<script type="text/javascript">
-$(window).on('load',function(){
-  // $('.top-title').hide();
-  // $('.top-title').show(3000);
-
-
-
-  // fade-in
-    $(window).scroll(function (){
-        $('.container').each(function(){
-            var POS = $(this).offset().top;  //fade-inがついている要素の位置
-            var scroll = $(window).scrollTop();  //スクロール一
-            var windowHeight = $(window).height();  //ウィンドウの高さ
-
-            if (scroll > POS - windowHeight + windowHeight/5){
-                $(this).css("opacity","1" );
-            } else {
-                $(this).css("opacity","0" );
-            }
-        });
-
-    });
-});
-
-
-</script>
 
 </body>
 </html>

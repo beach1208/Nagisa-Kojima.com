@@ -23,10 +23,11 @@ body {
 .contact {
     padding: 90px 0;
 }
-
+h1,h2,p,.nav-link:link,.nav-link:visited,.menu-trigger,.social-icons li i,.social-icons li a:link,visited {
+  color: #4d4b50
+}
 h2 {
   text-align: center;
-  color: #4d4b50;
   font-weight: 400;
   font-family:  'Playfair Display',serif;
   font-size: 25px;
@@ -34,11 +35,11 @@ h2 {
 }
 
 p {
-  color: #4d4b50;
   font-family: 'EB Garamond',serif;
 }
 
 /*=========  Nav bar ==========*/
+
 .navbar-nav {
   background-color: #ecd8d8;
   padding: 0px;
@@ -62,7 +63,6 @@ p {
 .nav-link:link,
 .nav-link:visited {
   padding: 8px 0;
-  color: #4d4b50;
   text-decoration: none;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.2s;
@@ -73,7 +73,10 @@ p {
   border-bottom: 2px solid #b74979;
 }
 
-
+.menu-trigger {
+  display: none;
+  text-decoration: none;
+}
 /*====main-top style====*/
 header {
   background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url("../img/headimg.jpg");
@@ -93,7 +96,6 @@ header h1 {
     font-weight: 400;
     font-size: 300%;
     font-family: 'Playfair Display',serif;
-    color: #4d4b50;
     letter-spacing: 4px;  
 }
 
@@ -116,21 +118,9 @@ header p{
   display: inline-block;
 }
 
-.social-icons li i{
-  color: #4d4b50;
-}
-
-.social-icons li a:link,visited{
-  color: #4d4b50;
-}
 
 .social-icons li i:hover{
   color: #b74979;
-}
-
-/*#top-title.showUp {
-  opacity: 1;
-  margin-top: 0;
 }
 
 /*==============  About =============*/
@@ -261,10 +251,12 @@ header p{
   background: #ecd8d8;
 }
 
-.icons {
-  display: inline;
-  text-align: center;
+.second {
+  padding-right: 40px;
+  display: block; 
+  margin-top: 30px;
 }
+
 
 /*====Footer====*/
 
@@ -276,6 +268,57 @@ header p{
   font-family: 'Cormorant Garamond',sans-serif;
 }
 
+@media screen and (max-width:580px) {
+  .menu-trigger {
+    display:block;
+    background: #ecd8d8;
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Playfair Display',serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .nav-item {
+    display:block;   
+    background-color: #eee;
+    padding: 10px;
+    font-size: .8em;
+    text-align: center;
+  }
+  .navbar-nav {
+    display:none;
+  }
 
+  header {
+    height: 50vh;
+    background-position: left;
+  }
 
+  header h1 {
+    font-size: 230%;
+  }
+
+.social-icons {
+  margin-right: 3em;
+}
+.social-icons li {
+  padding: 8px 10px;
+  font-size: 1.3em;
+}
+
+.second {
+  margin-left: 3em;
+}
+
+.profile {
+  margin: 0 auto;
+}
+}
+
+@media screen and (max-width:760px) {
+  .flex-item {
+    width: 60%;
+    margin: 0 auto;
+   }
+}
 
