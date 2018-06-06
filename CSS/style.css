@@ -86,7 +86,6 @@ header {
   background-position: top left;
 }
 
-
 .top-title {
     padding: 10% 10%;
     display: inline-block;
@@ -171,6 +170,90 @@ header p{
 .skills {
   background-color: #fff;
   text-align: center;
+}
+
+.bar {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.speech-bubble {
+  font-size: 0.75em;
+  line-height: 2em;
+  position: absolute;
+  top: -2.7em;
+  text-align: center;
+  min-width: 3em;
+  border-radius: 0.3em;
+  display: none;
+}
+
+.photo,
+.fluent {
+  left: calc(75% - 1.5em);
+}
+
+.illustrator {
+  left: calc(90% - 1.5em);
+}
+
+.indesign {
+  left: calc(85% - 1.5em);
+}
+
+.speech-bubble:after {
+  border: 0.5em solid transparent;
+  content: "";
+  margin-left: -0.5em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.bar-outer {
+  height: 1.25em;
+  background: #EEEEEE;
+  position: relative;
+  border-radius: 0.3em;
+}
+
+.bar-inner {
+  width: 0;
+  height: 1.25em;
+  border-radius: 0.3em;
+}
+
+
+.ph, .photo {
+  background: #fbc9c4;
+}
+
+.photo:after {
+  border-top-color: #fbc9c4;
+}
+
+.il, .illustrator {
+  background: #f9b3ac;
+}
+
+.illustrator:after {
+  border-top-color: #f9b3ac;
+}
+
+.in, .indesign {
+  background: #f89d94;
+}
+
+.indesign:after {
+  border-top-color: #f89d94;
+}
+
+.fl, .fluent {
+  background: #f6877c;
+}
+
+.fluent:after {
+  border-top-color: #f6877c;
 }
 
 
@@ -268,35 +351,40 @@ header p{
   font-family: 'Cormorant Garamond',sans-serif;
 }
 
+@media screen and (max-width:480px){
+  .top-title {
+    padding: 13% 10% 10% 13%;
+  }
+}
+
+
 @media screen and (max-width:580px) {
   .menu-trigger {
-    display:block;
-    background: #ecd8d8;
+    display: block;
     padding: 10px;
-    font-size: 1em;
-    font-family: 'Playfair Display',serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    background-color: #ecd8d8;
   }
-  .nav-item {
+
+.nav-item {
     display:block;   
     background-color: #eee;
     padding: 10px;
     font-size: .8em;
     text-align: center;
-  }
-  .navbar-nav {
+}
+
+.navbar-nav {
     display:none;
-  }
+}
 
   header {
     height: 50vh;
     background-position: left;
   }
 
-  header h1 {
+header h1 {
     font-size: 230%;
-  }
+}
 
 .social-icons {
   margin-right: 3em;
