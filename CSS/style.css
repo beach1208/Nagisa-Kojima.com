@@ -7,6 +7,7 @@ body {
   padding: 0px;
 }
 
+
 .container {
   width: 100%;
   max-width: 1020px;
@@ -143,7 +144,7 @@ header p{
 .flex-item {
  width: 45%;
  height: auto;
- padding-left: 10px;
+ /* padding-left: 10px; */
 }
 
 .profile{
@@ -173,89 +174,29 @@ header p{
 }
 
 .bar {
-  width: 80%;
-  margin: 2em auto;
+  width: 30%;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin: 10px;
 }
 
-.speech-bubble {
-  font-size: 0.75em;
-  line-height: 2em;
-  position: absolute;
-  top: -2.7em;
-  text-align: center;
-  min-width: 3em;
-  border-radius: 0.3em;
-  display: none;
+.progress {
+  text-align: left;
+  padding-left: 20px;
+  line-height: 20px;
+  color: white;
+  border-radius: 10px;
 }
 
-.photo,
-.fluent {
-  left: calc(75% - 1.5em);
-}
-
-.illustrator {
-  left: calc(90% - 1.5em);
-}
-
-.indesign {
-  left: calc(85% - 1.5em);
-}
-
-.speech-bubble:after {
-  border: 0.5em solid transparent;
-  content: "";
-  margin-left: -0.5em;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-}
-
-.bar-outer {
-  height: 1.25em;
-  background: #EEEEEE;
-  position: relative;
-  border-radius: 0.3em;
-}
-
-.bar-inner {
-  width: 0;
-  height: 1.25em;
-  border-radius: 0.3em;
-}
-
-
-.ph, .photo {
-  background: #fbc9c4;
-}
-
-.photo:after {
-  border-top-color: #fbc9c4;
-}
-
-.il, .illustrator {
-  background: #f9b3ac;
-}
-
-.illustrator:after {
-  border-top-color: #f9b3ac;
-}
-
-.in, .indesign {
-  background: #f89d94;
-}
-
-.indesign:after {
-  border-top-color: #f89d94;
-}
-
-.fl, .fluent {
-  background: #f6877c;
-}
-
-.fluent:after {
-  border-top-color: #f6877c;
-}
-
+.html {width: 90%; background-color: #b74979;}
+.css {width: 80%; background-color: #b74979;}
+.js {width: 70%; background-color: #b74979;}
+.java {width: 50%; background-color: #b74979;}
+.python {width: 30%; background-color: #b74979;}
+.php {width: 30%; background-color: #b74979;}
+.wp {width: 40%; background-color: #b74979;}
+.ph {width: 60%; background-color: #b74979;}
+.llus{width: 50%; background-color: #b74979;}
 
 /*=============== Beg of portfolio ========== */
 .portfolio {
