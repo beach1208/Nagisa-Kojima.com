@@ -8,10 +8,13 @@ body {
   font-size: 16px;
 }
 
+#wrapper {
+  overflow: hidden;
+}
 
 .container {
   width: 100%;
-  max-width: 1020px;
+  max-width: 80%;
   margin: 0 auto;
   transition: opacity 0.9s;
   -moz-transition: opacity 0.9s;
@@ -49,15 +52,12 @@ p {
   flex-wrap: wrap;
   justify-content: flex-end;
   list-style: none;
-
-  /*text-align: center;*/
 }
 .nav-item {
   font-size: 1em;
   font-family: 'Playfair Display',serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-/*  display: inline-block;*/
   padding: 20px;
 }
 
@@ -89,7 +89,7 @@ header {
 
 .top-title {
   position: absolute;
-  width: 1140px;
+  width: 80%;
   top: 50%;
   left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -109,22 +109,6 @@ header p{
   font-size: 230%;
   padding-top: 5px;
   letter-spacing: 2px;
-}
-
-.social-icons {
-  margin-right: 40px;
-  text-align: center;
-}
-
-.social-icons li {
-  padding: 10px 15px;
-  font-size: 23px;
-  display: inline-block;
-}
-
-
-.social-icons li i:hover{
-  color: #b74979;
 }
 
 /*==============  About =============*/
@@ -279,11 +263,20 @@ header p{
   background: #ecd8d8;
 }
 
-.second {
-  padding-right: 40px;
-  display: block; 
-  margin-top: 30px;
+.social-icons {
+  text-align: center;
+  padding-left: 0;
 }
+
+.social-icons li {
+  padding: 10px 15px;
+  font-size: 23px;
+  display: inline-block;
+}
+.social-icons li i:hover{
+  color: #b74979;
+}
+
 
 
 /*====Footer====*/
@@ -297,37 +290,27 @@ header p{
 }
 
 /*==== MEDIA QUERIES ====*/
-@media only screen and (max-width: 1200px) {
-  .top-title {
-      width: 100%;
-      padding: 0 2%;
-  }
+/* @media only screen and (max-width: 1200px) {
+
   
-  .container { padding: 0 2%; }
-}
+} */
 
 @media only screen and (max-width: 1023px) {
+  .top-title {
+    width: 100%;
+    text-align: center;
+}
 }
 
 
 @media only screen and (max-width:760px) {
-  
+
 }
 
 
 @media only screen and (max-width:480px) {
-  h1 {
-    font-size: 250%;
-  }
-  .top-title {
-    text-align: center;
-  }
 
-  header p {
-    font-size: 150%;
-  }
-
-  .menu-trigger {
+.menu-trigger {
     display: block;
     padding: 10px;
     background-color: #ecd8d8;
