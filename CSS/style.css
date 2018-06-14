@@ -18,10 +18,10 @@ body {
   -o-transition: opacity 0.9s;
 }
 
-.about,
-.skills,
-.portfolio,
-.contact {
+#about,
+#skills,
+#portfolio,
+#contact {
     padding: 90px 0;
 }
 h1,h2,p,.nav-link:link,.nav-link:visited,.menu-trigger,.social-icons li i,.social-icons li a:link,visited {
@@ -42,12 +42,11 @@ p {
 /*=========  Nav bar ==========*/
 
 .navbar-nav {
-  background-color: #ecd8d8;
   padding: 0px;
   margin: 0px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
   list-style: none;
 
   /*text-align: center;*/
@@ -80,36 +79,37 @@ p {
 }
 /*====main-top style====*/
 header {
-  background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url("../img/headimg.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4),rgba(255,255,255,0.4)),url("../img/headimg.jpg");
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-size: cover;
   background-position: top left;
 }
 
 .top-title {
-    padding: 10% 10%;
-    display: inline-block;
+  display: inline-block;
+  text-align: left;
+  padding: 10% 10%;
 }
 
-header h1 {
+h1 {
     font-weight: 400;
-    font-size: 300%;
+    font-size: 400%;
     font-family: 'Playfair Display',serif;
-    letter-spacing: 4px;  
+    letter-spacing: 10px;  
 }
 
 header p{
   font-family: 'Cormorant Garamond',serif;
-  font-size: 130%;
+  font-size: 230%;
   padding-top: 5px;
   letter-spacing: 2px;
   text-align: center;
 }
 
 .social-icons {
+  margin-right: 40px;
   text-align: center;
-  display: inline-block;
 }
 
 .social-icons li {
@@ -124,10 +124,10 @@ header p{
 }
 
 /*==============  About =============*/
-.about {
-  background: #ecd8d8;
+#about {
+  background: #f3dcdc2b;
 }
-.about p {
+#about p {
     line-height: 1.8;
     letter-spacing: 1.5px;
     text-align: left;
@@ -168,7 +168,7 @@ header p{
 
 
 /*============= Skills =======================*/
-.skills {
+#skills {
   background-color: #fff;
   text-align: center;
 }
@@ -199,7 +199,7 @@ header p{
 .llus{width: 50%; background-color: #b74979;}
 
 /*=============== Beg of portfolio ========== */
-.portfolio {
+#portfolio {
   background-color: #fff;
 }
 
@@ -270,7 +270,7 @@ header p{
 
 /*================ Contact =======================*/
 
-.contact {
+#contact {
   padding-bottom: 30px;
   background: #ecd8d8;
 }
@@ -294,8 +294,10 @@ header p{
 
 @media screen and (max-width:480px){
   .top-title {
-    padding: 13% 10% 10% 13%;
+    text-align: center;
   }
+
+
 }
 
 
@@ -318,22 +320,24 @@ header p{
     display:none;
 }
 
-  header {
-    height: 50vh;
+  /* header {
     background-position: left;
   }
 
-header h1 {
-    font-size: 230%;
-}
+  h1 {
+    font-size: 200%;
+  } */
+  /* header p {
+    font-size: 150%;
+  } */
 
-.social-icons {
+/* .social-icons {
   margin-right: 3em;
 }
 .social-icons li {
   padding: 8px 10px;
   font-size: 1.3em;
-}
+} */
 
 .second {
   margin-left: 3em;
@@ -349,5 +353,6 @@ header h1 {
     width: 60%;
     margin: 0 auto;
    }
+
 }
 
