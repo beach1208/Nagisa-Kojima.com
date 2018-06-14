@@ -87,9 +87,13 @@ header {
 }
 
 .top-title {
-  display: inline-block;
-  text-align: left;
-  padding: 10% 10%;
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -104,7 +108,6 @@ header p{
   font-size: 230%;
   padding-top: 5px;
   letter-spacing: 2px;
-  text-align: center;
 }
 
 .social-icons {
@@ -137,12 +140,12 @@ header p{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 50px;
 }
 
 .flex-item {
- width: 45%;
+ width: 50%;
  height: auto;
  /* padding-left: 10px; */
 }
@@ -292,16 +295,27 @@ header p{
   font-family: 'Cormorant Garamond',sans-serif;
 }
 
-@media screen and (max-width:480px){
+/*==== MEDIA QUERIES ====*/
+@media only screen and (max-width: 1200px) {
+  .top-title {
+      width: 100%;
+      padding: 0 2%;
+  }
+  
+  .container { padding: 0 2%; }
+}
+
+@media only screen and (max-width: 1023px) {
+  body { font-size: 18px; }
+    section { padding: 60px 0; }
+}
+
+
+@media screen and (max-width:760px) {
   .top-title {
     text-align: center;
   }
 
-
-}
-
-
-@media screen and (max-width:580px) {
   .menu-trigger {
     display: block;
     padding: 10px;
@@ -320,16 +334,34 @@ header p{
     display:none;
 }
 
-  /* header {
-    background-position: left;
+.flex-item {
+    width: 60%;
+    margin: 0 auto;
+ }
+
+.profile {
+  margin: 0 auto;
+}
+}
+
+/* @media screen and (max-width:580px) {
+  .menu-trigger {
+    display: block;
+    padding: 10px;
+    background-color: #ecd8d8;
   }
 
-  h1 {
-    font-size: 200%;
-  } */
-  /* header p {
-    font-size: 150%;
-  } */
+.nav-item {
+    display:block;   
+    background-color: #eee;
+    padding: 10px;
+    font-size: .8em;
+    text-align: center;
+}
+
+.navbar-nav {
+    display:none;
+} */
 
 /* .social-icons {
   margin-right: 3em;
@@ -339,20 +371,22 @@ header p{
   font-size: 1.3em;
 } */
 
-.second {
+/* .second {
   margin-left: 3em;
 }
 
 .profile {
   margin: 0 auto;
-}
-}
+} */
+/* } */
 
-@media screen and (max-width:760px) {
-  .flex-item {
-    width: 60%;
-    margin: 0 auto;
-   }
+@media screen and (max-width:480px){
+
+  header p {
+    font-size: 150%;
+  }
+
+  section { padding: 25px 0; }
+
 
 }
-
