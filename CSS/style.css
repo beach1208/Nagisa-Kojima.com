@@ -5,6 +5,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  font-size: 16px;
 }
 
 
@@ -306,14 +307,24 @@ header p{
 }
 
 @media only screen and (max-width: 1023px) {
-  body { font-size: 18px; }
-    section { padding: 60px 0; }
 }
 
 
-@media screen and (max-width:760px) {
+@media only screen and (max-width:760px) {
+  
+}
+
+
+@media only screen and (max-width:480px) {
+  h1 {
+    font-size: 250%;
+  }
   .top-title {
     text-align: center;
+  }
+
+  header p {
+    font-size: 150%;
   }
 
   .menu-trigger {
@@ -342,51 +353,6 @@ header p{
 .profile {
   margin: 0 auto;
 }
-}
-
-/* @media screen and (max-width:580px) {
-  .menu-trigger {
-    display: block;
-    padding: 10px;
-    background-color: #ecd8d8;
-  }
-
-.nav-item {
-    display:block;   
-    background-color: #eee;
-    padding: 10px;
-    font-size: .8em;
-    text-align: center;
-}
-
-.navbar-nav {
-    display:none;
-} */
-
-/* .social-icons {
-  margin-right: 3em;
-}
-.social-icons li {
-  padding: 8px 10px;
-  font-size: 1.3em;
-} */
-
-/* .second {
-  margin-left: 3em;
-}
-
-.profile {
-  margin: 0 auto;
-} */
-/* } */
-
-@media screen and (max-width:480px){
-
-  header p {
-    font-size: 150%;
-  }
-
-  section { padding: 25px 0; }
 
 
 }
