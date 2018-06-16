@@ -26,8 +26,10 @@ body {
 #skills,
 #portfolio,
 #contact {
-    padding: 90px 0;
+    padding: 10% 0;
 }
+
+/*  FONTS AND COLOR  */
 h1,h2,p,.nav-link:link,.nav-link:visited,.menu-trigger,.social-icons li i,.social-icons li a:link,visited {
   color: #4d4b50
 }
@@ -39,7 +41,8 @@ h2 {
   letter-spacing: 5px;
 }
 
-p {
+
+p,.main-footer{
   font-family: 'EB Garamond',serif;
 }
 
@@ -55,9 +58,9 @@ p {
 }
 .nav-item {
   font-size: 1em;
-  font-family: 'Playfair Display',serif;
+  font-family: 'Playfair Display', serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   padding: 20px;
 }
 
@@ -98,93 +101,20 @@ header {
 }
 
 h1 {
-    font-weight: 400;
-    font-size: 400%;
-    font-family: 'Playfair Display',serif;
-    letter-spacing: 10px;  
+  font-weight: 700;
+  font-size: 500%;
+  font-family: 'Cormorant Garamond',serif;
+  font-style: italic;
+  letter-spacing: 5px;
 }
 
 header p{
   font-family: 'Cormorant Garamond',serif;
+  font-style: italic;
   font-size: 230%;
   padding-top: 5px;
   letter-spacing: 2px;
 }
-
-/*==============  About =============*/
-#about {
-  background: #f3dcdc2b;
-}
-#about p {
-    line-height: 1.8;
-    letter-spacing: 1.5px;
-    text-align: left;
-  }
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
-.flex-item {
- width: 50%;
- height: auto;
- /* padding-left: 10px; */
-}
-
-.profile{
-  width: auto;
-  height: 400px;
-  margin-top: 20px;
-  margin-left: 40px;
-}
-
-.intro li{
-  font-size: 20px;
-  list-style: none;
-  letter-spacing: 2px;
-  vertical-align: middle;
-  padding-top: 10px;
-}
-
-.intro span {
-  margin-left: 10px;
-}
-
-
-/*============= Skills =======================*/
-#skills {
-  background-color: #fff;
-  text-align: center;
-}
-
-.bar {
-  width: 30%;
-  background-color: #ddd;
-  border-radius: 10px;
-  margin: 10px;
-}
-
-.progress {
-  text-align: left;
-  padding-left: 20px;
-  line-height: 20px;
-  color: white;
-  border-radius: 10px;
-}
-
-.html {width: 90%; background-color: #b74979;}
-.css {width: 80%; background-color: #b74979;}
-.js {width: 70%; background-color: #b74979;}
-.java {width: 50%; background-color: #b74979;}
-.python {width: 30%; background-color: #b74979;}
-.php {width: 30%; background-color: #b74979;}
-.wp {width: 40%; background-color: #b74979;}
-.ph {width: 60%; background-color: #b74979;}
-.llus{width: 50%; background-color: #b74979;}
 
 /*=============== Beg of portfolio ========== */
 #portfolio {
@@ -256,6 +186,97 @@ header p{
 	opacity: 1;
 }
 
+
+/*==============  About =============*/
+#about {
+  background: #ecd8d8;
+}
+#about p {
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    text-align: left;
+  }
+
+.about li:nth-child(1) {
+  padding-left: 0px;
+  
+}
+
+h3 {
+  font-weight: 700;
+  font-family: 'Playfair Display',serif;
+  font-style: italic;
+  font-size: 300%;
+  letter-spacing: 5px;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+
+.col1 {
+  flex:2;
+  margin: 10px;
+  padding: 20px;
+}
+
+.col2 {
+  flex:1;
+  margin: 10px;
+  padding: 20px;
+}
+
+
+.profile-img{
+  width: auto;
+  height: 300px;
+  border: 10px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  box-shadow: 3px 3px 3px #777;
+}
+
+
+/*============= Skills =======================*/
+#skills {
+  background-color: #fff;
+  text-align: center;
+}
+
+.bar {
+  width: 30%;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.progress {
+  text-align: left;
+  padding-left: 20px;
+  line-height: 20px;
+  color: white;
+  border-radius: 10px;
+  background: #D66D75;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E29587, #D66D75);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E29587, #D66D75); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.html {width: 90%; }
+.css {width: 80%;}
+.js {width: 70%; }
+.java {width: 50%; }
+.python {width: 30%;;}
+.php {width: 30%;}
+.wp {width: 40%; }
+.ph {width: 60%; }
+.llus{width: 50%; }
+
+
 /*================ Contact =======================*/
 
 #contact {
@@ -264,8 +285,11 @@ header p{
 }
 
 .social-icons {
-  text-align: center;
   padding-left: 0;
+}
+
+.contact {
+  text-align: center;
 }
 
 .social-icons li {
@@ -286,7 +310,6 @@ header p{
   color: #fff;
   padding: 10px 0;
   text-align: center;
-  font-family: 'Cormorant Garamond',sans-serif;
 }
 
 /*==== MEDIA QUERIES ====*/
