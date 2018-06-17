@@ -1,8 +1,34 @@
+// window.onscroll = function(){myScroll()};
+// const nav1 = document.getElementsByTagName("nav");
+// window.onscroll = function(){
+//     if(window.pageXOffset > 300){
+//         nav1.classList.add("scrolled-nav");
+//     }else{
+//         nav1.classList.remove("scrolled-nav");
+//     }
+//     console.log(nav1);
+// }
+
+$(function() {
+    var navbar = $("nav");
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 400) {
+            navbar.addClass("scrolled-nav");
+        } else {
+            navbar.removeClass("scrolled-nav");
+        }
+    });
+  
+});
+
+
 
 $(window).on('load',function(){
+ 
   $('.menu-trigger').click(function() {
       $('.navbar-nav').slideToggle(500);
-
   });
 
   $(window).resize(function(){

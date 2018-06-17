@@ -48,6 +48,12 @@ p,.main-footer{
 
 /*=========  Nav bar ==========*/
 
+#nav-wrap {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
+}
 .navbar-nav {
   padding: 0px;
   margin: 0px;
@@ -55,6 +61,12 @@ p,.main-footer{
   flex-wrap: wrap;
   justify-content: flex-end;
   list-style: none;
+}
+
+.scrolled-nav {
+  background-color: #ecd8d8;
+  z-index: 10;
+  transition: 0.3s;
 }
 .nav-item {
   font-size: 1em;
@@ -209,7 +221,6 @@ h3 {
   font-size: 300%;
   letter-spacing: 5px;
 }
-
 
 .flex-container {
   display: flex;
