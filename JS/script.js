@@ -24,7 +24,6 @@ $(function() {
 });
 
 
-
 $(window).on('load',function(){
  
   $('.menu-trigger').click(function() {

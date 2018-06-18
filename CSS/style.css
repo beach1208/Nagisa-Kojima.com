@@ -22,12 +22,7 @@ body {
   -o-transition: opacity 0.9s;
 }
 
-#about,
-#skills,
-#portfolio,
-#contact {
-    padding: 10% 0;
-}
+#about,#skills,#portfolio,#contact{ padding: 5% 0; }
 
 /*  FONTS AND COLOR  */
 h1,h2,p,.nav-link:link,.nav-link:visited,.menu-trigger,.social-icons li i,.social-icons li a:link,visited {
@@ -92,6 +87,7 @@ p,.main-footer{
 .menu-trigger {
   display: none;
   text-decoration: none;
+  text-align: right;
 }
 /*====main-top style====*/
 header {
@@ -231,14 +227,14 @@ h3 {
 
 .col1 {
   flex:2;
-  margin: 10px;
-  padding: 20px;
+  margin: 1em;
+  padding: 1em;
 }
 
 .col2 {
   flex:1;
-  margin: 10px;
-  padding: 20px;
+  margin: 2em;
+  padding: 2em;
 }
 
 
@@ -291,12 +287,12 @@ h3 {
 /*================ Contact =======================*/
 
 #contact {
-  padding-bottom: 30px;
   background: #ecd8d8;
 }
 
 .social-icons {
   padding-left: 0;
+  margin-bottom: 30px;
 }
 
 .contact {
@@ -312,6 +308,22 @@ h3 {
   color: #b74979;
 }
 
+.message-btn {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  background-color:  #b74979;
+}
+
+.message-btn:hover {
+  background-color: #E29587;
+}
 
 
 /*====Footer====*/
@@ -354,7 +366,7 @@ h3 {
     display:block;   
     background-color: #eee;
     padding: 10px;
-    font-size: .8em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -362,14 +374,6 @@ h3 {
     display:none;
 }
 
-.flex-item {
-    width: 60%;
-    margin: 0 auto;
- }
-
-.profile {
-  margin: 0 auto;
-}
 
 
 }
