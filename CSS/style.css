@@ -254,11 +254,15 @@ h3 {
   text-align: center;
 }
 
+#skills .flex-container {
+  padding: 3em;
+}
+
 .bar {
   width: 30%;
   background-color: #ddd;
   border-radius: 10px;
-  margin: 10px;
+  margin: 1em;
 }
 
 .progress {
@@ -267,9 +271,10 @@ h3 {
   line-height: 20px;
   color: white;
   border-radius: 10px;
-  background: #D66D75;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #E29587, #D66D75);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E29587, #D66D75); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #c32950ab;
+  /* background: #D66D75;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #E29587, #D66D75);  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #E29587, #D66D75); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */ */
 
 }
 

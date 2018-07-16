@@ -27,10 +27,10 @@ $(function () {
     $('.name-title').textillate({
 
         // ループのオンオフ、falseの場合、outは発動しない
-        loop: false,
+        loop: true,
       
         // テキストが置き換えられるまでの表示時間
-        minDisplayTime: 6000,
+        minDisplayTime: 1500,
       
         // 遅延時間
         initialDelay: 0,
@@ -41,10 +41,10 @@ $(function () {
         // フェードインのエフェクトの詳細設定
         in: {
           // エフェクトの名前（animate.cssをご参照下さい）
-          effect: 'fadeInLeftBig',
+          effect: 'fadeInUp',
       
           // 遅延時間の指数
-          delayScale: 1.5,
+          delayScale: 1.0,
       
           // 文字ごとの遅延時間
           delay: 100,
@@ -59,8 +59,8 @@ $(function () {
       
         // フェードアウトのエフェクトの詳細設定(同上)
         out: {
-          effect: 'hinge',
-          delayScale: 1.5,
+          effect: 'fadeOutUp',
+          delayScale: 1.0,
           delay: 50,
           sync: false,
           shuffle: false,
