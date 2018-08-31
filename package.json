@@ -1,0 +1,24 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beach1208/Personal_portfolio.git"
+  },
+  "author": "Nagisa Kojima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beach1208/Personal_portfolio/issues"
+  },
+  "homepage": "https://github.com/beach1208/Personal_portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1"
+  }
+}

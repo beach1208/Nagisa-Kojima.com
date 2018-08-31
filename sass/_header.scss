@@ -1,0 +1,32 @@
+// Header style
+@import "variables";
+@import "mixin";
+
+header {
+    background-image: linear-gradient($header-bg, #eee), url(../img/headimg.jpg);
+    width: 100%;
+    height: $height100vh;
+    background-size: cover;
+    background-position: top left;
+}
+
+.top-title {
+    @include header-vertical-center;
+
+    h1 {
+        font-weight: 700;
+        font-size: 500%;
+        font-family: $title-font;
+        font-style: italic;
+        letter-spacing: 5px;
+    }
+
+    p {
+        font-family: $title-font;
+        font-style: italic;
+        font-size: 230%;
+        padding-top: 5px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+}

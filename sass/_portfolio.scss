@@ -1,0 +1,28 @@
+/*===============  portfolio ========== */
+@import "variables";
+@import "mixin";
+
+.column {
+    height: 70vh;
+    width: 100%;
+}
+
+.left1 {
+    background: url(../img/mockup-portfolio.jpg);
+    @include slide-left-background;
+}
+
+.left2 {
+    background: url(../img/mockup-layla.png);
+    @include slide-left-background;
+}
+
+.right {
+    @include border-top-bot;
+}
+
+@media all and (min-width: 500px) {
+    .column-wrapper {
+        display: flex;
+    }
+}
