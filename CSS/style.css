@@ -370,17 +370,35 @@ h3 {
 }
 
 /*================ Contact =======================*/
+/** =========
+  Media Queries
+========= **/
+/** =========
+  Media Queries
+========= **/
+/* ==============
+   Media queries
+  ============= */
 #contact {
   background: #ecd8d8;
+}
+
+.contact-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.contact {
+  text-align: center;
 }
 
 .social-icons {
   padding-left: 0;
   margin-bottom: 30px;
-}
-
-.contact {
-  text-align: center;
 }
 
 .social-icons li {
@@ -399,9 +417,7 @@ h3 {
   width: 200px;
   height: auto;
   padding: 20px;
-  border-radius: 10px;
   border: 2px solid #b74979;
-  color: #fff;
   font-size: 1.2em;
   text-decoration: none;
   background-color: #b74979;
@@ -409,11 +425,19 @@ h3 {
   box-shadow: 0px 3px 5px 0px #b74979;
 }
 
+.message-btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .message-btn:hover {
-  background-color: #fff;
-  color: #b74979;
-  border-color: #fff;
+  background-color: #ffffff;
+  border-color: #ffffff;
   border-radius: 30px;
+}
+
+.message-btn:hover a {
+  color: #b74979;
 }
 
 /* ========= Main layout ============*/

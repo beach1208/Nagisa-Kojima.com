@@ -9,14 +9,12 @@
 <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Libre+Baskerville:400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
 <link rel="stylesheet" href="CSS/style.css">
+<!-- textllate.js用 -->
 <link rel="stylesheet" href="assets/animate.css">
+
 <link rel="stylesheet" type="text/css" href="CSS/jquery.fullPage.css">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-
-<!-- <script src="jquery.textillate.js"></script>
-<script src="assets/jquery.fittext.js"></script>
-<script src="assets/jquery.lettering.js"></script> -->
 
 
 
@@ -40,7 +38,7 @@
         <span></span>
       </div>
     </nav>
-    <div id="fullpage">
+    <main id="fullpage">
       <div class="section" id="home">
         <header>
           <div class="top-title">
@@ -139,32 +137,32 @@
 
           <div id="skills">
             <ul>
-              <li><img src="../icons/html.png" class="icon">HTML5</li>
+              <li><img src="icons/html.png" class="icon">HTML5</li>
               <div class="box">
                 <div id="one"></div>
               </div>
 
-              <li><img src="../icons/css.png" class="icon">CSS3</li>
+              <li><img src="icons/css.png" class="icon">CSS3</li>
               <div class="box">
                 <div id="two"></div>
               </div>
 
-              <li><img src="../icons/js.png" class="icon">JavaScript</li>
+              <li><img src="icons/js.png" class="icon">JavaScript</li>
               <div class="box">
                 <div id="three"></div>
               </div>
 
-              <li><img src="../icons/java.png" class="icon">Java</li>
+              <li><img src="icons/java.png" class="icon">Java</li>
               <div class="box">
                 <div id="four"></div>
               </div>
 
-              <li><img src="../icons/wp.png" class="icon">WordPress</li>
+              <li><img src="icons/wp.png" class="icon">WordPress</li>
               <div class="box">
                 <div id="five"></div>
               </div>
 
-              <li><img src="../icons/bstrp.png" class="icon">Bootstrap 4</li>
+              <li><img src="icons/bstrp.png" class="icon">Bootstrap 4</li>
               <div class="box">
                 <div id="six"></div>
               </div>
@@ -175,39 +173,40 @@
         </div>
         <!-- </section> -->
       </div>
+
       <!-- =============== Contact ===================-->
       <div class="section">
         <section id="contact">
           <div class="container">
-            <ul class="social-icons contact">
-              <li><a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://github.com/beach1208" target="_blank"><i class="fab fa-github"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
+            <div class="contact-container">
 
-            <button class="message-btn">Send a Message</button>
+              <ul class="social-icons contact">
+                <li><a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://github.com/beach1208" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+
+
+              <button class="message-btn"> <a href="mailto:nk.bg.1208@gmail.com">Send a Message</a></button>
+            </div>
           </div>
           　
         </section>
-      </div>
-    </div>
-    <!-- ======== footer ============-->
+    </main>
 
-    <footer class="main-footer">
-      <div class="footer-inner">
-        <span>&copy;2018 Nagisa Kojima</span>
-      </div>
-    </footer>
+
 
 
 
     <script src="js/jquery.easings.min.js"></script>
     <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+    <script src="assets/jquery.fittext.js"></script>
+    <script src="assets/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
     <script src="js/jquery.fullPage.js"></script>
-
     <script type="text/javascript" src="js/script.js"></script>
-  </div>
+
 </body>
 
 </html>

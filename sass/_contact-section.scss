@@ -1,25 +1,38 @@
 /*================ Contact =======================*/
+@import "variables";
+@import "mixin";
+
 #contact {
-    background: #ecd8d8;
+    background: $main-pink-color;
 }
 
-.social-icons {
-    padding-left: 0;
-    margin-bottom: 30px;
+.contact-container {
+    @include header-vertical-center;
+    // a {
+    //     font-size: 2rem;
+    //     color: #b74979;
+    //     margin-bottom: 2rem;
+    //     display: block;
+    // }
 }
 
 .contact {
     text-align: center;
 }
 
-.social-icons li {
-    padding: 10px 15px;
-    font-size: 23px;
-    display: inline-block;
-}
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 30px;
 
-.social-icons li i:hover {
-    color: #b74979;
+    li {
+        padding: 10px 15px;
+        font-size: 23px;
+        display: inline-block;
+    }
+
+    li i:hover {
+        color: $sub-pink-color;
+    }
 }
 
 .message-btn {
@@ -28,19 +41,25 @@
     width: 200px;
     height: auto;
     padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #b74979;
-    color: #fff;
+    border: 2px solid $sub-pink-color;
     font-size: 1.2em;
     text-decoration: none;
-    background-color: #b74979;
+    background-color: $sub-pink-color;
     transition: 0.3s ease-in-out;
     box-shadow: 0px 3px 5px 0px #b74979;
-}
 
-.message-btn:hover {
-    background-color: #fff;
-    color: #b74979;
-    border-color: #fff;
-    border-radius: 30px;
+    a {
+        color: $white-color;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: $white-color;
+        border-color: $white-color;
+        border-radius: 30px;
+
+        a {
+            color: $sub-pink-color;
+        }
+    }
 }
