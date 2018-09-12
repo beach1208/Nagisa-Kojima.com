@@ -8,6 +8,7 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 @mixin slide-left-background {
@@ -21,9 +22,34 @@
     border-bottom: 1px solid #eaeaea;
 }
 
-@mixin flex-center {
+@mixin flex-end {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+}
+
+@mixin container-size {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: calc(100% - 200px);
+    height: calc(100% - 200px);
+
+    @include max-screen($breakpPc-max-1024) {
+        left: 70px;
+        width: calc(100% - 140px);
+        height: calc(100% - 140px);
+    }
+
+    @include max-screen($breakpMobileLand-max-767) {
+        left: 0px;
+        width: 100%;
+    }
+}
+
+@mixin wrapper-style {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 /* ==============

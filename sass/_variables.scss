@@ -1,16 +1,19 @@
 //color 
 $main-text-color: #4d4b50;
-$main-pink-color:#ecd8d8;
+$main-pink-color:#E0AAA5;
 $sub-pink-color:#b74979;
 $white-color: #ffffff;
+$about-bg:#C2E3DF;
+$work-one: #F4C290;
+$work-two: #BCC8EF;
 $header-bg: unquote($string: "#fffefe00");
 // font
-$main-font: 'Playfair Display',
+$main-font: 'Merriweather',
 serif;
-$p-font:'EB Garamond',
-serif;
-$title-font:'Cormorant Garamond',
-serif;
+$p-font:'Inconsolata',
+monospace;
+// $title-font:'Cormorant Garamond',
+// serif;
 //style
 $height100vh: 100vh;
 /** =========

@@ -1,58 +1,70 @@
 @import "nav-footer";
-@import "header";
 @import "portfolio";
 @import "about-section";
-@import "skills-section";
-@import "contact-section";
+
+
 
 /* ========= Main layout ============*/
 body {
     margin: 0px;
     padding: 0px;
     font-size: 16px;
-}
-
-#wrapper {
-    overflow: hidden;
-}
-
-.container {
-    width: 100%;
-    max-width: 80%;
-    margin: 0 auto;
-    transition: opacity 0.9s;
-    -moz-transition: opacity 0.9s;
-    -webkit-transition: opacity 0.9s;
-    -o-transition: opacity 0.9s;
-}
-
-section {
     height: 100vh;
-    // padding: 10%;
+    background-color: #fff;
 }
+
 
 /*  FONTS AND COLOR  */
-h1,
-h2,
+
 p,
-.nav-link:link,
-.nav-link:visited,
-.menu-trigger,
 .social-icons li i,
 .social-icons li a:link,
 visited {
     color: $main-text-color;
 }
 
-h2 {
-    text-align: center;
-    font-weight: 400;
-    font-family: $main-font;
-    font-size: 25px;
-    letter-spacing: 5px;
+p {
+    font-family: $p-font;
 }
 
-p,
-.main-footer {
-    font-family: $p-font;
+.main-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-top {
+    background-color: $main-pink-color;
+    @include container-size;
+
+    @include max-screen($breakpMobileLand-max-767) {
+        height: calc(100% - 100px);
+    }
+
+    .top-title {
+        @include header-vertical-center;
+        width: 80%;
+
+        h1 {
+            font-weight: 400;
+            font-size: 2.5rem;
+            font-family: $main-font;
+            letter-spacing: 5px;
+            color: $white-color;
+
+            @include max-screen($breakpMobileLand-max-767) {
+                font-size: 2rem;
+                line-height: 1.5em;
+            }
+        }
+
+        p {
+            font-family: $p-font;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            text-align: center;
+            color: $white-color;
+        }
+    }
 }

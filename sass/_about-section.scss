@@ -1,50 +1,133 @@
-/*==============  About =============*/
-#about {
-    background: #ecd8d8;
+@import "nav-footer";
+@import "variables";
+@import "mixin";
+
+
+.about-wrapper {
+    @include wrapper-style;
+    overflow: scroll;
 }
 
-#about p {
-    line-height: 1.8;
-    letter-spacing: 1.5px;
-    text-align: left;
+.about-section {
+    background-color: $about-bg;
+    @include container-size;
+
+    @include min-screen($breakpMobileLand-min-768) {
+        display: flex;
+        align-items: center;
+    }
+
+    @include max-screen($breakpMobileLand-max-767) {
+        left: 0;
+        width: 100%;
+        height: calc(100% - (-150px));
+    }
+
+    @include max-screen($breakp-mobile-min-320) {
+        height: calc(100% - (-250px));
+    }
+
+    h1 {
+        font-family: $main-font;
+        color: $white-color;
+        text-align: left;
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+
+        @include max-screen($breakpMobileLand-max-767) {
+            text-align: center;
+        }
+    }
+
+    .flex-container {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 900px;
+        // height: calc(100% - 60px);
+
+        @include max-screen($breakpMobileLand-max-767) {
+            flex-direction: column;
+            margin: 0 auto;
+            width: 80%;
+            padding-top: 2rem;
+        }
+    }
+
+    .right {
+        flex: 2;
+        height: 100%;
+        position: relative;
+    }
+
+    .content {
+        position: absolute;
+
+        @include max-screen($breakpMobileLand-max-767) {
+            text-align: center;
+
+        }
+    }
+
+    .left {
+        flex: 1;
+        margin: 1rem;
+
+        @include max-screen($breakpMobileLand-max-767) {
+            margin: 0 auto;
+        }
+    }
+
+    .profile-img {
+        width: auto;
+        height: 300px;
+        border: 10px solid #fff;
+        -webkit-box-shadow: 3px 3px 3px #777;
+        -moz-box-shadow: 3px 3px 3px #777;
+        box-shadow: 3px 3px 3px #777;
+    }
 }
 
-.about li:nth-child(1) {
-    padding-left: 0px;
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 30px;
+
+    li {
+        padding: 10px 15px;
+        font-size: 23px;
+        display: inline-block;
+    }
+
+    li i:hover {
+        color: $sub-pink-color;
+    }
 }
 
-h3 {
-    font-weight: 700;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 300%;
-    letter-spacing: 5px;
-}
+.message-btn {
+    display: block;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid $main-text-color;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: $white-color;
+    transition: 0.3s ease-in-out;
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10rem 5rem;
-}
+    @include max-screen($breakpMobileLand-max-767) {
+        display: inline;
+        margin: 0 auto;
+    }
 
-.col1 {
-    flex: 2;
-    margin: 1em;
-    padding: 1em;
-}
+    a {
+        color: $main-text-color;
+        text-decoration: none;
+        font-family: $p-font;
+    }
 
-.col2 {
-    flex: 1;
-    margin: 2em;
-    padding: 2em;
-}
-
-.profile-img {
-    width: auto;
-    height: 300px;
-    border: 10px solid #fff;
-    -webkit-box-shadow: 3px 3px 3px #777;
-    -moz-box-shadow: 3px 3px 3px #777;
-    box-shadow: 3px 3px 3px #777;
+    &:hover {
+        background-color: $white-color;
+        border-color: $main-text-color;
+        border-radius: 30px;
+    }
 }

@@ -2,209 +2,51 @@
 <html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1, maximum-scale=1, minimum-scale=1">
-<link rel="stylesheet" type="text/css" href="CSS/normalize.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-  crossorigin="anonymous">
-<link rel="icon" href="img/favicon.ico" />
-<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Libre+Baskerville:400,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
-<link rel="stylesheet" href="CSS/style.css">
-<!-- textllate.js用 -->
-<link rel="stylesheet" href="assets/animate.css">
 
-<link rel="stylesheet" type="text/css" href="CSS/jquery.fullPage.css">
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="icon" href="img/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- textllate.js用 -->
+  <link rel="stylesheet" href="assets/animate.css">
 
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+  <title>Nagisa Kojima</title>
 
-
-<title>Nagisa Kojima</title>
+</head>
 
 
 <body>
-  <div id="wrapper">
+  <div class="main-wrapper">
     <!-- =========== navigation bar=================-->
     <nav>
       <ul id="menu">
-        <li data-menuanchor="1page" class="active"><a href="#home">Home</a></li>
-        <li data-menuanchor="2page"><a href="#portfolio">Works</a></li>
-        <li data-menuanchor="3page"><a href="#about">About</a></li>
-        <li data-menuanchor="4page"><a href="#skills">Skills</a></li>
-        <li data-menuanchor="5page"><a href="#contact">Contact</a></li>
+        <!-- <li><a href="#home">Home</a></li> -->
+        <li><a href="index.html" class="logo">NK</a></li>
+        <li><a href="work.html">Works</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
-      <div class="nav__icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
     </nav>
-    <main id="fullpage">
-      <div class="section" id="home">
-        <header>
-          <div class="top-title">
-            <h1 class="name-title">Nagisa Kojima</h1>
-            <p>Front End Developer</p>
-          </div>
-        </header>
+    <!-- <main id="fullpage"> -->
 
+    <div class="main-top">
+      <div class="top-title">
+        <h1 class="name-title">Nagisa Kojima</h1>
+        <p>Front End Developer</p>
       </div>
+    </div>
 
-
-      <!-- =============== Beg of portofolio ===================-->
-      <div class="section">
-        <section id="portfolio">
-          <div class="slide">
-            <div class="column-wrapper">
-              <div class="column left1">
-                <div class="info">
-
-                </div>
-              </div>
-              <div class="column right">
-                <div class="info">
-                  <h2>Portfolio Website</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="slide">
-            <div class="column-wrapper">
-              <div class="column left2">
-                <div class="info">
-
-                </div>
-              </div>
-              <div class="column right">
-                <div class="info">
-                  <h2>Layla Ballet</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <div class="col-1-4">
-              <img class="figimage" src="img/mockup.png" alt="img">
-              <a href="#">Country Frag Game</a>
-            </div>
-          </div>
-
-        </section>
-      </div>
-      <!--End of portofolio-->
-
-
-
-      <!-- ============= About me ====================== -->
-      <div class="section">
-        <section id="about">
-          <div class="container">
-
-            <div class="flex-container">
-              <div class="flex-item col1">
-
-                <h3>Hello! I'm Nagisa.</h3>
-                <p>My name is Nagisa. I'm a Japanese Front End Developer based in Vancouver,Canada.
-                  I have enrolled in 12 months Web and Mobile Application Development Course at Cornerstone
-                  International
-                  College.
-                  I love traveling! I have traveled to over 37 countries, 55 cities so far.</p>
-                <ul class="social-icons about">
-                  <li><a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="https://github.com/beach1208" target="_blank"><i class="fab fa-github"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-
-              </div>
-
-
-              <div class="flex-item col2">
-                <img class="profile-img" src="img/IMG_7208.jpg" alt="profile">
-              </div>
-            </div>
-          </div>
-
-        </section>
-      </div>
-      <!-- ============ Skills ============== -->
-
-      <div class="section">
-        <!-- <section id="skills"> -->
-        <div class="container">
-
-          <div id="skills">
-            <ul>
-              <li><img src="icons/html.png" class="icon">HTML5</li>
-              <div class="box">
-                <div id="one"></div>
-              </div>
-
-              <li><img src="icons/css.png" class="icon">CSS3</li>
-              <div class="box">
-                <div id="two"></div>
-              </div>
-
-              <li><img src="icons/js.png" class="icon">JavaScript</li>
-              <div class="box">
-                <div id="three"></div>
-              </div>
-
-              <li><img src="icons/java.png" class="icon">Java</li>
-              <div class="box">
-                <div id="four"></div>
-              </div>
-
-              <li><img src="icons/wp.png" class="icon">WordPress</li>
-              <div class="box">
-                <div id="five"></div>
-              </div>
-
-              <li><img src="icons/bstrp.png" class="icon">Bootstrap 4</li>
-              <div class="box">
-                <div id="six"></div>
-              </div>
-
-            </ul>
-          </div>
-
-        </div>
-        <!-- </section> -->
-      </div>
-
-      <!-- =============== Contact ===================-->
-      <div class="section">
-        <section id="contact">
-          <div class="container">
-            <div class="contact-container">
-
-              <ul class="social-icons contact">
-                <li><a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://www.facebook.com/nagisa.kojima.33" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://github.com/beach1208" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-
-
-              <button class="message-btn"> <a href="mailto:nk.bg.1208@gmail.com">Send a Message</a></button>
-            </div>
-          </div>
-          　
-        </section>
-    </main>
-
-
-
-
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
     <script src="js/jquery.easings.min.js"></script>
     <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
     <script src="assets/jquery.fittext.js"></script>
     <script src="assets/jquery.lettering.js"></script>
     <script src="js/jquery.textillate.js"></script>
-    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/fullPage.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
 </body>

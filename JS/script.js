@@ -1,13 +1,8 @@
-// window.onscroll = function () {
-//     scrollFunction()
-// };
-
-
 $(function () {
     $('.name-title').textillate({
 
         // ループのオンオフ、falseの場合、outは発動しない
-        loop: true,
+        loop: false,
 
         // テキストが置き換えられるまでの表示時間
         minDisplayTime: 1500,
@@ -50,9 +45,6 @@ $(function () {
 })
 
 
-
-
-
 // fade-in
 // $(window).scroll(function () {
 //     $('.container').each(function () {
@@ -69,34 +61,15 @@ $(function () {
 
 // });
 
-$(function () {
-    $('.nav__icon').on('click', function () {
-        $(this).toggleClass('active');
-        $('nav ul').slideToggle();
-    });
 
-    $(window).on('load resize', function () {
-        var w = $(window).width();
-        var h = $(window).height();
-        var x = 767;
-        if (w >= x) {
-            $('nav ul').css({
-                display: 'flex',
-                height: 'auto'
-            });
-        } else {
-            $('nav ul').css({
-                display: 'none',
-                height: h + 'px'
-            });
-        }
-    });
-});
 
-$(document).ready(function () {
-    $('#fullpage').fullpage({
-        anchors: ['1page', '2page', '3page', '4page', '5page'],
-        menu: '#menu',
-
-    });
+var myFullpage = new fullpage('#fullpage', {
+    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+    anchors: ['1page', '2page', '3page', '4page', '5page'],
+    navigation: true,
+    navigationPosition: 'right',
+    navigationTooltips: ['1page', '2page', '3page', '4page', '5page'],
+    menu: '#menu',
+    scrollingSpeed: 700,
+    css3: true,
 });
