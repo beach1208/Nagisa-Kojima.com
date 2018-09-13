@@ -46,9 +46,25 @@ nav {
 
 
 /*====Footer====*/
-.main-footer {
-    background: #4d4b50;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+// .main-footer {
+//     background: #4d4b50;
+//     color: #fff;
+//     padding: 10px 0;
+//     text-align: center;
+// }
+
+footer {
+    height: 30px;
+    background-color: $work-one;
+
+    p {
+        text-align: center;
+        color: $white-color;
+        padding-top: 5px;
+    }
+
+}
+
+.second-footer {
+    background-color: $work-two;
 }
