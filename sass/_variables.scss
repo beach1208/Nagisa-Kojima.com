@@ -16,6 +16,13 @@ monospace;
 // serif;
 //style
 $height100vh: 100vh;
+
+
+$easeInQuart: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+$easeOutQuart: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$easeOutSine: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+$move-pixel: -80px;
+$container-move-pixel: -300px;
 /** =========
   Media Queries
 ========= **/

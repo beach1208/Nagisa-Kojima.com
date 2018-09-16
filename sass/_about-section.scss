@@ -8,8 +8,13 @@
     overflow-y: scroll;
 }
 
+
 .about-section {
     background-color: $about-bg;
+    opacity: 0;
+    animation: leftToRightContainer 0.8s ease 0.5s 1 forwards;
+    @include leftToRightContainer;
+
     @include container-size;
 
     @include min-screen($breakpMobileLand-min-768) {
@@ -18,29 +23,30 @@
     }
 
     @include max-screen($breakpMobileLand-max-767) {
-        left: 0;
-        width: 100%;
-        height: calc(100% - (-150px));
-    }
-
-    @include max-screen($breakp-mobile-min-320) {
-        height: calc(100% - (-250px));
+        height: 100%;
+        overflow-y: scroll;
     }
 
     h1 {
-        font-family: $main-font;
         color: $white-color;
         text-align: left;
-        font-size: 2.5rem;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
+        opacity: 0;
+        animation: bottomToTop 0.8s ease 1.3s 1 forwards;
 
         @include max-screen($breakpMobileLand-max-767) {
+            font-size: 2rem;
             text-align: center;
         }
+
+        @include bottomToTop;
     }
 
     p {
         letter-spacing: 1px;
+        opacity: 0;
+        animation: bottomToTop 0.8s ease 1.6s 1 forwards;
+        @include bottomToTop;
     }
 
 
@@ -52,24 +58,20 @@
 
         @include max-screen($breakpMobileLand-max-767) {
             flex-direction: column;
-            margin: 0 auto;
             width: 80%;
-            padding-top: 2rem;
+            padding: 2rem 0;
+
         }
     }
 
     .right {
         flex: 2;
-        height: 100%;
         position: relative;
-    }
 
-    .content {
-        position: absolute;
-
-        @include max-screen($breakpMobileLand-max-767) {
-            text-align: center;
-
+        .content {
+            @include max-screen($breakpMobileLand-max-767) {
+                text-align: center;
+            }
         }
     }
 
@@ -80,58 +82,50 @@
         @include max-screen($breakpMobileLand-max-767) {
             margin: 0 auto;
         }
+
+        .profile-img {
+            width: auto;
+            height: 300px;
+            @include image-border;
+            animation: leftToRight ease-in-out 0.8s 1 1s forwards;
+            opacity: 0;
+            @include leftToRight;
+
+            @include max-screen($breakpMobileLand-max-767) {
+                max-height: 250px;
+            }
+        }
     }
 
-    .profile-img {
-        width: auto;
-        height: 300px;
-        border: 10px solid #fff;
-        -webkit-box-shadow: 3px 3px 3px #777;
-        -moz-box-shadow: 3px 3px 3px #777;
-        box-shadow: 3px 3px 3px #777;
-    }
-}
 
-.social-icons {
-    padding-left: 0;
-    margin-bottom: 30px;
+    .social-icons {
+        padding-left: 0;
+        opacity: 0;
+        animation: bottomToTop 0.8s ease 2s 1 forwards;
+        @include bottomToTop;
 
-    li {
-        padding: 10px 15px;
-        font-size: 23px;
-        display: inline-block;
+        li {
+            padding: 1rem 1.5rem 1rem 0;
+            font-size: 1.3rem;
+            display: inline-block;
+        }
+
+        li i:hover {
+            color: $sub-pink-color;
+        }
     }
 
-    li i:hover {
-        color: $sub-pink-color;
-    }
-}
+    .message-btn {
+        transition: 0.3s ease-in-out;
+        opacity: 0;
+        animation: bottomToTop 0.8s ease 2.5s 1 forwards;
+        @include bottomToTop;
 
-.message-btn {
-    display: block;
-    width: 200px;
-    height: auto;
-    padding: 20px;
-    border: 1px solid $main-text-color;
-    font-size: 1.2em;
-    text-decoration: none;
-    background-color: $white-color;
-    transition: 0.3s ease-in-out;
+        @include button-style;
 
-    @include max-screen($breakpMobileLand-max-767) {
-        display: inline;
-        margin: 0 auto;
-    }
+        @include max-screen($breakpMobileLand-max-767) {
 
-    a {
-        color: $main-text-color;
-        text-decoration: none;
-        font-family: $p-font;
-    }
-
-    &:hover {
-        background-color: $white-color;
-        border-color: $main-text-color;
-        border-radius: 30px;
+            margin: 0 auto;
+        }
     }
 }

@@ -46,21 +46,17 @@ nav {
 
 
 /*====Footer====*/
-// .main-footer {
-//     background: #4d4b50;
-//     color: #fff;
-//     padding: 10px 0;
-//     text-align: center;
-// }
 
 footer {
-    height: 30px;
+    height: 40px;
     background-color: $work-one;
+    margin-top: auto;
 
     p {
         text-align: center;
         color: $white-color;
-        padding-top: 5px;
+        margin: 0 auto;
+        padding-top: .8rem;
     }
 
 }
