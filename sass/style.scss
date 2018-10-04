@@ -2,17 +2,14 @@
 @import "portfolio";
 @import "about-section";
 
-
-
 /* ========= Main layout ============*/
 body {
-    margin: 0px;
-    padding: 0px;
-    font-size: 16px;
-    height: 100vh;
-    background-color: #fff;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  height: 100vh;
+  background-color: #fff;
 }
-
 
 /*  FONTS AND COLOR  */
 
@@ -20,54 +17,82 @@ p,
 .social-icons li i,
 .social-icons li a:link,
 visited {
-    color: $main-text-color;
+  color: $main-text-color;
 }
 
 h1 {
-    font-weight: 400;
-    font-size: 2.5rem;
-    font-family: $main-font;
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-family: $main-font;
 }
 
 p {
-    font-family: $p-font;
+  font-family: $p-font;
 }
 
 .main-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.top-border-rect {
+  @include header-vertical-center;
+  @include border-box-anim;
+  animation: border-box-anim 0.8s ease 3s 1 forwards;
+  @include top-box-style;
+
+  .btn__box {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
     overflow: hidden;
+
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
 }
 
 .main-top {
-    background-color: $main-pink-color;
+  background-color: $main-pink-color;
 
-    @include container-size;
+  @include container-size;
 
-    @include max-screen($breakpMobileLand-max-767) {
-        height: calc(100% - 100px);
+  opacity: 0;
+  animation: leftToRightContainer 1s ease 4s 1 forwards;
+  @include leftToRightContainer;
+
+  @include max-screen($breakpMobileLand-max-767) {
+    height: calc(100% - 100px);
+  }
+
+  .top-title {
+    @include header-vertical-center;
+    width: 80%;
+
+    h1 {
+      letter-spacing: 5px;
+      color: $white-color;
+      opacity: 0;
+      animation: bottomToTop 0.8s ease 5s 1 forwards;
+
+      @include max-screen($breakpMobileLand-max-767) {
+        font-size: 2rem;
+        line-height: 1.5em;
+      }
     }
 
-    .top-title {
-        @include header-vertical-center;
-        width: 80%;
-
-        h1 {
-            letter-spacing: 5px;
-            color: $white-color;
-
-            @include max-screen($breakpMobileLand-max-767) {
-                font-size: 2rem;
-                line-height: 1.5em;
-            }
-        }
-
-        p {
-            font-size: 1.3rem;
-            letter-spacing: 1px;
-            text-align: center;
-            color: $white-color;
-        }
+    p {
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      text-align: center;
+      color: $white-color;
+      opacity: 0;
+      animation: bottomToTop 0.8s ease 5.5s 1 forwards;
     }
+  }
 }

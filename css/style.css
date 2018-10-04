@@ -158,7 +158,7 @@ footer p {
 }
 
 .work-section {
-  background-color: #F4C290;
+  background-color: #BCC8EF;
   opacity: 0;
   animation: bottomToTop 0.5s ease-in-out 0.5s 1 forwards;
   position: absolute;
@@ -355,7 +355,7 @@ footer p {
 }
 
 .second {
-  background-color: #BCC8EF;
+  background-color: #F4C290;
 }
 
 .work-single-wrapper {
@@ -822,6 +822,136 @@ p {
   overflow: hidden;
 }
 
+.top-border-rect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: border-box-anim 0.8s ease 3s 1 forwards;
+  /* border style*/
+  /* bottom */
+  /* right */
+  /* top */
+  /* left */
+  /* animation */
+  /* animation*/
+}
+
+@keyframes border-box-anim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.top-border-rect .btn__box:before,
+.top-border-rect .btn__box:after,
+.top-border-rect .btn__box a:before,
+.top-border-rect .btn__box a:after {
+  content: "";
+  position: absolute;
+  background: #4d4b50;
+  /*線の色*/
+}
+
+.top-border-rect .btn__box:before {
+  bottom: 0;
+  left: -200px;
+  width: 200px;
+  height: 1px;
+}
+
+.top-border-rect .btn__box:after {
+  bottom: -200px;
+  right: 0;
+  width: 1px;
+  height: 200px;
+}
+
+.top-border-rect .btn__box a:before {
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 1px;
+}
+
+.top-border-rect .btn__box a:after {
+  top: -200px;
+  left: 0;
+  width: 1px;
+  height: 200px;
+}
+
+.top-border-rect .btn__box:before {
+  animation: leftAnim 1s linear 1.5s forwards;
+}
+
+.top-border-rect .btn__box:after {
+  animation: bottomAnim 1s linear 2s forwards;
+}
+
+.top-border-rect .btn__box a:before {
+  animation: rightAnim 1s linear 0.5s forwards;
+}
+
+.top-border-rect .btn__box a:after {
+  animation: topAnim 1s linear 1s forwards;
+}
+
+@keyframes topAnim {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: -100px;
+  }
+}
+
+@keyframes bottomAnim {
+  0% {
+    bottom: -200px;
+  }
+  100% {
+    bottom: -100px;
+  }
+}
+
+@keyframes rightAnim {
+  0% {
+    right: -100px;
+  }
+  100% {
+    right: 100px;
+  }
+}
+
+@keyframes leftAnim {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 100px;
+  }
+}
+
+.top-border-rect .btn__box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  overflow: hidden;
+}
+
+.top-border-rect .btn__box a {
+  display: block;
+  text-align: center;
+}
+
 .main-top {
   background-color: #E0AAA5;
   position: absolute;
@@ -829,12 +959,26 @@ p {
   left: 70px;
   width: calc(100% - 140px);
   height: calc(100% - 140px);
+  opacity: 0;
+  animation: leftToRightContainer 1s ease 4s 1 forwards;
 }
 
 @media screen and (max-width: 767px) {
   .main-top {
     left: 0px;
     width: 100%;
+  }
+}
+
+@keyframes leftToRightContainer {
+  0% {
+    transform: translateX(-500px);
+    /* X軸方向に50px */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    /* X軸方向に0px */
   }
 }
 
@@ -858,6 +1002,8 @@ p {
 .main-top .top-title h1 {
   letter-spacing: 5px;
   color: #ffffff;
+  opacity: 0;
+  animation: bottomToTop 0.8s ease 5s 1 forwards;
 }
 
 @media screen and (max-width: 767px) {
@@ -872,4 +1018,6 @@ p {
   letter-spacing: 1px;
   text-align: center;
   color: #ffffff;
+  opacity: 0;
+  animation: bottomToTop 0.8s ease 5.5s 1 forwards;
 }
