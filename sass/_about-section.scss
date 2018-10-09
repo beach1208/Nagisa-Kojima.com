@@ -2,130 +2,126 @@
 @import "variables";
 @import "mixin";
 
-
 .about-wrapper {
-    @include wrapper-style;
-    overflow-y: scroll;
+  @include wrapper-style;
+  overflow-y: scroll;
 }
 
-
 .about-section {
-    background-color: $about-bg;
+  background-color: $about-bg;
+  opacity: 0;
+  animation: leftToRightContainer 0.8s ease 0.5s 1 forwards;
+  @include leftToRightContainer;
+
+  @include container-size;
+
+  @include min-screen($breakpMobileLand-min-768) {
+    display: flex;
+    align-items: center;
+  }
+
+  @include max-screen($breakpMobileLand-max-767) {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  h1 {
+    color: $white-color;
+    text-align: left;
+    letter-spacing: 2px;
     opacity: 0;
-    animation: leftToRightContainer 0.8s ease 0.5s 1 forwards;
-    @include leftToRightContainer;
-
-    @include container-size;
-
-    @include min-screen($breakpMobileLand-min-768) {
-        display: flex;
-        align-items: center;
-    }
+    animation: bottomToTop 0.8s ease 1.3s 1 forwards;
 
     @include max-screen($breakpMobileLand-max-767) {
-        height: 100%;
-        overflow-y: scroll;
+      font-size: 2rem;
+      text-align: center;
     }
 
-    h1 {
-        color: $white-color;
-        text-align: left;
-        letter-spacing: 2px;
-        opacity: 0;
-        animation: bottomToTop 0.8s ease 1.3s 1 forwards;
+    @include bottomToTop;
+  }
 
-        @include max-screen($breakpMobileLand-max-767) {
-            font-size: 2rem;
-            text-align: center;
-        }
+  p {
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 500;
+    opacity: 0;
+    animation: bottomToTop 0.8s ease 1.6s 1 forwards;
+    @include bottomToTop;
+  }
 
-        @include bottomToTop;
+  .flex-container {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+
+    @include max-screen($breakpMobileLand-max-767) {
+      flex-direction: column;
+      width: 80%;
+      padding: 2rem 0;
+    }
+  }
+
+  .right {
+    flex: 2;
+    position: relative;
+
+    .content {
+      @include max-screen($breakpMobileLand-max-767) {
+        text-align: center;
+      }
+    }
+  }
+
+  .left {
+    flex: 1;
+    margin: 1rem;
+
+    @include max-screen($breakpMobileLand-max-767) {
+      margin: 0 auto;
     }
 
-    p {
-        letter-spacing: 1px;
-        opacity: 0;
-        animation: bottomToTop 0.8s ease 1.6s 1 forwards;
-        @include bottomToTop;
+    .profile-img {
+      width: auto;
+      height: 300px;
+      @include image-border;
+      animation: leftToRight ease-in-out 0.8s 1 1s forwards;
+      opacity: 0;
+      @include leftToRight;
+
+      @include max-screen($breakpMobileLand-max-767) {
+        max-height: 250px;
+      }
+    }
+  }
+
+  .social-icons {
+    padding-left: 0;
+    opacity: 0;
+    animation: bottomToTop 0.8s ease 2s 1 forwards;
+    @include bottomToTop;
+
+    li {
+      padding: 1rem 1.5rem 1rem 0;
+      font-size: 1.3rem;
+      display: inline-block;
     }
 
-
-    .flex-container {
-        display: flex;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 900px;
-
-        @include max-screen($breakpMobileLand-max-767) {
-            flex-direction: column;
-            width: 80%;
-            padding: 2rem 0;
-
-        }
+    li i:hover {
+      color: $sub-pink-color;
     }
+  }
 
-    .right {
-        flex: 2;
-        position: relative;
+  .message-btn {
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    animation: bottomToTop 0.8s ease 2.5s 1 forwards;
+    @include bottomToTop;
 
-        .content {
-            @include max-screen($breakpMobileLand-max-767) {
-                text-align: center;
-            }
-        }
+    @include button-style;
+
+    @include max-screen($breakpMobileLand-max-767) {
+      margin: 0 auto;
     }
-
-    .left {
-        flex: 1;
-        margin: 1rem;
-
-        @include max-screen($breakpMobileLand-max-767) {
-            margin: 0 auto;
-        }
-
-        .profile-img {
-            width: auto;
-            height: 300px;
-            @include image-border;
-            animation: leftToRight ease-in-out 0.8s 1 1s forwards;
-            opacity: 0;
-            @include leftToRight;
-
-            @include max-screen($breakpMobileLand-max-767) {
-                max-height: 250px;
-            }
-        }
-    }
-
-
-    .social-icons {
-        padding-left: 0;
-        opacity: 0;
-        animation: bottomToTop 0.8s ease 2s 1 forwards;
-        @include bottomToTop;
-
-        li {
-            padding: 1rem 1.5rem 1rem 0;
-            font-size: 1.3rem;
-            display: inline-block;
-        }
-
-        li i:hover {
-            color: $sub-pink-color;
-        }
-    }
-
-    .message-btn {
-        transition: 0.3s ease-in-out;
-        opacity: 0;
-        animation: bottomToTop 0.8s ease 2.5s 1 forwards;
-        @include bottomToTop;
-
-        @include button-style;
-
-        @include max-screen($breakpMobileLand-max-767) {
-
-            margin: 0 auto;
-        }
-    }
+  }
 }

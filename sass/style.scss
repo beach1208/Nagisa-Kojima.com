@@ -1,7 +1,6 @@
 @import "nav-footer";
 @import "portfolio";
 @import "about-section";
-
 /* ========= Main layout ============*/
 body {
   margin: 0px;
@@ -28,6 +27,8 @@ h1 {
 
 p {
   font-family: $p-font;
+  letter-spacing: 1px;
+  line-height: 1.5;
 }
 
 .main-wrapper {
@@ -53,6 +54,9 @@ p {
     a {
       display: block;
       text-align: center;
+      text-decoration: none;
+      color: $main-pink-color;
+      font-size: 1rem;
     }
   }
 }

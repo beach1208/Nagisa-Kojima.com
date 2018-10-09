@@ -3,6 +3,11 @@
 @import "variables";
 @import "mixin";
 
+/*===============  portfolio ========== */
+@import "nav-footer";
+@import "variables";
+@import "mixin";
+
 .work-wrapper {
   @include wrapper-style;
   overflow-y: scroll;
@@ -114,10 +119,6 @@
     @include image-border;
     transition: 0.3s ease;
 
-    &:hover {
-      transform: scale(1.3);
-    }
-
     @include max-screen($breakpTablet-max-960) {
       width: auto;
       max-height: 260px;
@@ -227,14 +228,10 @@
     margin: 5rem 0;
 
     img {
-      max-width: 400px;
-      max-height: 400px;
-      @include image-border;
-
-      @include max-screen($breakpTablet-max-960) {
-        max-width: 350px;
-        max-height: 350px;
-      }
+      width: 100%;
+      // max-width: 800px;
+      // max-height: 800px;
+      border: solid 1px #cacaca;
     }
   }
 }

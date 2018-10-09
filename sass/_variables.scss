@@ -1,26 +1,25 @@
-//color 
+//color
 $main-text-color: #4d4b50;
-$main-pink-color:#E0AAA5;
-$sub-pink-color:#b74979;
+$main-pink-color: #e0aaa5;
+$sub-pink-color: #b74979;
 $white-color: #ffffff;
-$about-bg:#C2E3DF;
-$work-one: #F4C290;
-$work-two: #BCC8EF;
-$header-bg: unquote($string: "#fffefe00");
+$about-bg: #c2e3df;
+$work-one: #f4c290;
+$work-two: #bcc8ef;
+$header-bg: unquote(
+  $string: "#fffefe00"
+);
 // font
-$main-font: 'Merriweather',
-serif;
-$p-font:'Inconsolata',
-monospace;
+$main-font: "Merriweather", serif;
+$p-font: "Noto Sans", sans-serif;
 // $title-font:'Cormorant Garamond',
 // serif;
 //style
 $height100vh: 100vh;
 
-
-$easeInQuart: cubic-bezier(0.895, 0.030, 0.685, 0.220);
-$easeOutQuart: cubic-bezier(0.165, 0.840, 0.440, 1.000);
-$easeOutSine: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+$easeInQuart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeOutSine: cubic-bezier(0.39, 0.575, 0.565, 1);
 $move-pixel: -80px;
 $container-move-pixel: -300px;
 /** =========
