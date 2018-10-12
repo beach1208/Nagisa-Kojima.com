@@ -3,64 +3,64 @@
 @import "mixin";
 
 nav {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    background: $white-color;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background: $white-color;
+  z-index: 100;
+  opacity: 0;
+  animation: bottomToTop 0.5s ease-in-out 3s 1 forwards;
+  @include bottomToTop;
+
+  #menu {
+    @include flex-end;
+    margin: 2rem 4rem 0 1.5rem;
     z-index: 100;
 
-
-    #menu {
-        @include flex-end;
-        margin: 2rem 6rem 0 4rem;
-        z-index: 100;
-
-        li {
-            font-family: $p-font;
-            font-size: 1.2rem;
-            letter-spacing: 3px;
-            padding: 10px;
-            list-style: none;
-        }
-
-        li:first-child {
-            margin-right: auto;
-        }
-
-        a:link,
-        a:visited {
-            color: $main-text-color;
-            padding: 8px 0;
-            text-decoration: none;
-            border-bottom: 2px solid transparent;
-            transition: border-bottom 0.2s;
-        }
-
-        a:hover,
-        a:active {
-            color: $main-text-color;
-            border-bottom: 2px solid $sub-pink-color;
-        }
+    li {
+      font-family: $p-font;
+      font-size: 1.2rem;
+      letter-spacing: 3px;
+      padding: 10px;
+      list-style: none;
     }
-}
 
+    li:first-child {
+      margin-right: auto;
+    }
+
+    a:link,
+    a:visited {
+      color: $main-text-color;
+      padding: 8px 0;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.2s;
+    }
+
+    a:hover,
+    a:active {
+      color: $main-text-color;
+      border-bottom: 2px solid $sub-pink-color;
+    }
+  }
+}
 
 /*====Footer====*/
 
 footer {
-    height: 40px;
-    background-color: $work-one;
-    margin-top: auto;
+  height: 40px;
+  background-color: $work-one;
+  margin-top: auto;
 
-    p {
-        text-align: center;
-        color: $white-color;
-        margin: 0 auto;
-        padding-top: .8rem;
-    }
-
+  p {
+    text-align: center;
+    color: $white-color;
+    margin: 0 auto;
+    padding-top: 0.8rem;
+  }
 }
 
 .second-footer {
-    background-color: $work-two;
+  background-color: $work-two;
 }

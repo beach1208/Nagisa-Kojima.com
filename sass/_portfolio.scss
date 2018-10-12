@@ -173,46 +173,64 @@
     h1 {
       @include base-h1;
       @include header-vertical-center;
+      font-weight: 600;
+      font-size: 3.5rem;
     }
   }
 }
 
-.project-first-page {
+.project-page {
   .container {
     @include container-style;
   }
 
   h2 {
     font-family: $p-font;
-    color: $main-text-color;
-    text-align: center;
+    color: $work-one-section-title;
+    text-align: left;
   }
 
   .summary-content {
     max-width: 80%;
     margin: 0 auto;
     padding: 3rem 0;
+    display: flex;
+    text-align: left;
+    @include max-screen($breakpMobileLand-max-767) {
+      flex-wrap: wrap;
+    }
+
+    .first-content {
+      width: 50%;
+      padding-right: 5rem;
+
+      @include max-screen($breakpMobileLand-max-767) {
+        width: 100%;
+        padding: 0;
+      }
+    }
 
     p {
+      min-width: 200px;
+    }
+
+    .list-content {
       text-align: center;
-    }
-  }
 
-  .list-content {
-    text-align: center;
+      ul {
+        padding: 0;
+        text-align: left;
+        display: inline-block;
+        margin: 0 auto;
+      }
 
-    ul {
-      padding: 0;
-      text-align: left;
-      display: inline-block;
-      margin: 0 auto;
-    }
-
-    li {
-      font-family: $p-font;
-      list-style: none;
-      margin: 0 auto;
-      display: inline;
+      li {
+        font-family: $p-font;
+        list-style: none;
+        margin: 0 auto;
+        display: inline;
+        color: $main-text-color;
+      }
     }
   }
 
@@ -229,8 +247,6 @@
 
     img {
       width: 100%;
-      // max-width: 800px;
-      // max-height: 800px;
       border: solid 1px #cacaca;
     }
   }
@@ -240,5 +256,11 @@
   header,
   nav {
     background-color: $work-two;
+  }
+}
+
+.project-second {
+  h2 {
+    color: $work-two-section-title;
   }
 }
