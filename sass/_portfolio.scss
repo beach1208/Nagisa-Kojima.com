@@ -8,11 +8,11 @@
 @import "variables";
 @import "mixin";
 
-.work-wrapper {
-  @include wrapper-style;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
+// .work-wrapper {
+//   @include wrapper-style;
+//   overflow-y: scroll;
+//   overflow-x: hidden;
+// }
 
 .work-section {
   background-color: $work-two;

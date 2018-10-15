@@ -2,11 +2,6 @@
 @import "variables";
 @import "mixin";
 
-.about-wrapper {
-  @include wrapper-style;
-  overflow-y: scroll;
-}
-
 .about-section {
   background-color: $about-bg;
   opacity: 0;

@@ -265,14 +265,6 @@ footer p {
 /* ==============
    Media queries
   ============= */
-.work-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
 .work-section {
   background-color: #bcc8ef;
   opacity: 0;
@@ -702,13 +694,6 @@ footer p {
 /* ==============
    Media queries
   ============= */
-.about-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-}
-
 .about-section {
   background-color: #c2e3df;
   opacity: 0;
@@ -957,13 +942,6 @@ p {
   font-family: "Noto Sans", sans-serif;
   letter-spacing: 1px;
   line-height: 1.5;
-}
-
-.main-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
 .top-border-rect {
