@@ -2,22 +2,23 @@
 @import "variables";
 @import "mixin";
 
-nav {
-  top: 0;
+.nav-bar {
   position: fixed;
   width: 100%;
   background: $white-color;
   z-index: 100;
-  opacity: 0;
-  animation: bottomToTop 0.5s ease-in-out 3s 1 forwards;
-  @include bottomToTop;
+  padding-top: 20px;
 
-  #menu {
+  .menu {
     @include flex-end;
-    margin: 2rem 4rem 0 1.5rem;
     z-index: 100;
+    padding-right: 60px;
 
-    li {
+    @include max-screen($breakpMobileLand-max-767) {
+      padding: 0;
+    }
+
+    .menu-list {
       font-family: $p-font;
       font-size: 1.2rem;
       letter-spacing: 3px;
@@ -25,8 +26,15 @@ nav {
       list-style: none;
     }
 
-    li:first-child {
+    .menu-list:first-child {
       margin-right: auto;
+      padding-left: 30px;
+      width: auto;
+      height: 30px;
+
+      @include max-screen($breakpMobileLand-max-767) {
+        padding-left: 20px;
+      }
     }
 
     a:link,
@@ -41,26 +49,28 @@ nav {
     a:hover,
     a:active {
       color: $main-text-color;
-      border-bottom: 2px solid $sub-pink-color;
+      border-bottom: 2px solid #c7a9a9;
     }
   }
+}
+
+.first-page-nav {
+  opacity: 0;
+  animation: nav-animation 0.3s ease-in 3.5s 1 forwards;
+  @include nav-animation;
 }
 
 /*====Footer====*/
 
 footer {
   height: 40px;
-  background-color: $work-one;
+  background-color: $work-bg;
   margin-top: auto;
 
   p {
     text-align: center;
-    color: $white-color;
+    color: $main-text-color;
     margin: 0 auto;
     padding-top: 0.8rem;
   }
-}
-
-.second-footer {
-  background-color: $work-two;
 }

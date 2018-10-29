@@ -1,26 +1,24 @@
-// fade-in
-// $(window).scroll(function () {
-//     $('.container').each(function () {
-//         var POS = $(this).offset().top; //fade-inがついている要素の位置
-//         var scroll = $(window).scrollTop(); //スクロール一
-//         var windowHeight = $(window).height(); //ウィンドウの高さ
+window.onscroll = function() {
+  fadeIn();
+};
+function fadeIn() {
+  let elem = document.getElementById("fadeIn-img");
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    elem.classList.add("slideIn");
+  } else {
+    elem.className = "";
+  }
+}
 
-//         if (scroll > POS - windowHeight + windowHeight / 5) {
-//             $(this).css("opacity", "1");
-//         } else {
-//             $(this).css("opacity", "0");
-//         }
-//     });
+jQuery(document).ready(function($) {
+  var option = {
+    section: ".scroll-section",
+    easing: "swing",
+    scrollSpeed: 600,
+    scrollbars: true
+  };
 
-// });
-
-var myFullpage = new fullpage("#fullpage", {
-  licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
-  anchors: ["1page", "2page", "3page", "4page", "5page"],
-  navigation: true,
-  navigationPosition: "right",
-  navigationTooltips: ["1page", "2page", "3page", "4page", "5page"],
-  menu: "#menu",
-  scrollingSpeed: 700,
-  css3: true
+  $(function() {
+    $.scrollify(option);
+  });
 });

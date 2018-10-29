@@ -7,116 +7,117 @@
   opacity: 0;
   animation: leftToRightContainer 0.8s ease 0.5s 1 forwards;
   @include leftToRightContainer;
-
   @include container-size;
 
-  @include min-screen($breakpMobileLand-min-768) {
+  @include min-screen($breakpPc-max-1024) {
     display: flex;
     align-items: center;
   }
 
-  @include max-screen($breakpMobileLand-max-767) {
+  @include max-screen($breakpPc-max-1024) {
+    position: relative;
     height: 100%;
     overflow-y: scroll;
   }
 
-  h1 {
-    color: $white-color;
+  .about-title {
     text-align: left;
-    letter-spacing: 2px;
     opacity: 0;
-    animation: bottomToTop 0.8s ease 1.3s 1 forwards;
+    animation: bottomToTop 0.8s ease 2s 1 forwards;
+    @include base-h1(600, 2.2rem, $section-title, 2px);
+    @include bottomToTop(20px);
 
     @include max-screen($breakpMobileLand-max-767) {
       font-size: 2rem;
-      text-align: center;
     }
-
-    @include bottomToTop;
   }
 
   p {
-    letter-spacing: 1px;
-    line-height: 1.5;
-    font-weight: 500;
     opacity: 0;
-    animation: bottomToTop 0.8s ease 1.6s 1 forwards;
-    @include bottomToTop;
+    text-align: left;
+    animation: bottomToTop 0.8s ease 2.3s 1 forwards;
+    @include bottomToTop(20px);
   }
 
   .flex-container {
     display: flex;
     margin: 0 auto;
     width: 100%;
-    max-width: 900px;
 
-    @include max-screen($breakpMobileLand-max-767) {
+    @include max-screen($breakpPc-max-1024) {
       flex-direction: column;
       width: 80%;
       padding: 2rem 0;
     }
-  }
 
-  .right {
-    flex: 2;
-    position: relative;
+    .flex-item-right {
+      flex: 2;
+      position: relative;
 
-    .content {
-      @include max-screen($breakpMobileLand-max-767) {
-        text-align: center;
+      .content {
+        p:nth-child(3) {
+          font-weight: bold;
+          font-family: $main-font;
+          color: $sub-pink-color;
+        }
       }
     }
-  }
 
-  .left {
-    flex: 1;
-    margin: 1rem;
+    .flex-item-left {
+      flex: 1;
+      margin: 1rem 1rem 0 3rem;
 
-    @include max-screen($breakpMobileLand-max-767) {
-      margin: 0 auto;
+      @include max-screen($breakpPc-max-1024) {
+        order: 2;
+        margin: 2rem 0 0 0;
+      }
+
+      .profile-img {
+        width: auto;
+        height: 400px;
+        animation: leftToRight ease-in 0.8s 1 1.3s forwards;
+        opacity: 0;
+        @include leftToRight;
+        @include image-border;
+
+        @include max-screen($breakpPc-max-1024) {
+          max-height: 250px;
+        }
+      }
     }
-
-    .profile-img {
-      width: auto;
-      height: 300px;
-      @include image-border;
-      animation: leftToRight ease-in-out 0.8s 1 1s forwards;
+    .social-icons {
+      padding-left: 0;
       opacity: 0;
-      @include leftToRight;
+      animation: bottomToTop 0.8s ease 2.5s 1 forwards;
+      @include bottomToTop(20px);
 
-      @include max-screen($breakpMobileLand-max-767) {
-        max-height: 250px;
+      .icon-list {
+        padding: 1rem 1.5rem 1rem 0;
+        font-size: 1.3rem;
+        display: inline-block;
+      }
+
+      & i:hover {
+        color: $section-title;
       }
     }
   }
+}
 
-  .social-icons {
-    padding-left: 0;
-    opacity: 0;
-    animation: bottomToTop 0.8s ease 2s 1 forwards;
-    @include bottomToTop;
+.btn-class {
+  margin-top: 1rem;
+  text-align: center;
+  @include button-style($white-color, $main-text-color);
 
-    li {
-      padding: 1rem 1.5rem 1rem 0;
-      font-size: 1.3rem;
-      display: inline-block;
-    }
-
-    li i:hover {
-      color: $sub-pink-color;
-    }
-  }
-
-  .message-btn {
+  &:hover {
+    @include button-link($main-text-color, $white-color, $main-text-color);
     transition: 0.3s ease-in-out;
-    opacity: 0;
-    animation: bottomToTop 0.8s ease 2.5s 1 forwards;
-    @include bottomToTop;
-
-    @include button-style;
-
-    @include max-screen($breakpMobileLand-max-767) {
-      margin: 0 auto;
-    }
+    border-radius: 30px;
   }
+}
+
+.btn-animation {
+  opacity: 0;
+  animation: bottomToTop 0.8s ease 2.8s 1 forwards;
+  @include bottomToTop(20px);
 }

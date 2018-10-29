@@ -8,151 +8,126 @@
 @import "variables";
 @import "mixin";
 
-// .work-wrapper {
-//   @include wrapper-style;
-//   overflow-y: scroll;
-//   overflow-x: hidden;
-// }
+.scroll-section {
+  position: relative;
+}
 
 .work-section {
-  background-color: $work-two;
+  background-color: $work-bg;
   opacity: 0;
-  animation: bottomToTop 0.5s ease-in-out 0.5s 1 forwards;
-  @include bottomToTop;
-
+  animation: rightToLeftContainer 1s ease 0.5s 1 forwards;
+  @include rightToLeftContainer;
+  position: relative;
   @include container-size;
 
   @include min-screen($breakpTablet-max-960) {
     display: flex;
     align-items: center;
   }
-
-  @include screen($breakpMobileLand-min-768, $breakpTablet-max-960) {
-    top: 70px;
-    height: calc(100vh - 100px);
-  }
-
   @include max-screen($breakpMobileLand-max-767) {
     height: calc(100vh - 70px);
   }
 
   .flex-container {
     display: flex;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 900px;
+    width: 100%;
 
-    @include max-screen($breakpTablet-max-960) {
+    @include max-screen($breakpPc-max-1024) {
       flex-direction: column;
-      // margin: 0 auto;
-      width: 80%;
-      padding-top: 4rem;
-    }
-
-    @include max-screen($breakp-mobile-min-320) {
-      padding-top: 2rem;
-    }
-  }
-
-  .right {
-    margin: 2rem;
-
-    @include max-screen($breakpTablet-max-960) {
       margin: 0 auto;
-      order: 1;
+      width: 100%;
+      @include header-vertical-center;
     }
-  }
 
-  .left {
-    height: 100%;
-    position: relative;
-    margin: 2rem;
+    .flex-item-left {
+      width: 50%;
+      text-align: center;
 
-    @include max-screen($breakpTablet-max-960) {
-      margin: 0 auto;
-      order: 2;
+      @include max-screen($breakpPc-max-1024) {
+        margin: 0 auto;
+        order: 2;
+      }
+
+      @include max-screen($breakpMobileLand-max-767) {
+        width: 80%;
+      }
+    }
+
+    .flex-item-right {
+      width: 50%;
+
+      @include max-screen($breakpPc-max-1024) {
+        width: 100%;
+      }
+
+      @include max-screen($breakpTablet-max-960) {
+        margin: 0 auto;
+        order: 1;
+      }
     }
   }
 
   .content {
-    h1 {
-      width: 80%;
-      font-size: 2rem;
-      font-family: $main-font;
-      letter-spacing: 3px;
-      color: $white-color;
-    }
-
-    p {
-      letter-spacing: 1px;
-    }
-
-    @include max-screen($breakpTablet-max-960) {
-      text-align: center;
-      margin-top: 2.5rem;
-
-      h1 {
-        margin: 0 auto;
-      }
-
-      p {
-        margin-bottom: 2rem;
-      }
-    }
-
     @include max-screen($breakp-mobile-mid-400) {
       margin-top: 1rem;
+    }
+    .work-title {
+      width: 100%;
+      margin: 0;
+      @include base-h1(600, 2.5rem, $section-title, 3px);
 
-      h1 {
-        font-size: 1.5rem;
+      @include max-screen($breakpPc-max-1024) {
+        padding-top: 1rem;
+      }
+      @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+        font-size: 3rem;
+      }
+
+      @include max-screen($breakp-mobile-mid-400) {
+        font-size: 2rem;
       }
     }
-  }
 
-  .image-container {
-    overflow: hidden;
+    .description {
+      max-width: 250px;
+      margin: 0 auto;
+      padding: 1rem 0;
+      text-align: justify;
+      @include base-paragraph(1rem, 1px, $main-text-color, 1.5);
+    }
   }
 
   .work-img-one {
+    width: 100%;
     max-width: 400px;
-    max-height: 350px;
+    max-height: 500px;
+    opacity: 0;
+    animation: bottomToTop 1s ease 1.3s 1 forwards;
+    @include bottomToTop(20px);
     @include image-border;
-    transition: 0.3s ease;
 
-    @include max-screen($breakpTablet-max-960) {
-      width: auto;
-      max-height: 260px;
+    @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+      max-width: 500px;
+      max-height: 300px;
     }
 
-    @include max-screen($breakpMobileLand-max-600) {
-      max-width: 240px;
-      max-height: 200px;
+    @include max-screen($breakpMobileLand-max-767) {
+      max-width: 300px;
     }
 
     @include max-screen($breakp-mobile-min-320) {
-      max-width: 180px;
-      max-height: 150px;
+      max-width: 250px;
     }
   }
 
-  .more-btn {
-    padding-bottom: 3rem;
-    transition: 0.3s ease-in-out;
-    @include button-style;
-
-    @include max-screen($breakpMobileLand-max-767) {
-      margin: 0 auto;
-    }
+  .btn-class {
+    margin: 0 auto;
   }
-}
-
-.second {
-  // @include container-size;
-  background-color: $work-one;
 }
 
 ////// single page portfolio section /////
 .work-single-wrapper {
+  background: $white-color;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -163,18 +138,23 @@
   nav,
   header,
   footer {
-    background-color: $work-one;
+    background-color: $work-bg;
+  }
+
+  .nav-bar {
+    a:link,
+    a:visited {
+      color: $main-text-color;
+    }
   }
 
   header {
     height: 300px;
     position: relative;
 
-    h1 {
-      @include base-h1;
+    .single-page-title {
+      @include base-h1(600, 3.5rem, $section-title, 3px);
       @include header-vertical-center;
-      font-weight: 600;
-      font-size: 3.5rem;
     }
   }
 }
@@ -186,16 +166,20 @@
 
   h2 {
     font-family: $p-font;
-    color: $work-one-section-title;
+    color: $section-title;
     text-align: left;
+    @include max-screen($breakpMobileLand-max-767) {
+      text-align: center;
+    }
   }
 
   .summary-content {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 3rem 0;
+    padding: 4rem 0;
     display: flex;
     text-align: left;
+
     @include max-screen($breakpMobileLand-max-767) {
       flex-wrap: wrap;
     }
@@ -203,42 +187,52 @@
     .first-content {
       width: 50%;
       padding-right: 5rem;
+      opacity: 0;
+      animation: bottomToTop 1s ease 1s 1 forwards;
+      @include bottomToTop(20px);
 
       @include max-screen($breakpMobileLand-max-767) {
         width: 100%;
         padding: 0;
+        text-align: center;
+      }
+    }
+
+    .second-content {
+      width: 50%;
+      opacity: 0;
+      animation: bottomToTop 1s ease 1.5s 1 forwards;
+      @include bottomToTop(20px);
+
+      @include max-screen($breakpMobileLand-max-767) {
+        width: 100%;
+        padding: 0;
+        text-align: center;
       }
     }
 
     p {
       min-width: 200px;
     }
-
-    .list-content {
-      text-align: center;
-
-      ul {
-        padding: 0;
-        text-align: left;
-        display: inline-block;
-        margin: 0 auto;
-      }
-
-      li {
-        font-family: $p-font;
-        list-style: none;
-        margin: 0 auto;
-        display: inline;
-        color: $main-text-color;
-      }
-    }
   }
 
   .page-btn {
     margin: 0 auto;
-    margin-top: 3rem;
-    transition: 0.3s ease-in-out;
-    @include button-style;
+    @include button-style($main-pink-color, $white-color);
+    border: 1px solid $white-color;
+
+    &:hover {
+      @include button-link($main-pink-color, $white-color, $main-pink-color);
+      border-color: $main-pink-color;
+      transition: 0.5s ease-in;
+      border-radius: 30px;
+    }
+  }
+
+  .btn-animation {
+    opacity: 0;
+    animation: bottomToTop 0.8s ease 2s 1 forwards;
+    @include bottomToTop(20px);
   }
 
   .img-container {
@@ -248,19 +242,13 @@
     img {
       width: 100%;
       border: solid 1px #cacaca;
+      opacity: 0;
     }
   }
-}
 
-.second-page {
-  header,
-  nav {
-    background-color: $work-two;
-  }
-}
-
-.project-second {
-  h2 {
-    color: $work-two-section-title;
+  .slideIn {
+    opacity: 0;
+    animation: bottomToTop 0.8s ease 0.5s 1 forwards;
+    @include bottomToTop(20px);
   }
 }
