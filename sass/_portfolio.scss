@@ -235,20 +235,21 @@
     @include bottomToTop(20px);
   }
 
-  .img-container {
+  #img-container {
     text-align: center;
     margin: 5rem 0;
-
-    img {
-      width: 100%;
-      border: solid 1px #cacaca;
-      opacity: 0;
-    }
   }
 
-  .slideIn {
+  .fadein {
     opacity: 0;
-    animation: bottomToTop 0.8s ease 0.5s 1 forwards;
-    @include bottomToTop(20px);
+    width: 100%;
+    border: solid 1px #cacaca;
+    transform: translate(0, 50px);
+    transition: all 1s;
+    margin-top: 2rem;
+  }
+  .fadein.scrollin {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }

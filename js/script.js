@@ -1,14 +1,15 @@
-window.onscroll = function() {
-  fadeIn();
-};
-function fadeIn() {
-  let elem = document.getElementById("fadeIn-img");
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    elem.classList.add("slideIn");
-  } else {
-    elem.className = "";
-  }
-}
+jQuery(function() {
+  jQuery(window).scroll(function() {
+    jQuery(".fadein").each(function() {
+      var elemPos = jQuery(this).offset().top;
+      var scroll = jQuery(window).scrollTop();
+      var windowHeight = jQuery(window).height();
+      if (scroll > elemPos - windowHeight + 100) {
+        jQuery(this).addClass("scrollin");
+      }
+    });
+  });
+});
 
 jQuery(document).ready(function($) {
   var option = {

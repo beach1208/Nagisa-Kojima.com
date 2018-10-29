@@ -662,30 +662,23 @@ footer p {
   }
 }
 
-.project-page .img-container {
+.project-page #img-container {
   text-align: center;
   margin: 5rem 0;
 }
 
-.project-page .img-container img {
+.project-page .fadein {
+  opacity: 0;
   width: 100%;
   border: solid 1px #cacaca;
-  opacity: 0;
+  transform: translate(0, 50px);
+  transition: all 1s;
+  margin-top: 2rem;
 }
 
-.project-page .slideIn {
-  opacity: 0;
-  animation: bottomToTop 0.8s ease 0.5s 1 forwards;
-}
-
-@keyframes bottomToTop {
-  0% {
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.project-page .fadein.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 /*=========  Nav bar ==========*/
