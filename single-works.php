@@ -42,12 +42,9 @@
 
 
                 <a href="#" class="page-btn btn-animation">Visit WebSite</a>
-                <div class="img-container">
                 <div id="img-container">
                     <img class="fadein" src="<?php the_field('works-img'); ?>" alt="portfolio-work">
                     <img class="fadein" src="<?php the_field('works-img'); ?>" alt="portfolio-work">
-                </div>
-                 
                 </div>
            
 
