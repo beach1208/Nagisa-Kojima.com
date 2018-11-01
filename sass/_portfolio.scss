@@ -92,7 +92,7 @@
       max-width: 250px;
       margin: 0 auto;
       padding: 1rem 0;
-      text-align: justify;
+      text-align: left;
       @include base-paragraph(1rem, 1px, $main-text-color, 1.5);
     }
   }

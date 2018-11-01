@@ -1,9 +1,8 @@
 <?php get_header(); ?>
-<!-- <?php wp_head(); ?> -->
 
 <nav class="nav-bar">
      <ul class="menu">
-         <li class="menu-list"><a href="<?php echo esc_url(home_url()); ?>/"><img src="/wp-content/themes/portfolio/img/logo.png" class="logo"></a></li>
+         <li class="menu-list"><a href="<?php echo esc_url(home_url()); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a></li>
          <li class="menu-list"><a href="<?php echo esc_url(home_url()); ?>/about">About</a></li>
          <li class="menu-list"><a href="<?php echo esc_url(home_url()); ?>/works">Works</a></li>
         </ul>
@@ -12,14 +11,12 @@
             <div class="flex-container">
 
                 <div class="flex-item-left">
-                    <img id="myimg" class="profile-img" src="/wp-content/themes/portfolio/img/IMG_7208.jpg" alt="profile">
+                <img id="myimg" class="profile-img" src="<?php the_field('aboutimage'); ?>"  alt="profile">
                 </div>
                 <div class="flex-item-right">
                     <div class="content">
                         <h1 class="about-title">About Me</h1>
-                        <p>My name is Nagisa. I'm a Japanese Front End Developer based in Vancouver,Canada.
-                        I have enrolled in 12 months Web and Mobile Application Development Course at Cornerstone International College.
-                        My speciality is Front End Development and UI Design.</p>
+                        <p><?php the_field('abouttext'); ?></p>
                         <p>My Skills</p>
                         <p>HTML/CSS/SASS/Javascript/JQuery
                         PHP/Bootstrap/Wordpress/Gulp/Git
@@ -39,6 +36,5 @@
                 </div>
             </div>
         </div>
-    </div>
     <?php wp_footer(); ?>
 <?php get_footer(); ?>
