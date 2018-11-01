@@ -50,7 +50,7 @@ p {
   background-color: $main-pink-color;
   opacity: 0;
   animation: bottomToTop 1s ease-in 4s 1 forwards;
-  @include bottomToTop(20px);
+  @include bottomToTop(30px);
   @include container-size;
 
   @include max-screen($breakpMobileLand-max-767) {

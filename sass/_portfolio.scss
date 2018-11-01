@@ -107,8 +107,8 @@
     @include image-border;
 
     @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
-      max-width: 500px;
-      max-height: 300px;
+      max-width: 350px;
+      max-height: 250px;
     }
 
     @include max-screen($breakpMobileLand-max-767) {
