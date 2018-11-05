@@ -3,11 +3,6 @@
 @import "variables";
 @import "mixin";
 
-/*===============  portfolio ========== */
-@import "nav-footer";
-@import "variables";
-@import "mixin";
-
 .scroll-section {
   position: relative;
 }
@@ -15,9 +10,9 @@
 .work-section {
   background-color: $work-bg;
   opacity: 0;
+  position: relative;
   animation: rightToLeftContainer 1s ease 0.5s 1 forwards;
   @include rightToLeftContainer;
-  position: relative;
   @include container-size;
 
   @include min-screen($breakpTablet-max-960) {
@@ -41,8 +36,6 @@
 
     .flex-item-left {
       width: 50%;
-      text-align: center;
-
       @include max-screen($breakpPc-max-1024) {
         margin: 0 auto;
         order: 2;
@@ -68,6 +61,14 @@
   }
 
   .content {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+    @include max-screen($breakpPc-max-1024) {
+      width: 100%;
+      text-align: center;
+      margin-top: 2rem;
+    }
     @include max-screen($breakp-mobile-mid-400) {
       margin-top: 1rem;
     }
@@ -76,52 +77,42 @@
       margin: 0;
       @include base-h1(600, 2.5rem, $section-title, 3px);
 
-      @include max-screen($breakpPc-max-1024) {
-        padding-top: 1rem;
-      }
-      @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
-        font-size: 3rem;
-      }
-
       @include max-screen($breakp-mobile-mid-400) {
         font-size: 2rem;
       }
     }
 
     .description {
-      max-width: 250px;
-      margin: 0 auto;
+      @include max-screen($breakpPc-max-1024) {
+        margin: 0 auto;
+      }
       padding: 1rem 0;
-      text-align: left;
       @include base-paragraph(1rem, 1px, $main-text-color, 1.5);
     }
   }
 
   .work-img-one {
-    width: 100%;
-    max-width: 400px;
-    max-height: 500px;
+    max-width: 420px;
+    height: auto;
     opacity: 0;
     animation: bottomToTop 1s ease 1.3s 1 forwards;
     @include bottomToTop(20px);
     @include image-border;
-
-    @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
-      max-width: 350px;
-      max-height: 250px;
+    @include max-screen($breakpPc-max-1024) {
+      max-height: 500px;
     }
-
     @include max-screen($breakpMobileLand-max-767) {
       max-width: 300px;
     }
-
     @include max-screen($breakp-mobile-min-320) {
       max-width: 250px;
     }
   }
 
   .btn-class {
-    margin: 0 auto;
+    @include max-screen($breakpPc-max-1024) {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -153,8 +144,13 @@
     position: relative;
 
     .single-page-title {
+      width: 100%;
       @include base-h1(600, 3.5rem, $section-title, 3px);
       @include header-vertical-center;
+
+      @include max-screen($breakpMobileLand-max-767) {
+        font-size: 2.5rem;
+      }
     }
   }
 }

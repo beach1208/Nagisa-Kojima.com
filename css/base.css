@@ -199,111 +199,6 @@ footer p {
 /* ==============
    Media queries
   ============= */
-/*===============  portfolio ========== */
-/*=========  Nav bar ==========*/
-/** =========
-  Media Queries
-========= **/
-/** =========
-  Media Queries
-========= **/
-/* ==============
-   Media queries
-  ============= */
-.nav-bar {
-  position: fixed;
-  width: 100%;
-  background: #ffffff;
-  z-index: 100;
-  padding-top: 20px;
-}
-
-.nav-bar .menu {
-  display: flex;
-  justify-content: flex-end;
-  z-index: 100;
-  padding-right: 60px;
-}
-
-@media screen and (max-width: 767px) {
-  .nav-bar .menu {
-    padding: 0;
-  }
-}
-
-.nav-bar .menu .menu-list {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 3px;
-  padding: 10px;
-  list-style: none;
-}
-
-.nav-bar .menu .menu-list:first-child {
-  margin-right: auto;
-  padding-left: 30px;
-  width: auto;
-  height: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  .nav-bar .menu .menu-list:first-child {
-    padding-left: 20px;
-  }
-}
-
-.nav-bar .menu a:link,
-.nav-bar .menu a:visited {
-  color: #4d4b50;
-  padding: 8px 0;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.2s;
-}
-
-.nav-bar .menu a:hover,
-.nav-bar .menu a:active {
-  color: #4d4b50;
-  border-bottom: 2px solid #c7a9a9;
-}
-
-.first-page-nav {
-  opacity: 0;
-  animation: nav-animation 0.3s ease-in 3.5s 1 forwards;
-}
-
-@keyframes nav-animation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/*====Footer====*/
-footer {
-  height: 40px;
-  background-color: #dcd0d5;
-  margin-top: auto;
-}
-
-footer p {
-  text-align: center;
-  color: #4d4b50;
-  margin: 0 auto;
-  padding-top: 0.8rem;
-}
-
-/** =========
-  Media Queries
-========= **/
-/** =========
-  Media Queries
-========= **/
-/* ==============
-   Media queries
-  ============= */
 .scroll-section {
   position: relative;
 }
@@ -311,8 +206,8 @@ footer p {
 .work-section {
   background-color: #dcd0d5;
   opacity: 0;
-  animation: rightToLeftContainer 1s ease 0.5s 1 forwards;
   position: relative;
+  animation: rightToLeftContainer 1s ease 0.5s 1 forwards;
   position: absolute;
   top: 100px;
   left: 70px;
@@ -374,7 +269,6 @@ footer p {
 
 .work-section .flex-container .flex-item-left {
   width: 50%;
-  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -407,6 +301,20 @@ footer p {
   }
 }
 
+.work-section .content {
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .work-section .content {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .work-section .content {
     margin-top: 1rem;
@@ -423,18 +331,6 @@ footer p {
   letter-spacing: 3px;
 }
 
-@media screen and (max-width: 1024px) {
-  .work-section .content .work-title {
-    padding-top: 1rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .work-section .content .work-title {
-    font-size: 3rem;
-  }
-}
-
 @media screen and (max-width: 400px) {
   .work-section .content .work-title {
     font-size: 2rem;
@@ -442,10 +338,7 @@ footer p {
 }
 
 .work-section .content .description {
-  max-width: 250px;
-  margin: 0 auto;
   padding: 1rem 0;
-  text-align: left;
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -453,10 +346,15 @@ footer p {
   line-height: 1.5;
 }
 
+@media screen and (max-width: 1024px) {
+  .work-section .content .description {
+    margin: 0 auto;
+  }
+}
+
 .work-section .work-img-one {
-  width: 100%;
-  max-width: 400px;
-  max-height: 500px;
+  max-width: 420px;
+  height: auto;
   opacity: 0;
   animation: bottomToTop 1s ease 1.3s 1 forwards;
   border: 10px solid #fff;
@@ -475,10 +373,9 @@ footer p {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .work-section .work-img-one {
-    max-width: 350px;
-    max-height: 250px;
+    max-height: 500px;
   }
 }
 
@@ -494,8 +391,10 @@ footer p {
   }
 }
 
-.work-section .btn-class {
-  margin: 0 auto;
+@media screen and (max-width: 1024px) {
+  .work-section .btn-class {
+    margin: 0 auto;
+  }
 }
 
 .work-single-wrapper {
@@ -523,6 +422,7 @@ footer p {
 }
 
 .single-page header .single-page-title {
+  width: 100%;
   font-weight: 600;
   font-size: 3.5rem;
   font-family: "Merriweather", serif;
@@ -535,6 +435,12 @@ footer p {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .single-page header .single-page-title {
+    font-size: 2.5rem;
+  }
 }
 
 .project-page .container {
