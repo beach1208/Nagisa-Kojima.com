@@ -110,13 +110,6 @@
   }
 
   .btn-class {
-    @include button-style($work-btn-color, $white-color);
-    border: 1px solid $work-btn-color;
-
-    &:hover {
-      @include button-link($work-btn-color, $white-color, $work-btn-color);
-    }
-
     @include max-screen($breakpPc-max-1024) {
       margin: 0 auto;
     }
@@ -221,15 +214,6 @@
 
   .page-btn {
     margin: 0 auto;
-    @include button-style($main-pink-color, $white-color);
-    border: 1px solid $white-color;
-
-    &:hover {
-      @include button-link($main-pink-color, $white-color, $main-pink-color);
-      border-color: $main-pink-color;
-      transition: 0.5s ease-in;
-      border-radius: 30px;
-    }
   }
 
   .btn-animation {

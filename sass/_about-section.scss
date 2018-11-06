@@ -107,10 +107,12 @@
 .btn-class {
   margin-top: 1rem;
   text-align: center;
-  @include button-style($white-color, $main-text-color);
+
+  @include button-style($work-btn-color, $white-color);
+  border: 1px solid $work-btn-color;
 
   &:hover {
-    @include button-link($main-text-color, $white-color, $main-text-color);
+    @include button-link($work-btn-color, $white-color, $work-btn-color);
     transition: 0.3s ease;
     border-radius: 30px;
   }
