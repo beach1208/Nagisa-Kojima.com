@@ -111,7 +111,7 @@
 
   &:hover {
     @include button-link($main-text-color, $white-color, $main-text-color);
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease;
     border-radius: 30px;
   }
 }

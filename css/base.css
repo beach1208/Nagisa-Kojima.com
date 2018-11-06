@@ -391,6 +391,27 @@ footer p {
   }
 }
 
+.work-section .btn-class {
+  display: block;
+  width: 200px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid #4d4b50;
+  font-size: 1.2rem;
+  background: #9e466e;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  border: 1px solid #9e466e;
+}
+
+.work-section .btn-class:hover {
+  background-color: #ffffff;
+  border-color: #9e466e;
+  color: #9e466e;
+}
+
 @media screen and (max-width: 1024px) {
   .work-section .btn-class {
     margin: 0 auto;
@@ -891,7 +912,7 @@ footer p {
   background-color: #ffffff;
   border-color: #4d4b50;
   color: #4d4b50;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
   border-radius: 30px;
 }
 

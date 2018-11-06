@@ -110,6 +110,13 @@
   }
 
   .btn-class {
+    @include button-style($work-btn-color, $white-color);
+    border: 1px solid $work-btn-color;
+
+    &:hover {
+      @include button-link($work-btn-color, $white-color, $work-btn-color);
+    }
+
     @include max-screen($breakpPc-max-1024) {
       margin: 0 auto;
     }

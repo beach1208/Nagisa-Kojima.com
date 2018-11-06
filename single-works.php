@@ -41,10 +41,11 @@
 
 
 
-                <a href="#" class="page-btn btn-animation">Visit WebSite</a>
+                <a href="<?php the_field('url'); ?>" class="page-btn btn-animation">Visit WebSite</a>
                 <div id="img-container">
                     <img class="fadein" src="<?php the_field('works-img'); ?>" alt="portfolio-work">
-                    <img class="fadein" src="<?php the_field('works-img'); ?>" alt="portfolio-work">
+                    <img class="fadein" src="<?php the_field('works-img2'); ?>" alt="portfolio-work">
+                    <img class="fadein" src="<?php the_field('works-img3'); ?>" alt="portfolio-work">
                 </div>
            
 
