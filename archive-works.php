@@ -38,6 +38,7 @@ $count++;
     </div>
 </section>
 
+<ul class="pager" id="js-pager"></ul>
 
 <?php
 endwhile;
