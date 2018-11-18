@@ -1,3 +1,13 @@
+let aboutImg = document.getElementsByClassName("profile-img"),
+  aboutTitle = document.getElementsByClassName("about-title"),
+  tl = new TimelineLite();
+
+tl.from(aboutImg, 1, {
+  x: -100,
+  autoAlpha: 0,
+  ease: Power1.easeInOut
+}).from(aboutTitle, 1, { y: 20, autoAlpha: 0, ease: Power1.easeOut }, "+=0.15");
+
 // var anim = new TimelineLite({ paused: true });
 // mainCon = document.getElementsByClassName("main-top");
 // menu = document

@@ -45,12 +45,6 @@
   height: 30px;
 }
 
-@media screen and (max-width: 767px) {
-  .nav-bar .menu .menu-list:first-child {
-    padding-left: 20px;
-  }
-}
-
 .nav-bar .menu a:link,
 .nav-bar .menu a:visited {
   color: #4d4b50;
@@ -139,12 +133,6 @@ footer p {
   padding-left: 30px;
   width: auto;
   height: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  .nav-bar .menu .menu-list:first-child {
-    padding-left: 20px;
-  }
 }
 
 .nav-bar .menu a:link,
@@ -529,6 +517,7 @@ footer p {
 }
 
 .project-page .page-btn {
+  display: block;
   margin: 0 auto;
 }
 
@@ -637,12 +626,6 @@ footer p {
   height: 30px;
 }
 
-@media screen and (max-width: 767px) {
-  .nav-bar .menu .menu-list:first-child {
-    padding-left: 20px;
-  }
-}
-
 .nav-bar .menu a:link,
 .nav-bar .menu a:visited {
   color: #4d4b50;
@@ -697,25 +680,11 @@ footer p {
   ============= */
 .about-section {
   background-color: #ecd7bd;
-  opacity: 0;
-  animation: leftToRightContainer 0.8s ease 0.5s 1 forwards;
   position: absolute;
   top: 100px;
   left: 70px;
   width: calc(100% - 140px);
   height: calc(100% - 140px);
-}
-
-@keyframes leftToRightContainer {
-  0% {
-    transform: translateX(-500px);
-    /* X軸方向に50px */
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    /* X軸方向に0px */
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -735,7 +704,6 @@ footer p {
 @media screen and (max-width: 767px) {
   .about-section {
     position: relative;
-    height: 100%;
     overflow-y: scroll;
   }
 }
@@ -743,23 +711,11 @@ footer p {
 .about-section .about-title {
   text-align: left;
   margin: 0;
-  opacity: 0;
-  animation: bottomToTop 0.8s ease 2s 1 forwards;
   font-weight: 600;
   font-size: 2.2rem;
   font-family: "Merriweather", serif;
   color: #73496d;
   letter-spacing: 2px;
-}
-
-@keyframes bottomToTop {
-  0% {
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -836,24 +792,10 @@ footer p {
 .about-section .flex-container .flex-item-left .profile-img {
   width: auto;
   height: 400px;
-  animation: leftToRight ease-in 0.8s 1 1.3s forwards;
-  opacity: 0;
   border: 10px solid #fff;
   -webkit-box-shadow: 3px 3px 3px #777;
   -moz-box-shadow: 3px 3px 3px #777;
   box-shadow: 3px 3px 3px #777;
-}
-
-@keyframes leftToRight {
-  0% {
-    transform: translateX(-100px);
-    /* X軸方向に50px */
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    /* X軸方向に0px */
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -879,7 +821,7 @@ footer p {
 }
 
 .about-section .flex-container .social-icons .icon-list {
-  padding: 1rem 1.5rem 1rem 0;
+  padding: 1rem 1rem 0 0;
   font-size: 1.3rem;
   display: inline-block;
 }
@@ -893,12 +835,13 @@ footer p {
   text-align: center;
   position: relative;
   z-index: 2;
-  display: block;
-  width: 200px;
+  transition: 0.3s ease;
+  display: inline-block;
+  width: 150px;
   height: auto;
   padding: 20px;
   border: 1px solid #4d4b50;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background: #9e466e;
   color: #ffffff;
   text-decoration: none;
@@ -958,8 +901,10 @@ body {
 
 h1,
 h2,
-p {
+p,
+a {
   margin: 0;
+  padding: 0;
 }
 
 /*  FONTS AND COLOR  */
