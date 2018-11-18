@@ -22,6 +22,34 @@ function my_scripts()
         true
     );
     wp_enqueue_script(
+        'TweenLite',
+        'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js',
+        array(),
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'TimeLineLite',
+        'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineLite.min.js',
+        array(),
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'CSSPlugin',
+        'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js',
+        array(),
+        false,
+        true
+    );
+    wp_enqueue_script(
+        'EasePlugin',
+        'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/easing/EasePack.min.js',
+        array(),
+        false,
+        true
+    );
+    wp_enqueue_script(
         'scrollifyJs',
         get_template_directory_uri() . '/js/jquery.scrollify.js',
         array(),

@@ -14,13 +14,12 @@
                 <img id="myimg" class="profile-img" src="<?php the_field('aboutimage'); ?>"  alt="profile">
                 </div>
                 <div class="flex-item-right">
-                    <div class="content">
+                    <!-- <div class="content"> -->
                         <h1 class="about-title">About Me</h1>
                         <p><?php the_field('abouttext'); ?></p>
                         <p>My Skills</p>
-                        <p>HTML/CSS/SASS/Javascript/JQuery
-                        PHP/Bootstrap/Wordpress/Gulp/Git
-                        AdobeXD/Photoshop/Sketch/Illustrator</p>
+                        <p><?php the_field('programlang-text'); ?></p>
+                        <p><?php the_field('designtool-text'); ?></p>
 
                         
 
@@ -32,7 +31,7 @@
                         </ul>
                         <a href="mailto:nk.bg.1208@gmail.com" class="btn-class btn-animation">Send a Message</a>
               
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>

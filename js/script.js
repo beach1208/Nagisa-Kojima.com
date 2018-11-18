@@ -1,3 +1,42 @@
+// var anim = new TimelineLite({ paused: true });
+// mainCon = document.getElementsByClassName("main-top");
+// menu = document
+//   .querySelector(".about-menu")
+//   .addEventListener("click", function() {
+//     TweenLite.to(mainCon, 1, {
+//       ease: Power2.easeInOut,
+//       scale: 0.8
+//       // scaleX: 1,
+//       // skewX: "10deg"
+//       // skewY: "180deg"
+//     });
+//   });
+// menubar = document.getElementsByClassName("menu-list");
+
+// TweenLite.from(mainCon, 1, {
+//   opacity: 0,
+//   y: 30,
+//   ease: Power2.easeInOut,
+//   delay: 4
+// });
+
+// document
+//   .getElementsByClassName("menu-list")
+//   .addEventListener("click", function() {
+//     anim.play();
+//   });
+
+// menubar.addEventListener("click", scaleOnClick);
+// function scaleOnClick() {
+//   TweenLite.to(menubar, 1, {
+//     ease: Power2.easeInOut,
+//     scale: 0.8
+//     // scaleX: 1,
+//     // skewX: "10deg"
+//     // skewY: "180deg"
+//   });
+// }
+
 jQuery(function() {
   jQuery(window).scroll(function() {
     jQuery(".fadein").each(function() {

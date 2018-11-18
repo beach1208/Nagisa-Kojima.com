@@ -14,7 +14,7 @@
     align-items: center;
   }
 
-  @include max-screen($breakpPc-max-1024) {
+  @include max-screen($breakpMobileLand-max-767) {
     position: relative;
     height: 100%;
     overflow-y: scroll;
@@ -22,6 +22,7 @@
 
   .about-title {
     text-align: left;
+    margin: 0;
     opacity: 0;
     animation: bottomToTop 0.8s ease 2s 1 forwards;
     @include base-h1(600, 2.2rem, $section-title, 2px);
@@ -33,16 +34,20 @@
   }
 
   p {
+    word-break: break-all;
     opacity: 0;
     text-align: left;
+    padding-top: 0.5rem;
     animation: bottomToTop 0.8s ease 2.3s 1 forwards;
     @include bottomToTop(20px);
   }
 
   .flex-container {
     display: flex;
+    justify-content: space-around;
     margin: 0 auto;
     width: 100%;
+    max-width: 1024px;
 
     @include max-screen($breakpPc-max-1024) {
       flex-direction: column;
@@ -51,25 +56,27 @@
     }
 
     .flex-item-right {
-      flex: 2;
+      width: 50%;
       position: relative;
+      @include max-screen($breakpPc-max-1024) {
+        width: 100%;
+      }
+      @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
+        padding-top: 3rem;
+      }
 
-      .content {
-        p:nth-child(3) {
-          font-weight: bold;
-          font-family: $main-font;
-          color: $sub-pink-color;
-        }
+      p:nth-child(3) {
+        font-weight: bold;
+        font-family: $main-font;
+        color: $sub-pink-color;
+        padding-top: 2rem;
       }
     }
 
     .flex-item-left {
-      flex: 1;
-      margin: 1rem 1rem 0 3rem;
-
       @include max-screen($breakpPc-max-1024) {
         order: 2;
-        margin: 2rem 0 0 0;
+        margin-top: 2rem;
       }
 
       .profile-img {
@@ -107,14 +114,36 @@
 .btn-class {
   margin-top: 1rem;
   text-align: center;
+  position: relative;
+  z-index: 2;
+  // transition: 0.3s ease;
 
   @include button-style($work-btn-color, $white-color);
   border: 1px solid $work-btn-color;
 
   &:hover {
     @include button-link($work-btn-color, $white-color, $work-btn-color);
-    transition: 0.3s ease;
-    border-radius: 30px;
+  }
+  &::before,
+  &::after {
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: $work-btn-color;
+  }
+
+  &::before {
+    right: 0;
+  }
+
+  &::after {
+    left: 0;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 0;
+    background: $white-color;
   }
 }
 

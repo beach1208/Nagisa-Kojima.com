@@ -14,7 +14,7 @@
     </p>
   </div>
 
-  <div class="main-top">
+  <div id="main" class="main-top">
     <div class="top-title">
       <h1 class="name-title">Nagisa Kojima</h1>
       <p class="position-title">Front End Developer</p>
