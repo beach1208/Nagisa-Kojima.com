@@ -1,51 +1,38 @@
 let aboutImg = document.getElementsByClassName("profile-img"),
-  aboutTitle = document.getElementsByClassName("about-title"),
+  abouttitle = document.getElementsByClassName("about-title"),
+  p = document.getElementsByClassName("description"),
+  skills = document.getElementsByClassName("skill-description"),
+  snsIcons = document.getElementsByClassName("social-icons"),
+  btn = document.getElementsByClassName("message-btn"),
   tl = new TimelineLite();
 
 tl.from(aboutImg, 1, {
   x: -100,
   autoAlpha: 0,
   ease: Power1.easeInOut
-}).from(aboutTitle, 1, { y: 20, autoAlpha: 0, ease: Power1.easeOut }, "+=0.15");
+})
+  .from(
+    abouttitle,
+    0.5,
+    { y: 15, autoAlpha: 0, ease: Power0.easeIn },
+    "-= 0.15"
+  )
+  .from(p, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
+  .from(skills, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
+  .from(snsIcons, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
+  .from(btn, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15");
 
-// var anim = new TimelineLite({ paused: true });
-// mainCon = document.getElementsByClassName("main-top");
-// menu = document
-//   .querySelector(".about-menu")
-//   .addEventListener("click", function() {
-//     TweenLite.to(mainCon, 1, {
-//       ease: Power2.easeInOut,
-//       scale: 0.8
-//       // scaleX: 1,
-//       // skewX: "10deg"
-//       // skewY: "180deg"
-//     });
-//   });
-// menubar = document.getElementsByClassName("menu-list");
+let workImg = document.getElementsByClassName("work-img-one"),
+  workTitle = document.getElementsByClassName("work-title"),
+  workp = document.getElementsByClassName("work-description"),
+  btnworks = document.getElementsByClassName("work-btn"),
+  newtl = new TimelineLite();
 
-// TweenLite.from(mainCon, 1, {
-//   opacity: 0,
-//   y: 30,
-//   ease: Power2.easeInOut,
-//   delay: 4
-// });
-
-// document
-//   .getElementsByClassName("menu-list")
-//   .addEventListener("click", function() {
-//     anim.play();
-//   });
-
-// menubar.addEventListener("click", scaleOnClick);
-// function scaleOnClick() {
-//   TweenLite.to(menubar, 1, {
-//     ease: Power2.easeInOut,
-//     scale: 0.8
-//     // scaleX: 1,
-//     // skewX: "10deg"
-//     // skewY: "180deg"
-//   });
-// }
+newtl
+  .from(workImg, 1, { y: 15, autoAlpha: 0, ease: Power1.easeIn })
+  .from(workTitle, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
+  .from(workp, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
+  .from(btnworks, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15");
 
 jQuery(function() {
   jQuery(window).scroll(function() {

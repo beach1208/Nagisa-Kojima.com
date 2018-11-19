@@ -72,7 +72,7 @@
     @include max-screen($breakp-mobile-mid-400) {
       margin-top: 1rem;
     }
-    .work-title {
+    .section-title {
       width: 100%;
       margin: 0;
       @include base-h1(600, 2.5rem, $section-title, 3px);
@@ -82,7 +82,7 @@
       }
     }
 
-    .description {
+    .work-description {
       @include max-screen($breakpPc-max-1024) {
         margin: 0 auto;
       }
@@ -94,9 +94,9 @@
   .work-img-one {
     max-width: 420px;
     height: auto;
-    opacity: 0;
-    animation: bottomToTop 1s ease 1.3s 1 forwards;
-    @include bottomToTop(20px);
+    // opacity: 0;
+    // animation: bottomToTop 1s ease 1.3s 1 forwards;
+    // @include bottomToTop(20px);
     @include image-border;
     @include max-screen($breakpPc-max-1024) {
       max-height: 500px;
@@ -217,11 +217,11 @@
     margin: 0 auto;
   }
 
-  .btn-animation {
-    opacity: 0;
-    animation: bottomToTop 0.8s ease 2s 1 forwards;
-    @include bottomToTop(20px);
-  }
+  // .btn-animation {
+  //   opacity: 0;
+  //   animation: bottomToTop 0.8s ease 2s 1 forwards;
+  //   @include bottomToTop(20px);
+  // }
 
   #img-container {
     text-align: center;

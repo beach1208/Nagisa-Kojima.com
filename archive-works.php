@@ -25,9 +25,9 @@ $count++;
         <div class="flex-container">
             <div class="flex-item-left">
                 <div class="content">
-                    <h1 class="work-title"><?php the_title(); ?></h1>
-                    <p class="description"><?php the_field('workspagesummary'); ?></p>
-                   <a href="<?php the_permalink(); ?>" class="btn-class">More Details</a>
+                    <h1 class="section-title work-title"><?php the_title(); ?></h1>
+                    <p class="work-description"><?php the_field('workspagesummary'); ?></p>
+                   <a href="<?php the_permalink(); ?>" class="btn-class work-btn">More Details</a>
                 </div>
             </div>
 

@@ -30,6 +30,11 @@ p {
   @include base-paragraph(1rem, 1px, $main-text-color, 1.5);
 }
 
+.section-title {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
 .top-border-rect {
   @include header-vertical-center;
   @include border-box-anim;

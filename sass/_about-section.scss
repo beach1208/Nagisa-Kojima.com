@@ -4,9 +4,6 @@
 
 .about-section {
   background-color: $about-bg;
-  // opacity: 0;
-  // animation: leftToRightContainer 0.8s ease 0.5s 1 forwards;
-  // @include leftToRightContainer;
   @include container-size;
 
   @include min-screen($breakpPc-max-1024) {
@@ -20,9 +17,8 @@
     overflow-y: scroll;
   }
 
-  .about-title {
+  .section-title {
     text-align: left;
-    margin: 0;
     @include base-h1(600, 2.2rem, $section-title, 2px);
 
     @include max-screen($breakpMobileLand-max-767) {
@@ -32,11 +28,7 @@
 
   p {
     word-break: break-all;
-    opacity: 0;
     text-align: left;
-    padding-top: 0.5rem;
-    animation: bottomToTop 0.8s ease 2.3s 1 forwards;
-    @include bottomToTop(20px);
   }
 
   .flex-container {
@@ -61,12 +53,15 @@
       @include screen($breakpMobileLand-min-768, $breakpPc-max-1024) {
         padding-top: 3rem;
       }
+      p:nth-child(2) {
+        margin-bottom: 1.5rem;
+      }
 
       p:nth-child(3) {
         font-weight: bold;
         font-family: $main-font;
         color: $sub-pink-color;
-        padding-top: 2rem;
+        margin-bottom: 1rem;
       }
     }
 
@@ -79,9 +74,6 @@
       .profile-img {
         width: auto;
         height: 400px;
-        // animation: leftToRight ease-in 0.8s 1 1.3s forwards;
-        // opacity: 0;
-        // @include leftToRight;
         @include image-border;
 
         @include max-screen($breakpPc-max-1024) {
@@ -91,10 +83,7 @@
     }
     .social-icons {
       padding-left: 0;
-      opacity: 0;
-      animation: bottomToTop 0.8s ease 2.5s 1 forwards;
-      @include bottomToTop(20px);
-
+      margin: 0;
       .icon-list {
         padding: 1rem 1rem 0 0;
         font-size: 1.3rem;
@@ -113,7 +102,7 @@
   text-align: center;
   position: relative;
   z-index: 2;
-  transition: 0.3s ease;
+  // transition: 0.3s ease;
 
   @include button-style($work-btn-color, $white-color);
   border: 1px solid $work-btn-color;
@@ -121,31 +110,25 @@
   &:hover {
     @include button-link($work-btn-color, $white-color, $work-btn-color);
   }
-  &::before,
-  &::after {
-    top: 0;
-    width: 50%;
-    height: 100%;
-    background-color: $work-btn-color;
-  }
+  // &::before,
+  // &::after {
+  //   top: 0;
+  //   width: 50%;
+  //   height: 100%;
+  //   background-color: $work-btn-color;
+  // }
 
-  &::before {
-    right: 0;
-  }
+  // &::before {
+  //   right: 0;
+  // }
 
-  &::after {
-    left: 0;
-  }
+  // &::after {
+  //   left: 0;
+  // }
 
-  &:hover::before,
-  &:hover::after {
-    width: 0;
-    background: $white-color;
-  }
-}
-
-.btn-animation {
-  opacity: 0;
-  animation: bottomToTop 0.8s ease 2.8s 1 forwards;
-  @include bottomToTop(20px);
+  // &:hover::before,
+  // &:hover::after {
+  //   width: 0;
+  //   background: $white-color;
+  // }
 }

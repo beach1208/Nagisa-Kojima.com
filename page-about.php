@@ -14,14 +14,11 @@
                 <img id="myimg" class="profile-img" src="<?php the_field('aboutimage'); ?>"  alt="profile">
                 </div>
                 <div class="flex-item-right">
-                    <!-- <div class="content"> -->
-                        <h1 class="about-title">About Me</h1>
-                        <p><?php the_field('abouttext'); ?></p>
-                        <p>My Skills</p>
-                        <p><?php the_field('programlang-text'); ?></p>
-                        <p><?php the_field('designtool-text'); ?></p>
-
-                        
+                        <h1 class="section-title about-title">About Me</h1>
+                        <p class="description"><?php the_field('abouttext'); ?></p>
+                        <p class="skill-description">My Skills</p>
+                        <p class="skill-description"><?php the_field('programlang-text'); ?></p>
+                        <p class="skill-description"><?php the_field('designtool-text'); ?></p>
 
                         <ul class="social-icons contact">
                             <li class="icon-list"><a href="https://dribbble.com/beach1208" target="_blank"><i class="fab fa-dribbble"></i></a></li>
@@ -29,9 +26,7 @@
                             <li class="icon-list"><a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                             <li class="icon-list"><a href="https://www.instagram.com/nagisa_design/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                         </ul>
-                        <a href="mailto:nk.bg.1208@gmail.com" class="btn-class btn-animation">Send a Message</a>
-              
-                    <!-- </div> -->
+                        <a href="mailto:nk.bg.1208@gmail.com" class="btn-class message-btn">Send a Message</a>
                 </div>
             </div>
         </div>

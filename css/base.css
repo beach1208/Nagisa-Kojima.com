@@ -309,7 +309,7 @@ footer p {
   }
 }
 
-.work-section .content .work-title {
+.work-section .content .section-title {
   width: 100%;
   margin: 0;
   font-weight: 600;
@@ -320,12 +320,12 @@ footer p {
 }
 
 @media screen and (max-width: 400px) {
-  .work-section .content .work-title {
+  .work-section .content .section-title {
     font-size: 2rem;
   }
 }
 
-.work-section .content .description {
+.work-section .content .work-description {
   padding: 1rem 0;
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
@@ -335,7 +335,7 @@ footer p {
 }
 
 @media screen and (max-width: 1024px) {
-  .work-section .content .description {
+  .work-section .content .work-description {
     margin: 0 auto;
   }
 }
@@ -343,22 +343,10 @@ footer p {
 .work-section .work-img-one {
   max-width: 420px;
   height: auto;
-  opacity: 0;
-  animation: bottomToTop 1s ease 1.3s 1 forwards;
   border: 10px solid #fff;
   -webkit-box-shadow: 3px 3px 3px #777;
   -moz-box-shadow: 3px 3px 3px #777;
   box-shadow: 3px 3px 3px #777;
-}
-
-@keyframes bottomToTop {
-  0% {
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -519,21 +507,6 @@ footer p {
 .project-page .page-btn {
   display: block;
   margin: 0 auto;
-}
-
-.project-page .btn-animation {
-  opacity: 0;
-  animation: bottomToTop 0.8s ease 2s 1 forwards;
-}
-
-@keyframes bottomToTop {
-  0% {
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .project-page #img-container {
@@ -708,9 +681,8 @@ footer p {
   }
 }
 
-.about-section .about-title {
+.about-section .section-title {
   text-align: left;
-  margin: 0;
   font-weight: 600;
   font-size: 2.2rem;
   font-family: "Merriweather", serif;
@@ -719,27 +691,14 @@ footer p {
 }
 
 @media screen and (max-width: 767px) {
-  .about-section .about-title {
+  .about-section .section-title {
     font-size: 2rem;
   }
 }
 
 .about-section p {
   word-break: break-all;
-  opacity: 0;
   text-align: left;
-  padding-top: 0.5rem;
-  animation: bottomToTop 0.8s ease 2.3s 1 forwards;
-}
-
-@keyframes bottomToTop {
-  0% {
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .about-section .flex-container {
@@ -775,11 +734,15 @@ footer p {
   }
 }
 
+.about-section .flex-container .flex-item-right p:nth-child(2) {
+  margin-bottom: 1.5rem;
+}
+
 .about-section .flex-container .flex-item-right p:nth-child(3) {
   font-weight: bold;
   font-family: "Merriweather", serif;
   color: #a26a31;
-  padding-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -806,18 +769,7 @@ footer p {
 
 .about-section .flex-container .social-icons {
   padding-left: 0;
-  opacity: 0;
-  animation: bottomToTop 0.8s ease 2.5s 1 forwards;
-}
-
-@keyframes bottomToTop {
-  0% {
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  margin: 0;
 }
 
 .about-section .flex-container .social-icons .icon-list {
@@ -835,7 +787,6 @@ footer p {
   text-align: center;
   position: relative;
   z-index: 2;
-  transition: 0.3s ease;
   display: inline-block;
   width: 150px;
   height: auto;
@@ -854,41 +805,6 @@ footer p {
   background-color: #ffffff;
   border-color: #9e466e;
   color: #9e466e;
-}
-
-.btn-class::before, .btn-class::after {
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background-color: #9e466e;
-}
-
-.btn-class::before {
-  right: 0;
-}
-
-.btn-class::after {
-  left: 0;
-}
-
-.btn-class:hover::before, .btn-class:hover::after {
-  width: 0;
-  background: #ffffff;
-}
-
-.btn-animation {
-  opacity: 0;
-  animation: bottomToTop 0.8s ease 2.8s 1 forwards;
-}
-
-@keyframes bottomToTop {
-  0% {
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* ========= Main layout ============*/
@@ -921,6 +837,11 @@ p {
   letter-spacing: 1px;
   color: #4d4b50;
   line-height: 1.5;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .top-border-rect {
