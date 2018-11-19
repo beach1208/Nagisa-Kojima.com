@@ -12,7 +12,7 @@
                     <li class="menu-list"><a href="<?php echo esc_url(home_url()); ?>/works">Works</a></li>
                 </ul>
 </nav>
-                <h1 class="single-page-title"><?php the_title(); ?></h1>
+                <h1 class="section-title single-page-title"><?php the_title(); ?></h1>
             </header>
         </div>
 
@@ -29,7 +29,7 @@
 
                         <h2>Languages and Tools</h2>
                       
-                        <p><?php the_field('langandtool'); ?></p>
+                        <p class="tool-desc"><?php the_field('langandtool'); ?></p>
                     
 
                         <h2>My Role</h2>

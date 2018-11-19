@@ -193,26 +193,12 @@ footer p {
 
 .work-section {
   background-color: #dcd0d5;
-  opacity: 0;
   position: relative;
-  animation: rightToLeftContainer 1s ease 0.5s 1 forwards;
   position: absolute;
   top: 100px;
   left: 70px;
   width: calc(100% - 140px);
   height: calc(100% - 140px);
-}
-
-@keyframes rightToLeftContainer {
-  0% {
-    transform: translateX(500px);
-    /* X軸方向に50px */
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-    /* X軸方向に0px */
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -429,6 +415,7 @@ footer p {
   font-family: "Noto Sans", sans-serif;
   color: #73496d;
   text-align: left;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -498,6 +485,10 @@ footer p {
     padding: 0;
     text-align: center;
   }
+}
+
+.project-page .summary-content .second-content .tool-desc {
+  margin-bottom: 1rem;
 }
 
 .project-page .summary-content p {

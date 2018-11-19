@@ -9,7 +9,8 @@ let aboutImg = document.getElementsByClassName("profile-img"),
 tl.from(aboutImg, 1, {
   x: -100,
   autoAlpha: 0,
-  ease: Power1.easeInOut
+  ease: Power1.easeInOut,
+  delay: 0.8
 })
   .from(
     abouttitle,
@@ -29,10 +30,32 @@ let workImg = document.getElementsByClassName("work-img-one"),
   newtl = new TimelineLite();
 
 newtl
-  .from(workImg, 1, { y: 15, autoAlpha: 0, ease: Power1.easeIn })
-  .from(workTitle, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
+
+  .from(workTitle, 0.5, {
+    y: 15,
+    autoAlpha: 0,
+    ease: Power0.easeIn,
+    delay: 0.8
+  })
   .from(workp, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
-  .from(btnworks, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15");
+  .from(btnworks, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
+  .from(workImg, 1, { y: 15, autoAlpha: 0, ease: Power1.easeIn }, "-= 0.15");
+
+let slideSec = document.getElementsByClassName("slide-section");
+sectionTween = TweenLite.fromTo(
+  slideSec,
+  1,
+  {
+    // ease: Power3.easeInOut,
+    opacity: 0,
+    scale: 0.8
+  },
+  {
+    opacity: 1,
+    scale: 1
+  }
+  // onCompleteParams: [element, 'param2']
+);
 
 jQuery(function() {
   jQuery(window).scroll(function() {
@@ -95,3 +118,74 @@ jQuery(document).ready(function($) {
     });
   }
 });
+
+var btns = document.querySelectorAll(".js-btn");
+var duration = 0.8;
+var isAnimating = false;
+
+addEventListenerList(btns, "click", function(e) {
+  if (!isAnimating) {
+    switchPages(e.currentTarget.dataset.out, e.currentTarget.dataset.in);
+  }
+});
+
+function switchPages(outFn, inFn) {
+  isAnimating = true;
+  window[outFn](document.querySelector(".is-current"));
+  window[inFn](document.querySelector(".js-page:not(.is-current)"));
+}
+
+function scaleUp(el) {
+  addClass(el, "is-current");
+  TweenLite.fromTo(
+    el,
+    duration,
+    {
+      opacity: 0,
+      scale: 0.8
+    },
+    {
+      opacity: 1,
+      scale: 1,
+      clearProps: "opacity, scale"
+    }
+  );
+}
+
+function moveToRight(el) {
+  addClass(el, ["is-onTop", "is-current"]);
+  TweenLite.fromTo(
+    el,
+    duration,
+    {
+      xPercent: 0
+    },
+    {
+      xPercent: -100,
+      clearProps: "xPercent",
+      onComplete: function() {
+        removeClass(el, ["is-onTop", "is-current"]);
+        isAnimating = false;
+      }
+    }
+  );
+}
+
+// utils
+function addClass(el, className) {
+  [].concat(className).forEach(function(n) {
+    el.classList.add(n);
+  });
+}
+
+function removeClass(el, className) {
+  [].concat(className).forEach(function(n) {
+    el.classList.remove(n);
+  });
+}
+
+function addEventListenerList(list, event, fn) {
+  for (var i = 0, len = list.length; i < len; i++) {
+    list[i].addEventListener(event, fn, false);
+  }
+}

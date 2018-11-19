@@ -7,7 +7,7 @@
          <li class="menu-list"><a href="<?php echo esc_url(home_url()); ?>/works">Works</a></li>
         </ul>
 </nav>
-        <div class="about-section">
+        <div class="about-section slide-section">
             <div class="flex-container">
 
                 <div class="flex-item-left">

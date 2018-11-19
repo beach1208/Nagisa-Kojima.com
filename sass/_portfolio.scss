@@ -9,10 +9,8 @@
 
 .work-section {
   background-color: $work-bg;
-  opacity: 0;
   position: relative;
-  animation: rightToLeftContainer 1s ease 0.5s 1 forwards;
-  @include rightToLeftContainer;
+
   @include container-size;
 
   @include min-screen($breakpTablet-max-960) {
@@ -94,9 +92,6 @@
   .work-img-one {
     max-width: 420px;
     height: auto;
-    // opacity: 0;
-    // animation: bottomToTop 1s ease 1.3s 1 forwards;
-    // @include bottomToTop(20px);
     @include image-border;
     @include max-screen($breakpPc-max-1024) {
       max-height: 500px;
@@ -164,6 +159,7 @@
     font-family: $p-font;
     color: $section-title;
     text-align: left;
+    margin-bottom: 1rem;
     @include max-screen($breakpMobileLand-max-767) {
       text-align: center;
     }
@@ -205,6 +201,9 @@
         padding: 0;
         text-align: center;
       }
+      .tool-desc {
+        margin-bottom: 1rem;
+      }
     }
 
     p {
@@ -216,12 +215,6 @@
     display: block;
     margin: 0 auto;
   }
-
-  // .btn-animation {
-  //   opacity: 0;
-  //   animation: bottomToTop 0.8s ease 2s 1 forwards;
-  //   @include bottomToTop(20px);
-  // }
 
   #img-container {
     text-align: center;
