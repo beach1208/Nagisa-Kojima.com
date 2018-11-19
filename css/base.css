@@ -980,6 +980,11 @@ p {
   font-size: 1rem;
 }
 
+.logo {
+  width: 40px;
+  height: auto;
+}
+
 .main-top {
   position: relative;
   background-color: #b78282;

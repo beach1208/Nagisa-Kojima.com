@@ -3,7 +3,7 @@
 
  <nav class="nav-bar">
      <ul class="menu">
-         <li class="menu-list"><a href="<?php echo esc_url(home_url()); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a></li>
+         <li class="menu-list"><a href="<?php echo esc_url(home_url()); ?>/"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg"></a></li>
          <li class="menu-list"><a href="<?php echo esc_url(home_url()); ?>/about">About</a></li>
          <li class="menu-list"><a href="<?php echo esc_url(home_url()); ?>/works">Works</a></li>
         </ul>
