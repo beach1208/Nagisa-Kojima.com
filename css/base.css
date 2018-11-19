@@ -498,6 +498,18 @@ footer p {
 .project-page .page-btn {
   display: block;
   margin: 0 auto;
+  opacity: 0;
+  animation: bottomToTop 1s ease 2s 1 forwards;
+}
+
+@keyframes bottomToTop {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .project-page #img-container {
@@ -726,14 +738,14 @@ footer p {
 }
 
 .about-section .flex-container .flex-item-right p:nth-child(2) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .about-section .flex-container .flex-item-right p:nth-child(3) {
   font-weight: bold;
   font-family: "Merriweather", serif;
   color: #a26a31;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -832,7 +844,7 @@ p {
 
 .section-title {
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .top-border-rect {

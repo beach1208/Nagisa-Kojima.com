@@ -57,6 +57,7 @@ sectionTween = TweenLite.fromTo(
   // onCompleteParams: [element, 'param2']
 );
 
+// scroll fade in function
 jQuery(function() {
   jQuery(window).scroll(function() {
     jQuery(".fadein").each(function() {
@@ -70,6 +71,7 @@ jQuery(function() {
   });
 });
 
+//scrollify js
 jQuery(document).ready(function($) {
   var $section = $(".scroll-section"); // 各スライド
   var $pager = $("#js-pager");
@@ -118,74 +120,3 @@ jQuery(document).ready(function($) {
     });
   }
 });
-
-var btns = document.querySelectorAll(".js-btn");
-var duration = 0.8;
-var isAnimating = false;
-
-addEventListenerList(btns, "click", function(e) {
-  if (!isAnimating) {
-    switchPages(e.currentTarget.dataset.out, e.currentTarget.dataset.in);
-  }
-});
-
-function switchPages(outFn, inFn) {
-  isAnimating = true;
-  window[outFn](document.querySelector(".is-current"));
-  window[inFn](document.querySelector(".js-page:not(.is-current)"));
-}
-
-function scaleUp(el) {
-  addClass(el, "is-current");
-  TweenLite.fromTo(
-    el,
-    duration,
-    {
-      opacity: 0,
-      scale: 0.8
-    },
-    {
-      opacity: 1,
-      scale: 1,
-      clearProps: "opacity, scale"
-    }
-  );
-}
-
-function moveToRight(el) {
-  addClass(el, ["is-onTop", "is-current"]);
-  TweenLite.fromTo(
-    el,
-    duration,
-    {
-      xPercent: 0
-    },
-    {
-      xPercent: -100,
-      clearProps: "xPercent",
-      onComplete: function() {
-        removeClass(el, ["is-onTop", "is-current"]);
-        isAnimating = false;
-      }
-    }
-  );
-}
-
-// utils
-function addClass(el, className) {
-  [].concat(className).forEach(function(n) {
-    el.classList.add(n);
-  });
-}
-
-function removeClass(el, className) {
-  [].concat(className).forEach(function(n) {
-    el.classList.remove(n);
-  });
-}
-
-function addEventListenerList(list, event, fn) {
-  for (var i = 0, len = list.length; i < len; i++) {
-    list[i].addEventListener(event, fn, false);
-  }
-}

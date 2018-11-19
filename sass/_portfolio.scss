@@ -214,6 +214,9 @@
   .page-btn {
     display: block;
     margin: 0 auto;
+    opacity: 0;
+    animation: bottomToTop 1s ease 2s 1 forwards;
+    @include bottomToTop(20px);
   }
 
   #img-container {
