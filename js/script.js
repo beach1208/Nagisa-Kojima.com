@@ -1,5 +1,6 @@
 //GSAP animationss
-window.onload = function() {
+
+document.addEventListener("DOMContentLoaded", function() {
   let slideSec = document.getElementsByClassName("slide-section");
   sectionTween = TweenLite.fromTo(
     slideSec,
@@ -66,7 +67,10 @@ window.onload = function() {
       "-= 0.15"
     )
     .from(workImg, 1, { y: 15, autoAlpha: 0, ease: Power1.easeIn }, "-= 0.15");
-};
+});
+// window.onload = function() {
+
+// };
 
 // scroll fade in function
 jQuery(function() {
