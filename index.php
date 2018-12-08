@@ -16,7 +16,7 @@
 
   <div id="main" class="main-top">
     <div class="top-title">
-      <h1 class="name-title">Nagisa Kojima</h1>
+      <h1 class="name-title">Hello, <br>I'm Nagisa Kojima.</h1>
       <p class="position-title">Front End Developer</p>
     </div>
   </div>
