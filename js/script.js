@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       opacity: 1,
+      delay: 0.5,
       scale: 1
     }
   );

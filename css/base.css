@@ -1056,3 +1056,7 @@ p {
   text-align: left;
   text-decoration: none;
 }
+
+.main-top .top-title i {
+  margin-left: 10px;
+}
