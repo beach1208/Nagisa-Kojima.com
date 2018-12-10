@@ -66,9 +66,6 @@ p {
 .main-top {
   position: relative;
   background-color: $main-pink-color;
-  opacity: 0;
-  animation: bottomToTop 1s ease-in 4s 1 forwards;
-  @include bottomToTop(30px);
   @include container-size;
 
   @include max-screen($breakpMobileLand-max-767) {
@@ -80,13 +77,11 @@ p {
     width: 80%;
 
     .name-title {
-      @include base-h1(400, 4.5rem, $white-color, 1px);
-      opacity: 0;
+      @include base-h1(400, 4rem, $white-color, 1px);
       margin: 0;
       padding: 0;
       text-align: left;
       line-height: 1.1;
-      animation: bottomToTop 0.8s ease 5s 1 forwards;
 
       @include max-screen($breakpMobileLand-max-767) {
         font-size: 2rem;
@@ -95,11 +90,18 @@ p {
     }
 
     .position-title {
-      @include base-paragraph(2.5rem, 1px, $white-color, 1.5);
+      @include base-paragraph(2rem, 1px, $white-color, 1.5);
       font-family: $main-font;
       text-align: left;
-      opacity: 0;
-      animation: bottomToTop 0.8s ease 5.5s 1 forwards;
+      margin-bottom: 3rem;
+    }
+
+    a {
+      display: block;
+      color: $white-color;
+      font-size: 1.5rem;
+      text-align: left;
+      text-decoration: none;
     }
   }
 }

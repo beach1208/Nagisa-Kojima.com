@@ -15,6 +15,45 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   );
 
+  let mainSlide = document.getElementsByClassName("main-top"),
+    helloTitle = document.getElementsByClassName("greed"),
+    nameTitle = document.getElementsByClassName("name"),
+    position = document.getElementsByClassName("position-title"),
+    checkWork = document.getElementsByClassName("check-work"),
+    mainTl = new TimelineLite();
+
+  mainTl
+    .from(mainSlide, 1, {
+      y: 50,
+      autoAlpha: 0,
+      ease: Power1.easeInOut,
+      delay: 4
+    })
+    .from(
+      helloTitle,
+      0.5,
+      { y: 15, autoAlpha: 0, ease: Power0.easeIn },
+      "-= 0.15"
+    )
+    .from(
+      nameTitle,
+      0.5,
+      { y: 15, autoAlpha: 0, ease: Power0.easeIn },
+      "-= 0.15"
+    )
+    .from(
+      position,
+      0.5,
+      { y: 15, autoAlpha: 0, ease: Power0.easeIn },
+      "-= 0.15"
+    )
+    .from(
+      checkWork,
+      0.5,
+      { y: 15, autoAlpha: 0, ease: Power0.easeIn },
+      "-= 0.15"
+    );
+
   let aboutImg = document.getElementsByClassName("profile-img"),
     abouttitle = document.getElementsByClassName("about-title"),
     p = document.getElementsByClassName("description"),
@@ -68,9 +107,6 @@ document.addEventListener("DOMContentLoaded", function() {
     )
     .from(workImg, 1, { y: 15, autoAlpha: 0, ease: Power1.easeIn }, "-= 0.15");
 });
-// window.onload = function() {
-
-// };
 
 // scroll fade in function
 jQuery(function() {
