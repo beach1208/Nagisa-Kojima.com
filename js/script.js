@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
     p = document.getElementsByClassName("description"),
     skills = document.getElementsByClassName("skill-description"),
     snsIcons = document.getElementsByClassName("social-icons"),
-    btn = document.getElementsByClassName("message-btn"),
+    btn = document.getElementsByClassName("msg-btn"),
     tl = new TimelineLite();
 
   tl.from(aboutImg, 1, {

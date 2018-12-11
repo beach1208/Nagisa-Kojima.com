@@ -27,7 +27,9 @@ $count++;
                 <div class="content">
                     <h1 class="section-title work-title"><?php the_title(); ?></h1>
                     <p class="work-description"><?php the_field('workspagesummary'); ?></p>
-                   <a href="<?php the_permalink(); ?>" class="btn-class work-btn">More Details</a>
+                    <div class="btn-class work-btn">
+                    <a href="<?php the_permalink(); ?>">More Details</a>
+                    </div>
                 </div>
             </div>
 

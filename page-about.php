@@ -26,7 +26,10 @@
                             <li class="icon-list"><a href="https://www.linkedin.com/in/nagisa-kojima-703209144/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                             <li class="icon-list"><a href="https://www.instagram.com/nagisa_design/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                         </ul>
-                        <a href="mailto:nk.bg.1208@gmail.com" class="btn-class message-btn">Send a Message</a>
+                        <div class="btn-class msg-btn">
+                        <a href="mailto:nk.bg.1208@gmail.com">Send a Message</a>
+                        </div>
+                        
                 </div>
             </div>
         </div>
