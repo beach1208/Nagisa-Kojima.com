@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       opacity: 1,
-      delay: 0.5,
       scale: 1
     }
   );
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
     x: -100,
     autoAlpha: 0,
     ease: Power1.easeInOut,
-    delay: 0.8
+    delay: 1
   })
     .from(
       abouttitle,
@@ -97,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
       y: 15,
       autoAlpha: 0,
       ease: Power0.easeIn,
-      delay: 0.8
+      delay: 1
     })
     .from(workp, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
     .from(

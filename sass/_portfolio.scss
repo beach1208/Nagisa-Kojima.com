@@ -73,7 +73,7 @@
     .section-title {
       width: 100%;
       margin: 0;
-      @include base-h1(600, 2.5rem, $section-title, 3px);
+      @include base-h1(600, 2.5rem, $sub-font, $section-title, 3px);
 
       @include max-screen($breakp-mobile-mid-400) {
         font-size: 2rem;
@@ -140,7 +140,7 @@
 
     .single-page-title {
       width: 100%;
-      @include base-h1(600, 3.5rem, $section-title, 3px);
+      @include base-h1(600, 3.5rem, $sub-font, $section-title, 3px);
       @include header-vertical-center;
 
       @include max-screen($breakpMobileLand-max-767) {

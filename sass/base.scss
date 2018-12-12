@@ -77,7 +77,7 @@ p {
     width: 80%;
 
     .name-title {
-      @include base-h1(400, 4rem, $white-color, 1px);
+      @include base-h1(400, 4rem, $main-font, $white-color, 1px);
       margin: 0;
       padding: 0;
       text-align: left;
@@ -94,12 +94,17 @@ p {
       font-family: $main-font;
       text-align: left;
       margin-bottom: 3rem;
+
+      @include max-screen($breakpMobileLand-max-767) {
+        font-size: 1.5rem;
+      }
     }
 
     a {
       display: block;
       color: $white-color;
-      font-size: 1.5rem;
+      font-size: 1rem;
+      font-family: $p-font;
       text-align: left;
       text-decoration: none;
     }
