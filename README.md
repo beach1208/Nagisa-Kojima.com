@@ -17,7 +17,7 @@ For More Details ? => http://nagisa-kojima.com
 
 ## Design
 
-My design step.
+My design steps.
 
 ### 1.Research and Planning. - Who are target users?
 
@@ -30,7 +30,7 @@ My design step.
 
 ### 3. Wireframing
 
-- I usually use a software either Adobe XD or Sketch for wireframing.
+- I like to use a software either Adobe XD or Sketch for wireframing.
 
 ### 4. Design
 
@@ -44,3 +44,7 @@ My design step.
 - Modify my design depending on feedback.
 
 ## Development
+
+### SASS & Gulp
+
+I used SASS as a CSS processor and Gulp as a task runner. It helped me a lot to code stylesheet much faster and I easily could make reuseable variables and Mixins.
