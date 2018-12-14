@@ -4,7 +4,7 @@ This is my portfolio website that I designed and developed with front end develo
 
 For More Details ? => http://nagisa-kojima.com
 
-## Major Skills for development
+## Major skills for development
 
 - HTML5
 - CSS3/SCSS
@@ -48,3 +48,19 @@ My design steps.
 ### SASS & Gulp
 
 I used SASS as a CSS processor and Gulp as a task runner. It helped me a lot to code stylesheet much faster and I easily could make reuseable variables and Mixins.
+
+### Scrollify.js
+I picked Scrollify.js for making smooth full page scroll sections. It's implemented at Works page.
+
+### GSAP
+In a first phase of development, I added some animations to pages with CSS animation. It was good learnings and I loved it. However, GSAP is fast and easy to maintain my codes. In every page, I added some animations with GSAP.
+
+### Wordpress
+I developed this website as a static website at first. Then I learned about Wordpress. I divided all html files to php files for Wordpress theme development. 
+It made the website dynamic and easily maintainable.
+
+## The more things To Do
+* Add animation with React.js or Vue.js instead of JQuery.
+* Add Loading icons.
+* Optimize SEO.
+
