@@ -1,5 +1,6 @@
-
-![logo-image](./img/logo.svg)
+<!-- 
+![logo-image](./img/logo.svg = 250x250) -->
+<img src=./img/logo.svg width=200>
 
 # Nagisa Kojima Portfolio
 
