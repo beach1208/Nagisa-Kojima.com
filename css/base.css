@@ -60,20 +60,6 @@
   border-bottom: 2px solid #c7a9a9;
 }
 
-.first-page-nav {
-  opacity: 0;
-  animation: nav-animation 0.3s ease-in 3.5s 1 forwards;
-}
-
-@keyframes nav-animation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /*====Footer====*/
 footer {
   height: 40px;
@@ -148,20 +134,6 @@ footer p {
 .nav-bar .menu a:active {
   color: #4d4b50;
   border-bottom: 2px solid #c7a9a9;
-}
-
-.first-page-nav {
-  opacity: 0;
-  animation: nav-animation 0.3s ease-in 3.5s 1 forwards;
-}
-
-@keyframes nav-animation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /*====Footer====*/
@@ -617,20 +589,6 @@ footer p {
   border-bottom: 2px solid #c7a9a9;
 }
 
-.first-page-nav {
-  opacity: 0;
-  animation: nav-animation 0.3s ease-in 3.5s 1 forwards;
-}
-
-@keyframes nav-animation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 /*====Footer====*/
 footer {
   height: 40px;
@@ -930,19 +888,19 @@ p {
 }
 
 .top-border-rect .btn__box:before {
-  animation: leftAnim 1s linear 1.5s forwards;
+  animation: leftAnim .8s linear 1.5s forwards;
 }
 
 .top-border-rect .btn__box:after {
-  animation: bottomAnim 1s linear 2s forwards;
+  animation: bottomAnim .8s linear 2s forwards;
 }
 
 .top-border-rect .btn__box a:before {
-  animation: rightAnim 1s linear 0.5s forwards;
+  animation: rightAnim .8s linear 0.5s forwards;
 }
 
 .top-border-rect .btn__box a:after {
-  animation: topAnim 1s linear 1s forwards;
+  animation: topAnim .8s linear 1s forwards;
 }
 
 @keyframes topAnim {
@@ -1026,6 +984,7 @@ p {
 }
 
 .main-top .top-title {
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1033,7 +992,6 @@ p {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 80%;
 }
 
 .main-top .top-title .name-title {

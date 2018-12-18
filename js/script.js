@@ -1,25 +1,5 @@
 //GSAP animationss
-
-document.addEventListener("DOMContentLoaded", function() {
-  //slides animation
-  let slideSec = document.getElementsByClassName("slide-section");
-  sectionTween = TweenLite.fromTo(slideSec,1,{opacity: 0,scale: 0.8},{opacity: 1,scale: 1});
-
-  //top page
-  let mainSlide = document.getElementsByClassName("main-top"),
-    helloTitle = document.getElementsByClassName("greed"),
-    nameTitle = document.getElementsByClassName("name"),
-    position = document.getElementsByClassName("position-title"),
-    checkWork = document.getElementsByClassName("check-work"),
-    mainTl = new TimelineLite();
-
-    mainTl.from(mainSlide, 1, { y: 50,autoAlpha: 0,ease: Power1.easeInOut,delay: 4})
-    .from(helloTitle,0.5,{y: 15, autoAlpha: 0, ease: Power0.easeIn}, "-= 0.15")
-    .from(nameTitle,0.5,{ y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
-    .from(position,0.5,{ y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
-    .from(checkWork,0.5,{ y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15");
-
-  //About page
+    //About page
   let aboutImg = document.getElementsByClassName("profile-img"),
     abouttitle = document.getElementsByClassName("about-title"),
     p = document.getElementsByClassName("description"),
@@ -27,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     snsIcons = document.getElementsByClassName("social-icons"),
     btn = document.getElementsByClassName("msg-btn"),
     tl = new TimelineLite();
-    
+
     tl.from(aboutImg, 1, { x: -100,autoAlpha: 0,ease: Power1.easeInOut,delay: 1})
     .from(abouttitle,0.5,{ y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
     .from(p, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn },  "-= 0.15")
@@ -35,18 +15,37 @@ document.addEventListener("DOMContentLoaded", function() {
     .from(snsIcons,0.5,{ y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
     .from(btn, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15");
 
-  //work page
-  let workImg = document.getElementsByClassName("work-img-one"),
+     //work page
+     let workImg = document.getElementsByClassName("work-img-one"),
     workTitle = document.getElementsByClassName("work-title"),
     workp = document.getElementsByClassName("work-description"),
     btnworks = document.getElementsByClassName("work-btn"),
     newtl = new TimelineLite();
-    
     newtl.from(workTitle, 0.5, { y: 15,autoAlpha: 0,ease: Power0.easeIn,delay: 1})
     .from(workp, 0.5, { y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
     .from(btnworks,0.5,{ y: 15, autoAlpha: 0, ease: Power0.easeIn },"-= 0.15")
     .from(workImg, 1, { y: 15, autoAlpha: 0, ease: Power1.easeIn }, "-= 0.15");
-});
+
+    //slide animation 
+
+    let slideSec = document.getElementsByClassName("slide-section");
+    sectionTween = TweenLite.fromTo(slideSec,1,{opacity: 0,scale: 0.8},{opacity: 1,scale: 1});
+
+  //top page
+  let mainNav = document.getElementsByClassName("first-page-nav");
+    mainSlide = document.getElementsByClassName("main-top"),
+    helloTitle = document.getElementsByClassName("greed"),
+    nameTitle = document.getElementsByClassName("name"),
+    position = document.getElementsByClassName("position-title"),
+    checkWork = document.getElementsByClassName("check-work"),
+    mainTl = new TimelineLite();
+
+    mainTl.from(mainNav, 1, { y: 15,autoAlpha: 0,ease: Power1.easeInOut,delay: 3.5})
+    .from(mainSlide, 1, { y: 50,autoAlpha: 0,ease: Power1.easeInOut},"-= 0.15")
+    .from(helloTitle,0.5,{y: 15, autoAlpha: 0, ease: Power0.easeIn}, "-= 0.15")
+    .from(nameTitle,0.5,{ y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
+    .from(position,0.5,{ y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15")
+    .from(checkWork,0.5,{ y: 15, autoAlpha: 0, ease: Power0.easeIn }, "-= 0.15");
 
 // scroll fade in single works page
 jQuery(function() {

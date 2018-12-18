@@ -1,6 +1,6 @@
 </div>
-<script>
-</script>
+  <!-- <?php wp_head(); ?> -->
 <?php wp_footer(); ?>
+
 </body>
 </html>

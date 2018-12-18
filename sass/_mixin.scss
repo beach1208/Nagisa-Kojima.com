@@ -117,13 +117,11 @@
   @keyframes leftToRight {
     0% {
       transform: translateX(-100px);
-      /* X軸方向に50px */
     }
 
     100% {
       opacity: 1;
       transform: translateX(0);
-      /* X軸方向に0px */
     }
   }
 }
@@ -132,13 +130,11 @@
   @keyframes leftToRightContainer {
     0% {
       transform: translateX(-500px);
-      /* X軸方向に50px */
     }
 
     100% {
       opacity: 1;
       transform: translateX(0);
-      /* X軸方向に0px */
     }
   }
 }
@@ -147,13 +143,11 @@
   @keyframes RightToLeft {
     0% {
       transform: translateX(500px);
-      /* X軸方向に50px */
     }
 
     100% {
       opacity: 1;
       transform: translateX(0);
-      /* X軸方向に0px */
     }
   }
 }
@@ -162,13 +156,11 @@
   @keyframes rightToLeftContainer {
     0% {
       transform: translateX(500px);
-      /* X軸方向に50px */
     }
 
     100% {
       opacity: 1;
       transform: translateX(0);
-      /* X軸方向に0px */
     }
   }
 }
@@ -225,16 +217,16 @@
 
   /* animation */
   .btn__box:before {
-    animation: leftAnim 1s linear 1.5s forwards;
+    animation: leftAnim .8s linear 1.5s forwards;
   }
   .btn__box:after {
-    animation: bottomAnim 1s linear 2s forwards;
+    animation: bottomAnim .8s linear 2s forwards;
   }
   .btn__box a:before {
-    animation: rightAnim 1s linear 0.5s forwards;
+    animation: rightAnim .8s linear 0.5s forwards;
   }
   .btn__box a:after {
-    animation: topAnim 1s linear 1s forwards;
+    animation: topAnim .8s linear 1s forwards;
   }
 
   /* animation*/

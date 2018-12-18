@@ -66,6 +66,8 @@ p {
 .main-top {
   position: relative;
   background-color: $main-pink-color;
+  // opacity: 0;	
+  // animation: bottomToTop 1s ease-in 4s 1 forwards;
   @include container-size;
 
   @include max-screen($breakpMobileLand-max-767) {
@@ -73,8 +75,8 @@ p {
   }
 
   .top-title {
-    @include header-vertical-center;
     width: 80%;
+    @include header-vertical-center;
 
     .name-title {
       @include base-h1(400, 4rem, $main-font, $white-color, 1px);
@@ -82,6 +84,8 @@ p {
       padding: 0;
       text-align: left;
       line-height: 1.1;
+      // opacity: 0;
+      // animation: bottomToTop 1s ease 5s 1 forwards;
 
       @include max-screen($breakpMobileLand-max-767) {
         font-size: 2rem;
@@ -94,6 +98,8 @@ p {
       font-family: $main-font;
       text-align: left;
       margin-bottom: 3rem;
+      // opacity: 0;
+      // animation: bottomToTop 1s ease 5.2s 1 forwards;
 
       @include max-screen($breakpMobileLand-max-767) {
         font-size: 1.5rem;
@@ -107,6 +113,8 @@ p {
       font-family: $p-font;
       text-align: left;
       text-decoration: none;
+      // opacity: 0;
+      // animation: bottomToTop 1s ease 5.4s 1 forwards;
     }
 
     i {
