@@ -163,6 +163,30 @@ footer p {
   position: relative;
 }
 
+.scroll-section.is-show .flex-container {
+  opacity: 1;
+}
+
+.scroll-section.is-show .flex-container .work-img-one {
+  opacity: 0;
+  animation: bottomToTop .6s ease-in-out .5s 1 forwards;
+}
+
+.scroll-section.is-show .flex-container .section-title {
+  opacity: 0;
+  animation: bottomToTop .6s ease-in-out .9s 1 forwards;
+}
+
+.scroll-section.is-show .flex-container .work-description {
+  opacity: 0;
+  animation: bottomToTop .6s ease-in-out 1s 1 forwards;
+}
+
+.scroll-section.is-show .flex-container .work-btn {
+  opacity: 0;
+  animation: bottomToTop .6s ease-in-out 1.2s 1 forwards;
+}
+
 .work-section {
   background-color: #dcd0d5;
   position: relative;
@@ -196,6 +220,7 @@ footer p {
 .work-section .flex-container {
   display: flex;
   width: 100%;
+  opacity: 0;
 }
 
 @media screen and (max-width: 1024px) {

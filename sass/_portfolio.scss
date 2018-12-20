@@ -5,6 +5,29 @@
 
 .scroll-section {
   position: relative;
+
+//onScroll animation in works section
+  &.is-show {
+    .flex-container {
+      opacity: 1;
+      .work-img-one {
+        opacity: 0;	
+        animation: bottomToTop .6s ease-in-out .5s 1 forwards;
+      }
+      .section-title{
+        opacity: 0;	
+        animation: bottomToTop .6s ease-in-out .9s 1 forwards;
+      }
+      .work-description{
+        opacity: 0;	
+        animation: bottomToTop .6s ease-in-out 1s 1 forwards;
+      }
+      .work-btn {
+        opacity: 0;	
+        animation: bottomToTop .6s ease-in-out 1.2s 1 forwards;
+      }
+    }
+  }
 }
 
 .work-section {
@@ -24,6 +47,7 @@
   .flex-container {
     display: flex;
     width: 100%;
+    opacity: 0;
 
     @include max-screen($breakpPc-max-1024) {
       flex-direction: column;

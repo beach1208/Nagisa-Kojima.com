@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     tl = new TimelineLite();
 
-    tl.from(aboutImg, 1, { x: -100,opacity: 0,ease: Power1.easeInOut,delay: 1})
-    .from(abouttitle,0.5,{ y: 15, opacity: 0, ease: Power0.easeIn }, "-= 0.15")
-    .from(p, 0.5, { y: 15, opacity: 0, ease: Power0.easeIn },  "-= 0.15")
-    .from(skills, 0.5, { y: 15, opacity: 0, ease: Power0.easeIn }, "-= 0.15")
-    .from(snsIcons,0.5,{ y: 15, opacity: 0, ease: Power0.easeIn }, "-= 0.15")
-    .from(btn, 0.5, { y: 15, opacity: 0, ease: Power0.easeIn }, "-= 0.15");
+    tl.from(aboutImg, 0.9, { x: -100,opacity: 0,ease: Power1.easeInOut,delay: 1})
+    .from(abouttitle,0.4,{ y: 15, opacity: 0, ease: Power0.easeInOut }, "-= 0.1")
+    .from(p, 0.4, { y: 15, opacity: 0, ease: Power0.easeInOut },  "-= 0.1")
+    .from(skills, 0.4, { y: 15, opacity: 0, ease: Power0.easeInOut }, "-= 0.1")
+    .from(snsIcons,0.4,{ y: 15, opacity: 0, ease: Power0.easeInOut }, "-= 0.1")
+    .from(btn, 0.4, { y: 15, opacity: 0, ease: Power0.easeInOut }, "-= 0.1");
 
     //slide animation 
 
@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
     sectionTween = TweenLite.set(".main-top",{visibility:"visible"});
     mainTl.from(mainNav, 1, { y: 15,opacity: 0,ease: Power1.easeInOut,delay: 3.5})
     .from(mainSlide, 1, { y: 50,opacity: 0,ease: Power1.easeInOut},"-= 0.15")
-    .from(helloTitle,0.5,{y: 15, opacity: 0, ease: Power0.easeIn}, "-= 0.15")
-    .from(nameTitle,0.5,{ y: 15, opacity: 0, ease: Power0.easeIn }, "-= 0.15")
-    .from(position,0.5,{ y: 15, opacity: 0, ease: Power0.easeIn }, "-= 0.15")
-    .from(checkWork,0.5,{ y: 15, opacity: 0, ease: Power0.easeIn }, "-= 0.15");
+    .from(helloTitle,0.5,{y: 15, opacity: 0, ease: Power0.easeInOut}, "-= 0.15")
+    .from(nameTitle,0.5,{ y: 15, opacity: 0, ease: Power0.easeInOut }, "-= 0.15")
+    .from(position,0.5,{ y: 15, opacity: 0, ease: Power0.easeInOut }, "-= 0.15")
+    .from(checkWork,0.5,{ y: 15, opacity: 0, ease: Power0.easeInOut }, "-= 0.15");
 
    
 // scroll fade in single works page
@@ -58,6 +58,10 @@ jQuery(function() {
   });
 });
 
+
+//methods
+
+
 //scrollify js
 jQuery(document).ready(function($) {
   var $section = $(".scroll-section");
@@ -69,13 +73,14 @@ jQuery(document).ready(function($) {
     easing: "swing",
     scrollSpeed: 600,
     scrollbars: true,
-    before: function(index) {
+    before: function(index,section) {
       setCurrent(index);
       pagerCurrent(index);
     },
     afterRender: function() {
       createPager();
       setCurrent();
+      
     }
   };
 
@@ -88,18 +93,25 @@ jQuery(document).ready(function($) {
   // ------------------------------
 
   //work
+//     let workImg = document.getElementsByClassName("work-img-one"),
+//     workTitle = document.getElementsByClassName("work-title"),
+//     workdetail = document.getElementsByClassName("work-description"),
+//     btnworks = document.getElementsByClassName("work-btn");
 
-function setCurrent(index = 0){
-  let workImg = document.getElementsByClassName("work-img-one"),
-    workTitle = document.getElementsByClassName("work-title"),
-    workp = document.getElementsByClassName("work-description"),
-    btnworks = document.getElementsByClassName("work-btn"),
-    newtl = new TimelineLite();
-    newtl.from(workImg, 0.5, { y: 15, opacity: 0, ease: Power1.easeInOut,delay:0.8 })
-    .from(workTitle, 0.5, { y: 15, opacity: 0, ease: Power0.easeIn }, "-= 0.15")
-    .from(workp, 0.5, { y: 15, opacity: 0, ease: Power0.easeIn }, "-= 0.15")
-    .from(btnworks,0.5,{ y: 15, opacity: 0, ease: Power0.easeIn },"-= 0.15")
+// function beforeCurrent(){
+//     let newtl = new TimelineLite();
+//     newtl.from(workImg, 0.5, { y: 15, opacity: 0, ease: Power1.easeInOut,delay:0.8,clearProps: 'all'})
+//     .from(workTitle, 0.5, { y: 15, opacity: 0, ease: Power0.easeIn,clearProps: 'all'}, "-= 0.15")
+//     .from(workdetail, 0.5, { y: 15, opacity: 0, ease: Power0.easeIn ,clearProps: 'all'}, "-= 0.15")
+//     .from(btnworks,0.5,{ y: 15, opacity: 0, ease: Power0.easeIn ,clearProps: 'all'},"-= 0.15")
+// }
+
+function setCurrent(index = 0) {
+  $section.removeClass('is-show');
+  $section.eq(index).addClass('is-show');
 }
+
+
 
   function pagerCurrent(index = 0) {
     var $li = $pager.find("li");
