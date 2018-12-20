@@ -817,6 +817,10 @@ p {
   line-height: 1.5;
 }
 
+.slide-section {
+  visibility: hidden;
+}
+
 .section-title {
   margin: 0;
   margin-bottom: 0.5rem;
@@ -961,6 +965,7 @@ p {
 }
 
 .main-top {
+  visibility: hidden;
   position: relative;
   background-color: #b78282;
   position: absolute;

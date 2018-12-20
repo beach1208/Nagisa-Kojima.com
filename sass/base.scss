@@ -30,6 +30,10 @@ p {
   @include base-paragraph(1rem, 1px, $main-text-color, 1.5);
 }
 
+.slide-section {
+    visibility: hidden;
+}
+
 .section-title {
   margin: 0;
   margin-bottom: 0.5rem;
@@ -64,6 +68,7 @@ p {
 }
 
 .main-top {
+  visibility: hidden;
   position: relative;
   background-color: $main-pink-color;
   // opacity: 0;	

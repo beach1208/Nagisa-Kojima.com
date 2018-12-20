@@ -62,6 +62,7 @@
     text-align: left;
     width: 60%;
     margin: 0 auto;
+
     @include max-screen($breakpPc-max-1024) {
       width: 100%;
       text-align: center;
