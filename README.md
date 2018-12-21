@@ -1,5 +1,4 @@
-<!-- 
-![logo-image](./img/logo.svg = 250x250) -->
+
 <img src=./img/logo.svg width=200>
 
 # Nagisa Kojima Portfolio
@@ -39,12 +38,12 @@ My design steps.
 ### 4. Design
 
 - Put my ideas and inspirations all together.
-- Pay attention to Font-family, Font-size, colors and shapes.
+- Pay attention to Font family, Font size, colors and shapes.
 - In this website, I designed a logo by using illustrator.
 
 ### 5. Design Review
 
-- I usually ask designers to get feedback.
+- I usually ask other designers to get feedback.
 - Modify my design depending on feedback.
 
 ## Development
@@ -57,7 +56,7 @@ I used SASS as a CSS processor and Gulp as a task runner. It helped me a lot to 
 I picked Scrollify.js for making smooth full page scroll sections. It's implemented at Works page.
 
 ### GSAP
-In a first phase of development, I added some animations to pages with CSS animation. It was good learnings and I loved it. However, GSAP is fast and easy to maintain my codes. In every page, I added some animations with GSAP.
+In a first phase of development, I used CSS animations to add motions in pages. In addition to it,I learned that GSAP was fast and easy to maintain my codes. So I added some animations with GSAP as well.
 
 ### Wordpress
 I developed this website as a static website at first. Then I learned about Wordpress. I divided all html files to php files for Wordpress theme development. 
