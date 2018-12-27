@@ -21,7 +21,7 @@ $count++;
 ?>
 
 <div id="fullpage">
-<section class="section scroll-section" data-section-name="section<?php echo $count ?>">
+<section class="scroll-section" data-section-name="section<?php echo $count ?>">
     <div class="work-section slide-section" >
         <div class="flex-container">
             <div class="flex-item-left">

@@ -16,6 +16,7 @@ For More Details ? => http://nagisa-kojima.com
 - [Scrollify.js](https://github.com/lukehaas/scrollify)
 - [GSAP](https://greensock.com/gsap)
 - Gulp
+- Git
 - Wordpress
 
 ## Design

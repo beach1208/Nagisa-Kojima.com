@@ -73,7 +73,7 @@ jQuery(document).ready(function($) {
     easing: "swing",
     scrollSpeed: 600,
     scrollbars: true,
-    before: function(index,section) {
+    before: function(index) {
       setCurrent(index);
       pagerCurrent(index);
     },
@@ -92,26 +92,10 @@ jQuery(document).ready(function($) {
   // page functions
   // ------------------------------
 
-  //work
-//     let workImg = document.getElementsByClassName("work-img-one"),
-//     workTitle = document.getElementsByClassName("work-title"),
-//     workdetail = document.getElementsByClassName("work-description"),
-//     btnworks = document.getElementsByClassName("work-btn");
-
-// function beforeCurrent(){
-//     let newtl = new TimelineLite();
-//     newtl.from(workImg, 0.5, { y: 15, opacity: 0, ease: Power1.easeInOut,delay:0.8,clearProps: 'all'})
-//     .from(workTitle, 0.5, { y: 15, opacity: 0, ease: Power0.easeIn,clearProps: 'all'}, "-= 0.15")
-//     .from(workdetail, 0.5, { y: 15, opacity: 0, ease: Power0.easeIn ,clearProps: 'all'}, "-= 0.15")
-//     .from(btnworks,0.5,{ y: 15, opacity: 0, ease: Power0.easeIn ,clearProps: 'all'},"-= 0.15")
-// }
-
 function setCurrent(index = 0) {
   $section.removeClass('is-show');
   $section.eq(index).addClass('is-show');
 }
-
-
 
   function pagerCurrent(index = 0) {
     var $li = $pager.find("li");
@@ -126,7 +110,6 @@ function setCurrent(index = 0) {
       if (i === 0) {
         addClass = "is-current";
       }
-
       var html = "";
       html += '<li class="' + addClass + '">';
       html += '<a href="#' + sectionName + '"></a>';
