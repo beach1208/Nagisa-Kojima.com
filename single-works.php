@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="btn-class">
-                <a href="<?php the_field('url'); ?>" class="page-btn">Visit WebSite</a>
+                <a href="<?php the_field('url'); ?>" class="page-btn" target="_blank">Visit WebSite</a>
                 </div>
                 <div id="img-container">
                     <img class="fadein" src="<?php the_field('works-img'); ?>" alt="portfolio-work">

@@ -40,7 +40,7 @@ My design steps.
 
 - Put my ideas and inspirations all together.
 - Pay attention to Font family, Font size, colors and shapes.
-- In this website, I designed a logo by using illustrator.
+- Designed a logo by using illustrator.
 
 ### 5. Design Review
 
