@@ -71,8 +71,9 @@ jQuery(document).ready(function($) {
   var option = {
     section: ".scroll-section",
     easing: "swing",
-    scrollSpeed: 600,
+    scrollSpeed: 900,
     scrollbars: true,
+    touchScroll:false,
     before: function(index) {
       setCurrent(index);
       pagerCurrent(index);

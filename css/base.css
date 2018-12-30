@@ -535,6 +535,7 @@ footer p {
   left: 0;
   transform: translateY(-50%);
   padding: 0;
+  z-index: 100;
 }
 
 .pager li {
@@ -772,6 +773,7 @@ footer p {
 .btn-class a {
   margin-top: 1rem;
   text-align: center;
+  letter-spacing: 1px;
   position: relative;
   overflow: hidden;
   transition: color 0.5s ease 0s;
@@ -841,6 +843,7 @@ p {
   letter-spacing: 1px;
   color: #4d4b50;
   line-height: 1.5;
+  font-weight: 400;
 }
 
 .slide-section {

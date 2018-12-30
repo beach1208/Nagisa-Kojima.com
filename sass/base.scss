@@ -29,6 +29,7 @@ visited {
 
 p {
   @include base-paragraph(1rem, 1px, $main-text-color, 1.5);
+  font-weight: 400;
 }
 
 .slide-section {
@@ -72,8 +73,6 @@ p {
   visibility: hidden;
   position: relative;
   background-color: $main-pink-color;
-  // opacity: 0;	
-  // animation: bottomToTop 1s ease-in 4s 1 forwards;
   @include container-size;
 
   @include max-screen($breakpMobileLand-max-767) {
