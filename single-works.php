@@ -53,7 +53,7 @@
 
 
         <footer>
-            <p>Nagisa Kojima</p>
+            <p>Created by <i class="fas fa-heart"></i> Nagisa Kojima</p>
         </footer>
 
     </div>
