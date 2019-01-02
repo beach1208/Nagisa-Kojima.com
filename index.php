@@ -18,7 +18,7 @@
     <div class="top-title">
       <h1 class="name-title"><span class="greed">Hello,</span> <br><span class="name">I'm Nagisa Kojima.</span></h1>
       <p class="position-title">Front End Developer</p>
-      <a href="<?php echo esc_url(home_url()); ?>/works" class="check-work">Check My Works<i class="far fa-hand-point-right"></i></a></li>
+      <a href="<?php echo esc_url(home_url()); ?>/works" class="check-work">Check My Works<i class="fas fa-angle-double-right"></i></a></li>
     </div>
   </div>
 

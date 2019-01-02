@@ -88,7 +88,7 @@ p {
       margin: 0;
       padding: 0;
       text-align: left;
-      line-height: 1.3;
+      line-height: 1.1;
 
       @include max-screen($breakpMobileLand-max-767) {
         font-size: 8vw;
@@ -123,6 +123,15 @@ p {
 
     i {
       margin-left: 10px;
+
+      &:hover {
+        animation: anime 0.3s alternate infinite;
+        @keyframes anime {
+          0% {transform: translateX(0px);}
+          100% {transform: translateX(10px);}
+          }
+      }
     }
+
   }
 }
