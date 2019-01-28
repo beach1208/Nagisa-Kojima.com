@@ -45,7 +45,7 @@ p {
   @include header-vertical-center;
   @include border-box-anim;
   @include top-box-style;
-  animation: border-box-anim 0.8s ease 3s 1 forwards;
+  animation: border-box-anim 0.5s ease 3s 1 forwards;
 
   .btn__box {
     position: relative;

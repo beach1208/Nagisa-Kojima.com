@@ -5,7 +5,7 @@
 
 This is my portfolio website that I designed and developed with front end development skills.
 
-For More Details ? => http://nagisa-kojima.com
+For More Details ? => <a href="http://nagisa-kojima.com" target="_blank">Portfolio</a>
 
 ## Major skills for development
 
