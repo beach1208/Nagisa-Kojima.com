@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 
+  <!-- =========== navigation bar=================-->
 <nav class="nav-bar first-page-nav">
      <ul id='main-nav' class="menu">
          <li class="menu-list"><a href="<?php echo esc_url(home_url()); ?>/"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg"></a></li>
@@ -7,7 +8,7 @@
          <li class="menu-list"><a href="<?php echo esc_url(home_url()); ?>/works">Works</a></li>
         </ul>
 </nav>
-  <!-- =========== navigation bar=================-->
+
   <div class="top-border-rect">
     <p class="btn__box">
       <a href="#"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg"></a></a>

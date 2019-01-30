@@ -60,7 +60,7 @@
 }
 
 .first-page-nav {
-  opacity: 0;
+  visibility: hidden;
 }
 
 /*====Footer====*/
@@ -140,7 +140,7 @@ footer p {
 }
 
 .first-page-nav {
-  opacity: 0;
+  visibility: hidden;
 }
 
 /*====Footer====*/
@@ -624,7 +624,7 @@ footer p {
 }
 
 .first-page-nav {
-  opacity: 0;
+  visibility: hidden;
 }
 
 /*====Footer====*/
@@ -752,8 +752,8 @@ footer p {
 }
 
 .about-section .flex-container .flex-item-left .profile-img {
-  width: auto;
-  height: 400px;
+  max-width: 300px;
+  height: auto;
   border: 10px solid #fff;
   -webkit-box-shadow: 3px 3px 3px #777;
   -moz-box-shadow: 3px 3px 3px #777;

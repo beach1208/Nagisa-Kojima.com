@@ -72,8 +72,8 @@
       }
 
       .profile-img {
-        width: auto;
-        height: 400px;
+        max-width: 300px;
+        height: auto;
         @include image-border;
 
         @include max-screen($breakpPc-max-1024) {

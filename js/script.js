@@ -34,9 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
     position = document.getElementsByClassName("position-title"),
     checkWork = document.getElementsByClassName("check-work"),
     mainTl = new TimelineLite();
+    navVisible = TweenLite.set(mainNav,{visibility: "visible"});
   
     
-    mainTl.fromTo(mainNav, 1, { opacity: 0},{y: -10,opacity:1,ease: Power1.easeInOut,delay: 3.5})
+    mainTl.fromTo(mainNav, 1, { opacity: 0},{y: -10, opacity:1, ease: Power1.easeInOut, delay: 3.5})
     .from(mainSlide, 1, { y: 50, opacity: 0,ease: Power1.easeInOut},"-= 0.15")
     .from(helloTitle,0.5,{y: 15, opacity: 0, ease: Power0.easeInOut}, "-= 0.15")
     .from(nameTitle,0.5,{ y: 15, opacity: 0, ease: Power0.easeInOut }, "-= 0.15")

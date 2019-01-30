@@ -20,7 +20,7 @@ query_posts(array(
 $count++;
 ?>
 
-<div id="fullpage">
+
 <section class="scroll-section" data-section-name="section<?php echo $count ?>">
     <div class="work-section slide-section" >
         <div class="flex-container">
@@ -40,7 +40,7 @@ $count++;
         </div>
     </div>
 </section>
-</div>
+
 
 <ul class="pager" id="js-pager"></ul>
 
