@@ -13,7 +13,6 @@
 
   @include max-screen($breakpMobileLand-max-767) {
     position: relative;
-    // height: 100%;
     overflow-y: scroll;
   }
 
@@ -27,7 +26,6 @@
   }
 
   p {
-    word-break: break-all;
     text-align: left;
   }
 
