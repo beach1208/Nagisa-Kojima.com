@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
     easing: "swing",
     scrollSpeed: 900,
     scrollbars: true,
-    touchScroll:false,
+    touchScroll: true,
     before: function(index) {
       setCurrent(index);
       pagerCurrent(index);

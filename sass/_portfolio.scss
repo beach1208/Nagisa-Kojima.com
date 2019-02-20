@@ -58,6 +58,9 @@
 
     .flex-item-left {
       width: 50%;
+      display: flex;
+      align-items: center;
+
       @include max-screen($breakpPc-max-1024) {
         margin: 0 auto;
         order: 2;
@@ -115,18 +118,9 @@
   }
 
   .work-img-one {
-    max-width: 420px;
+    width: 70%;
     height: auto;
     @include image-border;
-    @include max-screen($breakpPc-max-1024) {
-      max-height: 500px;
-    }
-    @include max-screen($breakpMobileLand-max-767) {
-      max-width: 300px;
-    }
-    @include max-screen($breakp-mobile-min-320) {
-      max-width: 250px;
-    }
   }
 
   .btn-class {
