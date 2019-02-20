@@ -101,69 +101,6 @@
   }
 }
 
-@mixin nav-animation {
-  @keyframes nav-animation {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }
-}
-
-@mixin leftToRight {
-  @keyframes leftToRight {
-    0% {
-      transform: translateX(-100px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-}
-
-@mixin leftToRightContainer {
-  @keyframes leftToRightContainer {
-    0% {
-      transform: translateX(-500px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-}
-
-@mixin RightToLeft {
-  @keyframes RightToLeft {
-    0% {
-      transform: translateX(500px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-}
-
-@mixin rightToLeftContainer {
-  @keyframes rightToLeftContainer {
-    0% {
-      transform: translateX(500px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-}
 
 @mixin border-box-anim {
   @keyframes border-box-anim {
@@ -217,16 +154,16 @@
 
   /* animation */
   .btn__box:before {
-    animation: leftAnim .8s linear 1.5s forwards;
+    animation: leftAnim .5s linear 1s forwards;
   }
   .btn__box:after {
-    animation: bottomAnim .8s linear 2s forwards;
+    animation: bottomAnim .5s linear 1.3s forwards;
   }
   .btn__box a:before {
-    animation: rightAnim .8s linear 0.5s forwards;
+    animation: rightAnim .5s linear 0.3s forwards;
   }
   .btn__box a:after {
-    animation: topAnim .8s linear 1s forwards;
+    animation: topAnim .5s linear 0.6s forwards;
   }
 
   /* animation*/
