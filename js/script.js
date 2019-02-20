@@ -12,17 +12,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     tl = new TimelineLite();
 
-    tl.from(aboutImg, 0.9, { x: -100,opacity: 0,ease: Power1.easeInOut,delay: 1})
-    .from(abouttitle,0.4,{ y: 15, opacity: 0, ease: Power0.easeInOut }, "-= 0.1")
-    .from(p, 0.4, { y: 15, opacity: 0, ease: Power0.easeInOut },  "-= 0.1")
-    .from(skills, 0.4, { y: 15, opacity: 0, ease: Power0.easeInOut }, "-= 0.1")
-    .from(snsIcons,0.4,{ y: 15, opacity: 0, ease: Power0.easeInOut }, "-= 0.1")
-    .from(btn, 0.4, { y: 15, opacity: 0, ease: Power0.easeInOut }, "-= 0.1");
+    tl.from(aboutImg, 0.8, { x: -100,opacity: 0,ease: Power1.easeInOut,delay: 1})
+    .from(abouttitle,0.4,{ y: 15, opacity: 0, ease: Power1.easeInOut },"-= 0.15")
+    .from(p, 0.4, { y: 15, opacity: 0, ease: Power1.easeInOut },"-= 0.15")
+    .from(skills, 0.4, { y: 15, opacity: 0, ease: Power1.easeInOut },"-= 0.15")
+    .from(snsIcons,0.4,{ y: 15, opacity: 0, ease: Power1.easeInOut })
+    .from(btn, 0.4, { y: 15, opacity: 0, ease: Power1.easeInOut },"-= 0.15");
 
     //slide animation 
 
     let slideSec = document.getElementsByClassName("slide-section");
-    sectionTween = TweenLite.fromTo(slideSec,1,{opacity: 0,scale: 0.8},{opacity: 1,scale: 1});
+    sectionTween = TweenLite.fromTo(slideSec,0.8,{opacity: 0,scale: 0.8},{opacity: 1,scale: 1});
     sectionTween = TweenLite.set(".slide-section",{visibility:"visible"});
   
  
@@ -46,20 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     sectionTween = TweenLite.set(".main-top",{visibility:"visible"});
 
-   
-// scroll fade in single works page
-jQuery(function() {
-  jQuery(window).scroll(function() {
-    jQuery(".fadein").each(function() {
-      var elemPos = jQuery(this).offset().top;
-      var scroll = jQuery(window).scrollTop();
-      var windowHeight = jQuery(window).height();
-      if (scroll > elemPos - windowHeight + 100) {
-        jQuery(this).addClass("scrollin");
-      }
-    });
-  });
-});
+  
 
 
 //methods

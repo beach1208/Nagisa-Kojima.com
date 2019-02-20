@@ -446,7 +446,7 @@ footer p {
   width: 50%;
   padding-right: 5rem;
   opacity: 0;
-  animation: bottomToTop 1s ease 1s 1 forwards;
+  animation: bottomToTop 1s ease .5s 1 forwards;
 }
 
 @keyframes bottomToTop {
@@ -471,7 +471,7 @@ footer p {
 .project-page .summary-content .second-content {
   width: 50%;
   opacity: 0;
-  animation: bottomToTop 1s ease 1.5s 1 forwards;
+  animation: bottomToTop 1s ease .8s 1 forwards;
 }
 
 @keyframes bottomToTop {
@@ -504,7 +504,7 @@ footer p {
   display: block;
   margin: 0 auto;
   opacity: 0;
-  animation: bottomToTop 1s ease 2s 1 forwards;
+  animation: bottomToTop 1s ease 1s 1 forwards;
 }
 
 @keyframes bottomToTop {
@@ -517,23 +517,21 @@ footer p {
   }
 }
 
-.project-page #img-container {
-  text-align: center;
-  margin: 5rem 0;
-}
-
-.project-page .fadein {
-  opacity: 0;
+.project-page .single-img {
+  margin: 2rem 0;
   width: 100%;
-  border: solid 1px #cacaca;
-  transform: translate(0, 50px);
-  transition: all 1s;
-  margin-top: 2rem;
+  opacity: 0;
+  animation: bottomToTop 1s ease 1.2s 1 forwards;
 }
 
-.project-page .fadein.scrollin {
-  opacity: 1;
-  transform: translate(0, 0);
+@keyframes bottomToTop {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .pager {
