@@ -154,16 +154,16 @@
 
   /* animation */
   .btn__box:before {
-    animation: leftAnim .5s linear 1s forwards;
+    animation: leftAnim .3s linear 1s forwards;
   }
   .btn__box:after {
-    animation: bottomAnim .5s linear 1.3s forwards;
+    animation: bottomAnim .3s linear 1.3s forwards;
   }
   .btn__box a:before {
-    animation: rightAnim .5s linear 0.3s forwards;
+    animation: rightAnim .3s linear 0.3s forwards;
   }
   .btn__box a:after {
-    animation: topAnim .5s linear 0.6s forwards;
+    animation: topAnim .3s linear 0.6s forwards;
   }
 
   /* animation*/

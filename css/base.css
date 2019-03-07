@@ -861,7 +861,7 @@ p {
   /* left */
   /* animation */
   /* animation*/
-  animation: border-box-anim 1.5s ease 2s 1 forwards;
+  animation: border-box-anim 0.8s ease 2s 1 forwards;
 }
 
 @keyframes border-box-anim {
@@ -912,19 +912,19 @@ p {
 }
 
 .top-border-rect .btn__box:before {
-  animation: leftAnim .5s linear 1s forwards;
+  animation: leftAnim .3s linear 1s forwards;
 }
 
 .top-border-rect .btn__box:after {
-  animation: bottomAnim .5s linear 1.3s forwards;
+  animation: bottomAnim .3s linear 1.3s forwards;
 }
 
 .top-border-rect .btn__box a:before {
-  animation: rightAnim .5s linear 0.3s forwards;
+  animation: rightAnim .3s linear 0.3s forwards;
 }
 
 .top-border-rect .btn__box a:after {
-  animation: topAnim .5s linear 0.6s forwards;
+  animation: topAnim .3s linear 0.6s forwards;
 }
 
 @keyframes topAnim {
@@ -1021,7 +1021,7 @@ p {
 
 .main-top .top-title .name-title {
   font-weight: 400;
-  font-size: 5vw;
+  font-size: 6vw;
   font-family: "Frank Ruhl Libre", serif;
   color: #ffffff;
   letter-spacing: 1px;

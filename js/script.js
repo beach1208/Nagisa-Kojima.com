@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
   //top page
     let mainNav = document.getElementsByClassName("first-page-nav");
     mainSlide = document.getElementsByClassName("main-top"),
-    helloTitle = document.getElementsByClassName("greed"),
+    helloTitle = document.getElementsByClassName("hello"),
     nameTitle = document.getElementsByClassName("name"),
     position = document.getElementsByClassName("position-title"),
     checkWork = document.getElementsByClassName("check-work"),
@@ -38,17 +38,15 @@ document.addEventListener('DOMContentLoaded', function() {
   
     
     mainTl.fromTo(mainNav, 0.8, { opacity: 0},{y: -10, opacity:1, ease: Power1.easeInOut, delay: 2.5})
-    .from(mainSlide, 0.8, { y: 50, opacity: 0,ease: Power1.easeInOut},"-= 0.15")
-    .from(helloTitle,0.4,{y: 20, opacity: 0, ease: Power2.easeInOut}, "-= 0.15")
-    .from(nameTitle,0.4,{ y: 20, opacity: 0, ease: Power2.easeInOut }, "-= 0.15")
+    .from(mainSlide, 0.8, { x: -500, opacity: 0, ease: Circ.easeOut,delay:0.5},"-= 0.15")
+    .from(helloTitle,0.6,{x: 20, opacity: 0, easeInOut: Power4.easeIn,delay:0.4}, "-= 0.15")
+    .from(nameTitle,0.6,{ x: 20, opacity: 0, easeInOut: Power4.easeIn }, "-= 0.15")
     .from(position,0.4,{ y: 20, opacity: 0, ease: Power2.easeInOut }, "-= 0.15")
     .from(checkWork,0.4,{ y: 20, opacity: 0, ease: Power2.easeInOut }, "-= 0.15");
 
     sectionTween = TweenLite.set(".main-top",{visibility:"visible"});
 
   
-
-
 //methods
 
 
@@ -56,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
 jQuery(document).ready(function($) {
   var $section = $(".scroll-section");
   var $pager = $("#js-pager");
-
 
   var option = {
     section: ".scroll-section",
@@ -75,6 +72,7 @@ jQuery(document).ready(function($) {
     }
   };
 
+  
   $(function() {
     $.scrollify(option);
   });
