@@ -10,7 +10,7 @@
 <meta property="og:url" content="https://nagisa-kojima.com/" />
 <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/thumbnail.png" />
 <meta property="og:site_name"  content="Nagisa Kojima" />
-<meta property="og:description" content="Nagisa Kojima Personal Portfolio Website" />
+<meta property="og:description" content="Nagisa Kojima Portfolio Website" />
 
 <!--  Facebook -->
 <meta property="fb:app_id" content="1008599752676821" />
@@ -21,7 +21,7 @@
 <meta name="twitter:site" content="@Twitter" />
 <meta name="twitter:title" content="Nagisa Kojima" />
 <meta name="twitter:url" content="https://nagisa-kojima.com/" />
-<meta name="twitter:description" content="Nagisa Kojima Personal Portfolio Website" />
+<meta name="twitter:description" content="Nagisa Kojima Portfolio Website" />
 <meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/img/thumbnail.png" />
 
   <link rel="icon" href="img/favicon.ico" />
