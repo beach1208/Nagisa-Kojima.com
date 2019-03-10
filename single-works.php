@@ -34,10 +34,14 @@
                 <div class="btn-class">
                      <a href="<?php the_field('url'); ?>" class="page-btn" target="_blank">Visit WebSite</a>
                 </div>
-                
-                <img class="single-img" src="<?php the_field('works-img'); ?>" alt="portfolio-work">
-                <img class="single-img" src="<?php the_field('works-img2'); ?>" alt="portfolio-work">
-                <img class="single-img" src="<?php the_field('works-img3'); ?>" alt="portfolio-work">
+
+        
+            <img class="single-img" src="<?php the_field('works-img'); ?>" alt="portfolio-work">
+                <?php if( $image2 = get_field('works-img2') ) : ?>
+                  <img class="single-img" src="<?php the_field('works-img2'); ?>" alt="portfolio-work">
+                    <?php elseif ( $image3 = get_field('works-img3') ) : ?>
+                     <img class="single-img" src="<?php the_field('works-img3'); ?>" alt="portfolio-work">
+                <?php endif; ?>
                
            
 
