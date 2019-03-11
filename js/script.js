@@ -1,4 +1,8 @@
-//GSAP animationss
+
+function animeLoad() {
+    document.getElementById("top-border-rect").style.visibility='hidden';
+};
+window.onload = setTimeout(animeLoad,2500);
 
 document.addEventListener('DOMContentLoaded', function() {
   
@@ -38,11 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
   
     
     mainTl.fromTo(mainNav, 0.8, { opacity: 0},{y: -10, opacity:1, ease: Power1.easeInOut, delay: 2.5})
-    .from(mainSlide, 0.8, { x: -500, opacity: 0, ease: Circ.easeOut,delay:0.5},"-= 0.15")
-    .from(helloTitle,0.6,{x: 20, opacity: 0, easeInOut: Power4.easeIn,delay:0.4}, "-= 0.15")
-    .from(nameTitle,0.6,{ x: 20, opacity: 0, easeInOut: Power4.easeIn }, "-= 0.15")
-    .from(position,0.4,{ y: 20, opacity: 0, ease: Power2.easeInOut }, "-= 0.15")
-    .from(checkWork,0.4,{ y: 20, opacity: 0, ease: Power2.easeInOut }, "-= 0.15");
+    .from(mainSlide, 0.8, { x: -300, opacity: 0, ease: Power2.easeInOut,delay:0.5},"-= 0.15")
+    .from(helloTitle,0.6,{x: 20, opacity: 0, ease: Power4.easeInOut,delay:0.4}, "-= 0.15")
+    .from(nameTitle,0.6,{ x: 20, opacity: 0, ease: Power4.easeIn }, "-= 0.15")
+    .from(position,0.4,{ y: 20, opacity: 0, ease: Power2.easeIn }, "-= 0.15")
+    .from(checkWork,0.4,{ y: 20, opacity: 0, ease: Power2.easeIn }, "-= 0.15");
 
     sectionTween = TweenLite.set(".main-top",{visibility:"visible"});
 

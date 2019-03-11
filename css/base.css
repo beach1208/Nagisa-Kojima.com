@@ -846,7 +846,7 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.top-border-rect {
+#top-border-rect {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -873,57 +873,57 @@ p {
   }
 }
 
-.top-border-rect .btn__box:before,
-.top-border-rect .btn__box:after,
-.top-border-rect .btn__box a:before,
-.top-border-rect .btn__box a:after {
+#top-border-rect .btn__box:before,
+#top-border-rect .btn__box:after,
+#top-border-rect .btn__box a:before,
+#top-border-rect .btn__box a:after {
   content: "";
   position: absolute;
   background: #4d4b50;
   /*border color*/
 }
 
-.top-border-rect .btn__box:before {
+#top-border-rect .btn__box:before {
   bottom: 0;
   left: -200px;
   width: 200px;
   height: 1px;
 }
 
-.top-border-rect .btn__box:after {
+#top-border-rect .btn__box:after {
   bottom: -200px;
   right: 0;
   width: 1px;
   height: 200px;
 }
 
-.top-border-rect .btn__box a:before {
+#top-border-rect .btn__box a:before {
   top: 0;
   right: -200px;
   width: 200px;
   height: 1px;
 }
 
-.top-border-rect .btn__box a:after {
+#top-border-rect .btn__box a:after {
   top: -200px;
   left: 0;
   width: 1px;
   height: 200px;
 }
 
-.top-border-rect .btn__box:before {
+#top-border-rect .btn__box:before {
   animation: leftAnim .3s linear 1s forwards;
 }
 
-.top-border-rect .btn__box:after {
+#top-border-rect .btn__box:after {
   animation: bottomAnim .3s linear 1.3s forwards;
 }
 
-.top-border-rect .btn__box a:before {
+#top-border-rect .btn__box a:before {
   animation: rightAnim .3s linear 0.3s forwards;
 }
 
-.top-border-rect .btn__box a:after {
+#top-border-rect .btn__box a:after {
   animation: topAnim .3s linear 0.6s forwards;
 }
 
@@ -963,7 +963,7 @@ p {
   }
 }
 
-.top-border-rect .btn__box {
+#top-border-rect .btn__box {
   position: relative;
   width: 200px;
   height: 200px;
@@ -971,7 +971,7 @@ p {
   overflow: hidden;
 }
 
-.top-border-rect .btn__box a {
+#top-border-rect .btn__box a {
   display: block;
   text-align: center;
   text-decoration: none;

@@ -9,7 +9,7 @@
      </ul>
 </nav>
 
-  <div class="top-border-rect">
+  <div id="top-border-rect" style="visibility: visible;">
     <p class="btn__box">
       <a href="#"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg"></a></a>
     </p>
