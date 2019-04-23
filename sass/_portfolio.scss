@@ -159,6 +159,7 @@
 
     .single-page-title {
       width: 100%;
+      margin: 0;
       @include base-h1(600, 3.5rem, $sub-font, $section-title, 3px);
       @include header-vertical-center;
 
@@ -186,8 +187,7 @@
 
   .summary-content {
     max-width: 100%;
-    margin: 0 auto;
-    padding: 4rem 0;
+    margin: 4rem auto;
     display: flex;
     text-align: left;
 
@@ -197,15 +197,14 @@
 
     .first-content {
       width: 50%;
-      padding-right: 5rem;
+      margin-right: 5rem;
       opacity: 0;
       animation: bottomToTop 1s ease .5s 1 forwards;
       @include bottomToTop(20px);
 
       @include max-screen($breakpMobileLand-max-767) {
         width: 100%;
-        padding: 0;
-        margin-bottom: 20px;
+        margin: 0 0 1rem 0;
         text-align: center;
       }
     }
